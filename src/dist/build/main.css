@@ -42155,7 +42155,10 @@ dynamic-form-question .width {
 
 dynamic-form-question .full-width {
   width: 100% !important;
-  display: grid !important;
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 dynamic-form-question .color {
@@ -42164,12 +42167,6 @@ dynamic-form-question .color {
 
 dynamic-form-question .select-width {
   max-width: 100%;
-}
-
-dynamic-form-question .input {
-  border-style: none;
-  margin: 11px 0;
-  width: 100%;
 }
 
 dynamic-form-question .red-underline {
@@ -42187,6 +42184,46 @@ dynamic-form-question .left-pull {
 
 dynamic-form-question .right-pull {
   float: right;
+}
+
+dynamic-form-question .color-red {
+  color: #f53d3d;
+}
+
+dynamic-form-question textarea {
+  border-style: none;
+  margin: 11px 0;
+  width: 100%;
+  resize: none;
+}
+
+dynamic-form-question input {
+  border-style: none;
+  margin: 11px 0;
+  overflow: scroll;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+dynamic-form-question .flexlayout {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+dynamic-form-question .right-justify {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
 }
 
 tile ion-card {
@@ -42228,15 +42265,6 @@ tile p.break {
   margin: auto;
   overflow: auto;
   max-height: 100%;
-}
-
-page-alcoholtracker .fix-underline {
-  border-bottom: .55px solid #c8c7cc;
-  padding: 0;
-}
-
-page-alcoholtracker .color-primary-darker {
-  color: #7695b4;
 }
 
 page-allergy-history .white-space {
