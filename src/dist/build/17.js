@@ -1,14 +1,14 @@
 webpackJsonp([17],{
 
-/***/ 587:
+/***/ 580:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MedicalRecordDetailPageModule", function() { return MedicalRecordDetailPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MedicalHistoryDetailPageModule", function() { return MedicalHistoryDetailPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__medical_record_detail__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__medical_history_detail__ = __webpack_require__(161);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var MedicalRecordDetailPageModule = (function () {
-    function MedicalRecordDetailPageModule() {
+var MedicalHistoryDetailPageModule = (function () {
+    function MedicalHistoryDetailPageModule() {
     }
-    MedicalRecordDetailPageModule = __decorate([
+    MedicalHistoryDetailPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__medical_record_detail__["a" /* MedicalRecordDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_2__medical_history_detail__["a" /* MedicalHistoryDetailPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__medical_record_detail__["a" /* MedicalRecordDetailPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__medical_history_detail__["a" /* MedicalHistoryDetailPage */]),
             ],
         })
-    ], MedicalRecordDetailPageModule);
-    return MedicalRecordDetailPageModule;
+    ], MedicalHistoryDetailPageModule);
+    return MedicalHistoryDetailPageModule;
 }());
 
-//# sourceMappingURL=medical-record-detail.module.js.map
+//# sourceMappingURL=medical-history-detail.module.js.map
 
 /***/ })
 

@@ -1,14 +1,14 @@
 webpackJsonp([30],{
 
-/***/ 572:
+/***/ 566:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DiagnosticProcedurePageModule", function() { return DiagnosticProcedurePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardPageModule", function() { return DashboardPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__diagnostic_procedure__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard__ = __webpack_require__(47);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var DiagnosticProcedurePageModule = (function () {
-    function DiagnosticProcedurePageModule() {
+var DashboardPageModule = (function () {
+    function DashboardPageModule() {
     }
-    DiagnosticProcedurePageModule = __decorate([
+    DashboardPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__diagnostic_procedure__["a" /* DiagnosticProcedurePage */],
+                __WEBPACK_IMPORTED_MODULE_2__dashboard__["a" /* DashboardPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__diagnostic_procedure__["a" /* DiagnosticProcedurePage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__dashboard__["a" /* DashboardPage */]),
             ],
         })
-    ], DiagnosticProcedurePageModule);
-    return DiagnosticProcedurePageModule;
+    ], DashboardPageModule);
+    return DashboardPageModule;
 }());
 
-//# sourceMappingURL=diagnostic-procedure.module.js.map
+//# sourceMappingURL=dashboard.module.js.map
 
 /***/ })
 

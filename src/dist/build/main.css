@@ -42248,7 +42248,7 @@ tile .col {
   padding: 6px;
 }
 
-tile .item_size {
+tile .item-size {
   text-align: center;
   display: -webkit-box;
   display: -webkit-flex;
@@ -42311,15 +42311,6 @@ page-immunization-history .white-space {
 
 page-login .btn {
   margin-top: 10px;
-}
-
-page-medical-record-detail .fix-underline {
-  border-bottom: .55px solid #c8c7cc;
-  padding: 0;
-}
-
-page-medical-record-detail .color-primary-darker {
-  color: #7695b4;
 }
 
 page-profile-editable .pull-right {

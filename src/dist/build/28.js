@@ -5,10 +5,10 @@ webpackJsonp([28],{
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DoctorVisitNotesPageModule", function() { return DoctorVisitNotesPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DiagnosticProcedurePageModule", function() { return DiagnosticProcedurePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__doctor_visit_notes__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__diagnostic_procedure__ = __webpack_require__(159);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var DoctorVisitNotesPageModule = (function () {
-    function DoctorVisitNotesPageModule() {
+var DiagnosticProcedurePageModule = (function () {
+    function DiagnosticProcedurePageModule() {
     }
-    DoctorVisitNotesPageModule = __decorate([
+    DiagnosticProcedurePageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__doctor_visit_notes__["a" /* DoctorVisitNotesPage */],
+                __WEBPACK_IMPORTED_MODULE_2__diagnostic_procedure__["a" /* DiagnosticProcedurePage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__doctor_visit_notes__["a" /* DoctorVisitNotesPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__diagnostic_procedure__["a" /* DiagnosticProcedurePage */]),
             ],
         })
-    ], DoctorVisitNotesPageModule);
-    return DoctorVisitNotesPageModule;
+    ], DiagnosticProcedurePageModule);
+    return DiagnosticProcedurePageModule;
 }());
 
-//# sourceMappingURL=doctor-visit-notes.module.js.map
+//# sourceMappingURL=diagnostic-procedure.module.js.map
 
 /***/ })
 

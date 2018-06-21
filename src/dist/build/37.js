@@ -1,14 +1,14 @@
 webpackJsonp([37],{
 
-/***/ 566:
+/***/ 559:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactAddContactsPageModule", function() { return ContactAddContactsPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppointmentPageModule", function() { return AppointmentPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_add_contacts__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appointment__ = __webpack_require__(79);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ContactAddContactsPageModule = (function () {
-    function ContactAddContactsPageModule() {
+var AppointmentPageModule = (function () {
+    function AppointmentPageModule() {
     }
-    ContactAddContactsPageModule = __decorate([
+    AppointmentPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__contact_add_contacts__["a" /* ContactAddContactsPage */],
+                __WEBPACK_IMPORTED_MODULE_2__appointment__["a" /* AppointmentPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__contact_add_contacts__["a" /* ContactAddContactsPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__appointment__["a" /* AppointmentPage */]),
             ],
         })
-    ], ContactAddContactsPageModule);
-    return ContactAddContactsPageModule;
+    ], AppointmentPageModule);
+    return AppointmentPageModule;
 }());
 
-//# sourceMappingURL=contact-add-contacts.module.js.map
+//# sourceMappingURL=appointment.module.js.map
 
 /***/ })
 
