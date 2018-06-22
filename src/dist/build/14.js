@@ -1,14 +1,14 @@
 webpackJsonp([14],{
 
-/***/ 580:
+/***/ 582:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MedicationPageModule", function() { return MedicationPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PasswordRetrievePageModule", function() { return PasswordRetrievePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__medication__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__password_retrieve__ = __webpack_require__(82);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var MedicationPageModule = (function () {
-    function MedicationPageModule() {
+var PasswordRetrievePageModule = (function () {
+    function PasswordRetrievePageModule() {
     }
-    MedicationPageModule = __decorate([
+    PasswordRetrievePageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__medication__["a" /* MedicationPage */],
+                __WEBPACK_IMPORTED_MODULE_2__password_retrieve__["a" /* PasswordRetrievePage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__medication__["a" /* MedicationPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__password_retrieve__["a" /* PasswordRetrievePage */]),
             ],
         })
-    ], MedicationPageModule);
-    return MedicationPageModule;
+    ], PasswordRetrievePageModule);
+    return PasswordRetrievePageModule;
 }());
 
-//# sourceMappingURL=medication.module.js.map
+//# sourceMappingURL=password-retrieve.module.js.map
 
 /***/ })
 

@@ -1,14 +1,14 @@
 webpackJsonp([40],{
 
-/***/ 553:
+/***/ 555:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AllergyHistoryPageModule", function() { return AllergyHistoryPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AllergyPageModule", function() { return AllergyPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__allergy_history__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__allergy__ = __webpack_require__(141);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AllergyHistoryPageModule = (function () {
-    function AllergyHistoryPageModule() {
+var AllergyPageModule = (function () {
+    function AllergyPageModule() {
     }
-    AllergyHistoryPageModule = __decorate([
+    AllergyPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__allergy_history__["a" /* AllergyHistoryPage */],
+                __WEBPACK_IMPORTED_MODULE_2__allergy__["a" /* AllergyPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__allergy_history__["a" /* AllergyHistoryPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__allergy__["a" /* AllergyPage */]),
             ],
         })
-    ], AllergyHistoryPageModule);
-    return AllergyHistoryPageModule;
+    ], AllergyPageModule);
+    return AllergyPageModule;
 }());
 
-//# sourceMappingURL=allergy-history.module.js.map
+//# sourceMappingURL=allergy.module.js.map
 
 /***/ })
 
