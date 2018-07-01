@@ -1,14 +1,14 @@
 webpackJsonp([14],{
 
-/***/ 583:
+/***/ 584:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PasswordRetrievePageModule", function() { return PasswordRetrievePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PasswordResetPageModule", function() { return PasswordResetPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__password_retrieve__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__password_reset__ = __webpack_require__(147);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var PasswordRetrievePageModule = (function () {
-    function PasswordRetrievePageModule() {
+var PasswordResetPageModule = (function () {
+    function PasswordResetPageModule() {
     }
-    PasswordRetrievePageModule = __decorate([
+    PasswordResetPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__password_retrieve__["a" /* PasswordRetrievePage */],
+                __WEBPACK_IMPORTED_MODULE_2__password_reset__["a" /* PasswordResetPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__password_retrieve__["a" /* PasswordRetrievePage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__password_reset__["a" /* PasswordResetPage */]),
             ],
         })
-    ], PasswordRetrievePageModule);
-    return PasswordRetrievePageModule;
+    ], PasswordResetPageModule);
+    return PasswordResetPageModule;
 }());
 
-//# sourceMappingURL=password-retrieve.module.js.map
+//# sourceMappingURL=password-reset.module.js.map
 
 /***/ })
 

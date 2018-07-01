@@ -42313,6 +42313,22 @@ page-login .btn {
   margin-top: 10px;
 }
 
+page-password-edit .pull-right {
+  padding-left: 16px;
+}
+
+page-password-edit .color-red {
+  color: #f53d3d;
+}
+
+page-password-reset .pull-right {
+  padding-left: 16px;
+}
+
+page-password-reset .color-red {
+  color: #f53d3d;
+}
+
 page-profile-editable .pull-right {
   padding-left: 16px;
 }

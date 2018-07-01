@@ -1,14 +1,14 @@
 webpackJsonp([22],{
 
-/***/ 574:
+/***/ 577:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ImmunizationPageModule", function() { return ImmunizationPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LabTestDetailPageModule", function() { return LabTestDetailPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__immunization__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lab_test_detail__ = __webpack_require__(79);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ImmunizationPageModule = (function () {
-    function ImmunizationPageModule() {
+var LabTestDetailPageModule = (function () {
+    function LabTestDetailPageModule() {
     }
-    ImmunizationPageModule = __decorate([
+    LabTestDetailPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__immunization__["a" /* ImmunizationPage */],
+                __WEBPACK_IMPORTED_MODULE_2__lab_test_detail__["a" /* LabTestDetailPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__immunization__["a" /* ImmunizationPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__lab_test_detail__["a" /* LabTestDetailPage */]),
             ],
         })
-    ], ImmunizationPageModule);
-    return ImmunizationPageModule;
+    ], LabTestDetailPageModule);
+    return LabTestDetailPageModule;
 }());
 
-//# sourceMappingURL=immunization.module.js.map
+//# sourceMappingURL=lab-test-detail.module.js.map
 
 /***/ })
 
