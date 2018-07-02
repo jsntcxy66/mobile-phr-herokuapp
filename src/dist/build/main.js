@@ -29,52 +29,56 @@ var DiagnosticProcedureClassificationProvider = (function () {
         var arr = [];
         if (id === 0) {
             arr = [
-                { id: 1, name: 'Cardiology', menu: 'diagnostic-procedure', end: false },
-                { id: 2, name: 'Radiology', menu: 'diagnostic-procedure', end: false },
-                { id: 3, name: 'Pulmonary Diagnostic Studies', menu: 'diagnostic-procedure', end: false },
-                { id: 4, name: 'Miscellaneous', menu: 'diagnostic-procedure', end: false }
+                { id: 1, name: 'ECG', menu: 'diagnostic-procedure', end: true },
+                { id: 2, name: 'X-Ray', menu: 'diagnostic-procedure', end: true },
+                { id: 3, name: 'CT Scan', menu: 'diagnostic-procedure', end: true },
+                { id: 4, name: 'MRI', menu: 'diagnostic-procedure', end: true },
+                { id: 5, name: 'Ultrasound', menu: 'diagnostic-procedure', end: true },
+                { id: 6, name: 'Sleep Study', menu: 'diagnostic-procedure', end: true },
+                { id: 7, name: 'Pulmonary Function Tests', menu: 'diagnostic-procedure', end: true },
+                { id: 8, name: 'Miscellaneous', menu: 'diagnostic-procedure', end: true }
             ];
         }
-        else if (id === 1) {
-            arr = [
-                { id: 101, name: 'ECG', menu: 'diagnostic-procedure', end: true },
-                { id: 102, name: 'Echocardiogram', menu: 'diagnostic-procedure', end: true },
-                { id: 103, name: '24 Hour Holter', menu: 'diagnostic-procedure', end: true },
-                { id: 104, name: '30 Day Event Monitor', menu: 'diagnostic-procedure', end: true },
-                { id: 105, name: 'Nuclear exercise stress test - Lexiscan', menu: 'diagnostic-procedure', end: true },
-                { id: 106, name: 'Nuclear stress test - Adenosine', menu: 'diagnostic-procedure', end: true },
-                { id: 107, name: 'Stress echocardiogram', menu: 'diagnostic-procedure', end: true }
-            ];
-        }
-        else if (id === 2) {
-            arr = [
-                { id: 200, name: 'Mammogram', menu: 'diagnostic-procedure', end: true },
-                { id: 201, name: 'CXR', menu: 'diagnostic-procedure', end: true },
-                { id: 202, name: 'AXR - KUB', menu: 'diagnostic-procedure', end: true },
-                { id: 203, name: 'AXR - 4 View', menu: 'diagnostic-procedure', end: true },
-                { id: 204, name: 'X- Ray', menu: 'diagnostic-procedure', end: true },
-                { id: 205, name: 'CT Scan', menu: 'diagnostic-procedure', end: true },
-                { id: 206, name: 'MRI', menu: 'diagnostic-procedure', end: true },
-                { id: 207, name: 'Ultrasound', menu: 'diagnostic-procedure', end: true },
-                { id: 208, name: 'Venous Dopplers', menu: 'diagnostic-procedure', end: true },
-                { id: 209, name: 'Arterial Dopllers', menu: 'diagnostic-procedure', end: true },
-                { id: 210, name: 'Dexa Scan', menu: 'diagnostic-procedure', end: true },
-                { id: 211, name: 'Bone Scan', menu: 'diagnostic-procedure', end: true },
-                { id: 212, name: 'CT Angiogram', menu: 'diagnostic-procedure', end: true }
-            ];
-        }
-        else if (id === 3) {
-            arr = [
-                { id: 302, name: 'Sleep Study', menu: 'diagnostic-procedure', end: true },
-                { id: 303, name: 'Pulmonary Function Tests', menu: 'diagnostic-procedure', end: true }
-            ];
-        }
-        else if (id === 4) {
-            arr = [
-                { id: 401, name: "EMG and NCV's", menu: 'diagnostic-procedure', end: true },
-                { id: 402, name: 'Other Tests', menu: 'diagnostic-procedure', end: true }
-            ];
-        }
+        // else if (id === 1) {
+        //   arr = [
+        //     { id: 101, name: 'ECG', menu: 'diagnostic-procedure', end: true },
+        //     { id: 102, name: 'Echocardiogram', menu: 'diagnostic-procedure', end: true },
+        //     { id: 103, name: '24 Hour Holter', menu: 'diagnostic-procedure', end: true },
+        //     { id: 104, name: '30 Day Event Monitor', menu: 'diagnostic-procedure', end: true },
+        //     { id: 105, name: 'Nuclear exercise stress test - Lexiscan', menu: 'diagnostic-procedure', end: true },
+        //     { id: 106, name: 'Nuclear stress test - Adenosine', menu: 'diagnostic-procedure', end: true },
+        //     { id: 107, name: 'Stress echocardiogram', menu: 'diagnostic-procedure', end: true }
+        //   ];
+        // }
+        // else if (id === 2) {
+        //   arr = [
+        //     { id: 200, name: 'Mammogram', menu: 'diagnostic-procedure', end: true },
+        //     { id: 201, name: 'CXR', menu: 'diagnostic-procedure', end: true },
+        //     { id: 202, name: 'AXR - KUB', menu: 'diagnostic-procedure', end: true },
+        //     { id: 203, name: 'AXR - 4 View', menu: 'diagnostic-procedure', end: true },
+        //     { id: 204, name: 'X- Ray', menu: 'diagnostic-procedure', end: true },
+        //     { id: 205, name: 'CT Scan', menu: 'diagnostic-procedure', end: true },
+        //     { id: 206, name: 'MRI', menu: 'diagnostic-procedure', end: true },
+        //     { id: 207, name: 'Ultrasound', menu: 'diagnostic-procedure', end: true },
+        //     { id: 208, name: 'Venous Dopplers', menu: 'diagnostic-procedure', end: true },
+        //     { id: 209, name: 'Arterial Dopllers', menu: 'diagnostic-procedure', end: true },
+        //     { id: 210, name: 'Dexa Scan', menu: 'diagnostic-procedure', end: true },
+        //     { id: 211, name: 'Bone Scan', menu: 'diagnostic-procedure', end: true },
+        //     { id: 212, name: 'CT Angiogram', menu: 'diagnostic-procedure', end: true }
+        //   ];
+        // }
+        // else if (id === 3) {
+        //   arr = [
+        //     { id: 302, name: 'Sleep Study', menu: 'diagnostic-procedure', end: true },
+        //     { id: 303, name: 'Pulmonary Function Tests', menu: 'diagnostic-procedure', end: true }
+        //   ];
+        // }
+        // else if (id === 4) {
+        //   arr = [
+        //     { id: 401, name: "EMG and NCV's", menu: 'diagnostic-procedure', end: true },
+        //     { id: 402, name: 'Other Tests', menu: 'diagnostic-procedure', end: true }
+        //   ];
+        // }
         return arr;
     };
     DiagnosticProcedureClassificationProvider = __decorate([
@@ -147,126 +151,13 @@ var UserProvider = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AllergyDetailPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_question_question__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_question_control_question_control__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_auth_service_auth_service__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_history_history__ = __webpack_require__(24);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-/**
- * Generated class for the AllergyDetailPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var AllergyDetailPage = (function () {
-    function AllergyDetailPage(navCtrl, navParams, qcp, qp, viewCtrl, loadingCtrl, toastCtrl, historyProvider, auth) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.qcp = qcp;
-        this.qp = qp;
-        this.viewCtrl = viewCtrl;
-        this.loadingCtrl = loadingCtrl;
-        this.toastCtrl = toastCtrl;
-        this.historyProvider = historyProvider;
-        this.auth = auth;
-        this.form = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"]({});
-        this.color = ['dark-salmon', 'rosy-brown', 'slate-grey'];
-        this.title = navParams.get('title');
-        this.id = navParams.get('id');
-        this.questions = this.qp.getAllergyQuestions();
-        this.form = this.qcp.toFormGroup(this.questions);
-        this.navcolor = this.color[(this.id - 1) % 3];
-    }
-    AllergyDetailPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad AllergyDetailPage');
-    };
-    AllergyDetailPage.prototype.dismiss = function () {
-        this.viewCtrl.dismiss();
-    };
-    AllergyDetailPage.prototype.onSubmit = function () {
-        var _this = this;
-        this.showLoader('Adding...');
-        var payLoad = this.form.value;
-        payLoad['category'] = this.title;
-        console.log(payLoad);
-        this.historyProvider.addAllergy(this.auth.userId, payLoad)
-            .subscribe(function (res) {
-            _this.loading.dismiss();
-            _this.presentToast('Successfully added!');
-            _this.viewCtrl.dismiss();
-        }, function (err) {
-            _this.loading.dismiss();
-            _this.presentToast('Failed to add allergy record.');
-        });
-    };
-    AllergyDetailPage.prototype.showLoader = function (msg) {
-        this.loading = this.loadingCtrl.create({
-            content: msg
-        });
-        this.loading.present();
-    };
-    AllergyDetailPage.prototype.presentToast = function (msg) {
-        var toast = this.toastCtrl.create({
-            message: msg,
-            duration: 3000,
-            position: 'bottom',
-            dismissOnPageChange: true
-        });
-        toast.onDidDismiss(function () {
-            console.log('Dismissed toast');
-        });
-        toast.present();
-    };
-    AllergyDetailPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-allergy-detail',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/allergy-detail/allergy-detail.html"*/'<!--\n  Generated template for the AllergyDetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-toolbar [color]="navcolor">\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <span ion-text color="white" showWhen="ios">Cancel</span>\n        <ion-icon name="md-close" showWhen="android, windows"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{title}}</ion-title>\n  </ion-toolbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-content>\n      <div>\n        <form [formGroup]=\'form\' (ngSubmit)="onSubmit()">\n      \n          <div *ngFor="let question of questions">\n            <ion-item>\n              <dynamic-form-question [question]="question" [form]="form"></dynamic-form-question>\n            </ion-item>\n          </div>\n      \n          <div>\n            <button ion-button type="submit" [disabled]="!form.valid" color="slate-grey">Record</button>\n          </div>\n      \n        </form>\n      </div>\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/allergy-detail/allergy-detail.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["NavParams"],
-            __WEBPACK_IMPORTED_MODULE_4__providers_question_control_question_control__["a" /* QuestionControlProvider */],
-            __WEBPACK_IMPORTED_MODULE_3__providers_question_question__["a" /* QuestionProvider */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["ViewController"],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["LoadingController"],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["ToastController"],
-            __WEBPACK_IMPORTED_MODULE_6__providers_history_history__["a" /* HistoryProvider */],
-            __WEBPACK_IMPORTED_MODULE_5__providers_auth_service_auth_service__["a" /* AuthServiceProvider */]])
-    ], AllergyDetailPage);
-    return AllergyDetailPage;
-}());
-
-//# sourceMappingURL=allergy-detail.js.map
-
-/***/ }),
-
-/***/ 139:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AllergyHistoryPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__allergy_allergy__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__allergy_allergy__ = __webpack_require__(139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_service_auth_service__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__welcome_welcome__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_history_history__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_history_history__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -374,14 +265,14 @@ var AllergyHistoryPage = (function () {
 
 /***/ }),
 
-/***/ 140:
+/***/ 139:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AllergyPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_allergy_classification_allergy_classification__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_allergy_classification_allergy_classification__ = __webpack_require__(226);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -425,7 +316,7 @@ var AllergyPage = (function () {
 
 /***/ }),
 
-/***/ 141:
+/***/ 140:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -526,7 +417,7 @@ var LoginPage = (function () {
 
 /***/ }),
 
-/***/ 142:
+/***/ 141:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -775,7 +666,7 @@ var AppointmentAddAppointmentsPage = (function () {
 
 /***/ }),
 
-/***/ 143:
+/***/ 142:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -786,7 +677,7 @@ var AppointmentAddAppointmentsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_question_question__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_service_auth_service__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_question_control_question_control__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_health_records_health_records__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_health_records_health_records__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -883,7 +774,7 @@ var MedicationDetailPage = (function () {
 
 /***/ }),
 
-/***/ 144:
+/***/ 143:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -933,7 +824,7 @@ var ImmunizationPage = (function () {
 
 /***/ }),
 
-/***/ 145:
+/***/ 144:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -945,7 +836,7 @@ var ImmunizationPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_question_control_question_control__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__contact_add_contacts_contact_add_contacts__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_auth_service_auth_service__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_health_records_health_records__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_health_records_health_records__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1113,7 +1004,7 @@ var DoctorVisitNotesDetailPage = (function () {
 
 /***/ }),
 
-/***/ 146:
+/***/ 145:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1344,7 +1235,7 @@ var SignupPage = (function () {
 
 /***/ }),
 
-/***/ 147:
+/***/ 146:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1534,17 +1425,18 @@ var PasswordResetPage = (function () {
 
 /***/ }),
 
-/***/ 148:
+/***/ 147:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactDetailPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AllergyDetailPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_call_number__ = __webpack_require__(354);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_contacts_contacts__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_service_auth_service__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__welcome_welcome__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_question_question__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_question_control_question_control__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_auth_service_auth_service__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_history_history__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1560,6 +1452,195 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+/**
+ * Generated class for the AllergyDetailPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var AllergyDetailPage = (function () {
+    function AllergyDetailPage(navCtrl, navParams, qcp, qp, viewCtrl, loadingCtrl, toastCtrl, historyProvider, auth) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.qcp = qcp;
+        this.qp = qp;
+        this.viewCtrl = viewCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.toastCtrl = toastCtrl;
+        this.historyProvider = historyProvider;
+        this.auth = auth;
+        this.form = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"]({});
+        this.color = ['dark-salmon', 'rosy-brown', 'slate-grey'];
+        this.title = navParams.get('title');
+        this.id = navParams.get('id');
+        this.questions = this.qp.getAllergyQuestions();
+        this.form = this.qcp.toFormGroup(this.questions);
+        this.navcolor = this.color[(this.id - 1) % 3];
+    }
+    AllergyDetailPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad AllergyDetailPage');
+    };
+    AllergyDetailPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    AllergyDetailPage.prototype.onSubmit = function () {
+        var _this = this;
+        this.showLoader('Adding...');
+        var payLoad = this.form.value;
+        payLoad['category'] = this.title;
+        console.log(payLoad);
+        this.historyProvider.addAllergy(this.auth.userId, payLoad)
+            .subscribe(function (res) {
+            _this.loading.dismiss();
+            _this.presentToast('Successfully added!');
+            _this.viewCtrl.dismiss();
+        }, function (err) {
+            _this.loading.dismiss();
+            _this.presentToast('Failed to add allergy record.');
+        });
+    };
+    AllergyDetailPage.prototype.showLoader = function (msg) {
+        this.loading = this.loadingCtrl.create({
+            content: msg
+        });
+        this.loading.present();
+    };
+    AllergyDetailPage.prototype.presentToast = function (msg) {
+        var toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000,
+            position: 'bottom',
+            dismissOnPageChange: true
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    AllergyDetailPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-allergy-detail',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/allergy-detail/allergy-detail.html"*/'<!--\n  Generated template for the AllergyDetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-toolbar [color]="navcolor">\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <span ion-text color="white" showWhen="ios">Cancel</span>\n        <ion-icon name="md-close" showWhen="android, windows"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>{{title}}</ion-title>\n  </ion-toolbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-card>\n    <ion-card-content>\n      <div>\n        <form [formGroup]=\'form\' (ngSubmit)="onSubmit()">\n      \n          <div *ngFor="let question of questions">\n            <ion-item>\n              <dynamic-form-question [question]="question" [form]="form"></dynamic-form-question>\n            </ion-item>\n          </div>\n      \n          <div>\n            <button ion-button type="submit" [disabled]="!form.valid" color="slate-grey">Record</button>\n          </div>\n      \n        </form>\n      </div>\n    </ion-card-content>\n  </ion-card>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/allergy-detail/allergy-detail.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["NavParams"],
+            __WEBPACK_IMPORTED_MODULE_4__providers_question_control_question_control__["a" /* QuestionControlProvider */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_question_question__["a" /* QuestionProvider */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["ViewController"],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["LoadingController"],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["ToastController"],
+            __WEBPACK_IMPORTED_MODULE_6__providers_history_history__["a" /* HistoryProvider */],
+            __WEBPACK_IMPORTED_MODULE_5__providers_auth_service_auth_service__["a" /* AuthServiceProvider */]])
+    ], AllergyDetailPage);
+    return AllergyDetailPage;
+}());
+
+//# sourceMappingURL=allergy-detail.js.map
+
+/***/ }),
+
+/***/ 148:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_detail_contact_detail__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__contact_add_contacts_contact_add_contacts__ = __webpack_require__(48);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the ContactPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ContactPage = (function () {
+    function ContactPage(navCtrl, navParams, modalCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.modalCtrl = modalCtrl;
+        this.contacts = [
+            {
+                category: 'Emergency Contacts',
+                name: 'emergency'
+            },
+            {
+                category: 'Friend',
+                name: 'friend'
+            },
+            {
+                category: 'Family Members',
+                name: 'family'
+            },
+            {
+                category: 'Doctor',
+                name: 'doctor'
+            }
+        ];
+    }
+    ContactPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ContactPage');
+    };
+    ContactPage.prototype.openPage = function (name) {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__contact_detail_contact_detail__["a" /* ContactDetailPage */], { name: name });
+    };
+    ContactPage.prototype.addContact = function () {
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__contact_add_contacts_contact_add_contacts__["a" /* ContactAddContactsPage */]);
+        modal.present();
+        modal.onDidDismiss(function () {
+            console.log("add contact");
+        });
+    };
+    ContactPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-contact',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/contact/contact.html"*/'<!--\n  Generated template for the ContactPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Contacts</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list>\n      <ion-list-header>\n        Category\n      </ion-list-header>\n    <button ion-item *ngFor="let contact of contacts" (click)="openPage(contact.name)">\n      {{contact.category}}\n    </button>\n  </ion-list>\n  <button ion-button block (click)="addContact()">Add Contacts</button>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/contact/contact.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["ModalController"]])
+    ], ContactPage);
+    return ContactPage;
+}());
+
+//# sourceMappingURL=contact.js.map
+
+/***/ }),
+
+/***/ 149:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactDetailPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_contacts_contacts__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_service_auth_service__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__welcome_welcome__ = __webpack_require__(16);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
 /**
  * Generated class for the ContactDetailPage page.
  *
@@ -1567,11 +1648,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Ionic pages and navigation.
  */
 var ContactDetailPage = (function () {
-    function ContactDetailPage(navCtrl, navParams, call, auth, alertCtrl, contactsProvider) {
+    function ContactDetailPage(navCtrl, navParams, auth, alertCtrl, contactsProvider) {
         var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.call = call;
         this.auth = auth;
         this.alertCtrl = alertCtrl;
         this.contactsProvider = contactsProvider;
@@ -1687,11 +1767,6 @@ var ContactDetailPage = (function () {
         }
         return false;
     };
-    ContactDetailPage.prototype.callNumber = function (i) {
-        this.call.callNumber(this.contacts[i].tel, true)
-            .then(function (res) { return console.log('Launched dialer!', res); })
-            .catch(function (err) { return console.log('Error launching dialer', err); });
-    };
     ContactDetailPage.prototype.presentAlert = function (msg) {
         var _this = this;
         var alert = this.alertCtrl.create({
@@ -1702,7 +1777,7 @@ var ContactDetailPage = (function () {
                 {
                     text: 'Ok',
                     handler: function () {
-                        _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__welcome_welcome__["a" /* WelcomePage */]);
+                        _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__welcome_welcome__["a" /* WelcomePage */]);
                     }
                 }
             ]
@@ -1711,13 +1786,12 @@ var ContactDetailPage = (function () {
     };
     ContactDetailPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-contact-detail',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/contact-detail/contact-detail.html"*/'<!--\n  Generated template for the ContactDetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Contacts</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list *ngFor="let contact of contacts; let i = index">\n    <div *ngIf="isCategory(i)">\n      <ion-list-header>{{contact.firstname}} {{contact.lastname}}</ion-list-header>\n      <ion-item>\n        Tel: {{tel[i]}}\n        <ion-icon item-end name="call" (click)="callNumber(i)"></ion-icon>\n      </ion-item>\n      <ion-item *ngIf="contact.fax&&contact.fax!=\'\'">Fax: {{fax[i]}}</ion-item>\n      <ion-item *ngIf="checkDoctor(i)" text-wrap>Specialty: {{contact.specialty}}</ion-item>\n      <ion-item *ngIf="!((contact.location2&&contact.location2!=\'\') || (contact.location3&&contact.location3!=\'\'))" text-wrap>Address: {{contact.location1}}</ion-item>\n      <ion-item *ngIf="(contact.location2&&contact.location2!=\'\') || (contact.location3&&contact.location3!=\'\')" text-wrap>Address1: {{contact.location1}}</ion-item>\n      <ion-item *ngIf="contact.location2&&contact.location2!=\'\'" text-wrap>Address2: {{contact.location2}}</ion-item>\n      <ion-item *ngIf="contact.location3&&contact.location3!=\'\'" text-wrap>Address3: {{contact.location3}}</ion-item>\n      <ion-item *ngIf="checkFamilyorEmergency(i)" text-wrap>Relationship: {{contact.relationship}}</ion-item>\n    </div>\n  </ion-list>\n  <!-- <ion-card [hidden]="matchCategory">\n    <ion-card-header>\n      No record!\n    </ion-card-header>\n  </ion-card> -->\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/contact-detail/contact-detail.html"*/,
+            selector: 'page-contact-detail',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/contact-detail/contact-detail.html"*/'<!--\n  Generated template for the ContactDetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Contacts</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list *ngFor="let contact of contacts; let i = index">\n    <div *ngIf="isCategory(i)">\n      <ion-list-header>{{contact.firstname}} {{contact.lastname}}</ion-list-header>\n      <ion-item>\n        Tel: {{tel[i]}}\n        <a href="tel:{{contact.tel}}" item-end>\n          <ion-icon name="call"></ion-icon>\n        </a>\n      </ion-item>\n      <ion-item *ngIf="contact.fax&&contact.fax!=\'\'">Fax: {{fax[i]}}</ion-item>\n      <ion-item *ngIf="checkDoctor(i)" text-wrap>Specialty: {{contact.specialty}}</ion-item>\n      <ion-item *ngIf="!((contact.location2&&contact.location2!=\'\') || (contact.location3&&contact.location3!=\'\'))" text-wrap>Address: {{contact.location1}}</ion-item>\n      <ion-item *ngIf="(contact.location2&&contact.location2!=\'\') || (contact.location3&&contact.location3!=\'\')" text-wrap>Address1: {{contact.location1}}</ion-item>\n      <ion-item *ngIf="contact.location2&&contact.location2!=\'\'" text-wrap>Address2: {{contact.location2}}</ion-item>\n      <ion-item *ngIf="contact.location3&&contact.location3!=\'\'" text-wrap>Address3: {{contact.location3}}</ion-item>\n      <ion-item *ngIf="checkFamilyorEmergency(i)" text-wrap>Relationship: {{contact.relationship}}</ion-item>\n    </div>\n  </ion-list>\n  <!-- <ion-card [hidden]="matchCategory">\n    <ion-card-header>\n      No record!\n    </ion-card-header>\n  </ion-card> -->\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/contact-detail/contact-detail.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],
-            __WEBPACK_IMPORTED_MODULE_2__ionic_native_call_number__["a" /* CallNumber */],
-            __WEBPACK_IMPORTED_MODULE_4__providers_auth_service_auth_service__["a" /* AuthServiceProvider */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_auth_service_auth_service__["a" /* AuthServiceProvider */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["AlertController"],
-            __WEBPACK_IMPORTED_MODULE_3__providers_contacts_contacts__["a" /* ContactsProvider */]])
+            __WEBPACK_IMPORTED_MODULE_2__providers_contacts_contacts__["a" /* ContactsProvider */]])
     ], ContactDetailPage);
     return ContactDetailPage;
 }());
@@ -1726,15 +1800,16 @@ var ContactDetailPage = (function () {
 
 /***/ }),
 
-/***/ 149:
+/***/ 150:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomPanelPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact_detail_contact_detail__ = __webpack_require__(148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__contact_add_contacts_contact_add_contacts__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__create_tracker_create_tracker__ = __webpack_require__(151);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1744,68 +1819,93 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+// import { CustomtrackerPage } from './../customtracker/customtracker';
+
 
 
 
 
 /**
- * Generated class for the ContactPage page.
+ * Generated class for the CustomPanelPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var ContactPage = (function () {
-    function ContactPage(navCtrl, navParams, modalCtrl) {
+var CustomPanelPage = (function () {
+    function CustomPanelPage(navCtrl, navParams, fb, viewCtrl, storage, modalCtrl) {
+        var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
+        this.fb = fb;
+        this.viewCtrl = viewCtrl;
+        this.storage = storage;
         this.modalCtrl = modalCtrl;
-        this.contacts = [
-            {
-                category: 'Emergency Contacts',
-                name: 'emergency'
-            },
-            {
-                category: 'Friend',
-                name: 'friend'
-            },
-            {
-                category: 'Family Members',
-                name: 'family'
-            },
-            {
-                category: 'Doctor',
-                name: 'doctor'
+        this.formgrouparray = [];
+        this.panels = navParams.data;
+        this.formgroupvalue = {
+            food: this.panels.food,
+            exercise: this.panels.exercise,
+            weight: this.panels.weight,
+            height: this.panels.height
+        };
+        this.custompanel = this.fb.group(this.formgroupvalue);
+        // let keys1 = Object.keys(this.formgroupvalue);
+        this.storage.get('mytracker').then(function (mytracker) {
+            if (mytracker != null) {
+                _this.formgroupvalue[mytracker.name] = true;
+                console.log(_this.formgroupvalue);
             }
-        ];
+            var keys = Object.keys(_this.formgroupvalue);
+            var values = new Array;
+            keys.forEach(function (key) {
+                values.push(_this.formgroupvalue[key]);
+            });
+            for (var i = 0; i < keys.length; i++) {
+                _this.formgrouparray.push({
+                    name: keys[i],
+                    check: values[i]
+                });
+            }
+            console.log(_this.formgroupvalue);
+            _this.custompanel = _this.fb.group(_this.formgroupvalue);
+        });
     }
-    ContactPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad ContactPage');
+    CustomPanelPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad CustomPanelPage');
     };
-    ContactPage.prototype.openPage = function (name) {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__contact_detail_contact_detail__["a" /* ContactDetailPage */], { name: name });
+    CustomPanelPage.prototype.onSubmit = function () {
+        this.panels = this.custompanel.value;
+        this.storage.set('panels', this.panels);
+        console.log(this.panels);
+        this.viewCtrl.dismiss(this.panels);
     };
-    ContactPage.prototype.addContact = function () {
-        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__contact_add_contacts_contact_add_contacts__["a" /* ContactAddContactsPage */]);
+    CustomPanelPage.prototype.createTracker = function () {
+        var _this = this;
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_4__create_tracker_create_tracker__["a" /* CreateTrackerPage */]);
         modal.present();
-        modal.onDidDismiss(function () {
-            console.log("add contact");
+        modal.onDidDismiss(function (mytracker) {
+            console.log(mytracker);
+            _this.storage.set('mytracker', mytracker);
         });
     };
-    ContactPage = __decorate([
+    CustomPanelPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-contact',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/contact/contact.html"*/'<!--\n  Generated template for the ContactPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Contacts</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list>\n      <ion-list-header>\n        Category\n      </ion-list-header>\n    <button ion-item *ngFor="let contact of contacts" (click)="openPage(contact.name)">\n      {{contact.category}}\n    </button>\n  </ion-list>\n  <button ion-button block (click)="addContact()">Add Contacts</button>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/contact/contact.html"*/,
+            selector: 'page-custom-panel',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/custom-panel/custom-panel.html"*/'<!--\n  Generated template for the CustomPanelPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<form [formGroup]=\'custompanel\' (ngSubmit)="onSubmit()">\n  <ion-list no-lines>\n    <ion-list-header>Custom Panel</ion-list-header>\n    <ion-item *ngFor="let f of formgrouparray">\n      <ion-label>{{f.name | titlecase}}</ion-label>\n      <ion-checkbox formControlName="{{f.name}}"></ion-checkbox>\n    </ion-item>\n    <button ion-button clear type="submit">OK</button>\n    <!-- <button ion-button clear (click)="createTracker()">Create My Tracker</button> -->\n  </ion-list>\n</form>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/custom-panel/custom-panel.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["ViewController"],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["ModalController"]])
-    ], ContactPage);
-    return ContactPage;
+    ], CustomPanelPage);
+    return CustomPanelPage;
 }());
 
-//# sourceMappingURL=contact.js.map
+//# sourceMappingURL=custom-panel.js.map
 
 /***/ }),
 
-/***/ 150:
+/***/ 151:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1814,7 +1914,7 @@ var ContactPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__customtracker_customtracker__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__customtracker_customtracker__ = __webpack_require__(152);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1885,7 +1985,7 @@ var CreateTrackerPage = (function () {
 
 /***/ }),
 
-/***/ 151:
+/***/ 152:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1894,8 +1994,8 @@ var CreateTrackerPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_trackers_trackers__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_trackers_trackers__ = __webpack_require__(82);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2011,111 +2111,6 @@ var CustomtrackerPage = (function () {
 
 /***/ }),
 
-/***/ 152:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomPanelPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__create_tracker_create_tracker__ = __webpack_require__(150);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-// import { CustomtrackerPage } from './../customtracker/customtracker';
-
-
-
-
-
-/**
- * Generated class for the CustomPanelPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var CustomPanelPage = (function () {
-    function CustomPanelPage(navCtrl, navParams, fb, viewCtrl, storage, modalCtrl) {
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.fb = fb;
-        this.viewCtrl = viewCtrl;
-        this.storage = storage;
-        this.modalCtrl = modalCtrl;
-        this.formgrouparray = [];
-        this.panels = navParams.data;
-        this.formgroupvalue = {
-            food: this.panels.food,
-            exercise: this.panels.exercise,
-            weight: this.panels.weight,
-            height: this.panels.height
-        };
-        this.custompanel = this.fb.group(this.formgroupvalue);
-        // let keys1 = Object.keys(this.formgroupvalue);
-        this.storage.get('mytracker').then(function (mytracker) {
-            if (mytracker != null) {
-                _this.formgroupvalue[mytracker.name] = true;
-                console.log(_this.formgroupvalue);
-            }
-            var keys = Object.keys(_this.formgroupvalue);
-            var values = new Array;
-            keys.forEach(function (key) {
-                values.push(_this.formgroupvalue[key]);
-            });
-            for (var i = 0; i < keys.length; i++) {
-                _this.formgrouparray.push({
-                    name: keys[i],
-                    check: values[i]
-                });
-            }
-            console.log(_this.formgroupvalue);
-            _this.custompanel = _this.fb.group(_this.formgroupvalue);
-        });
-    }
-    CustomPanelPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad CustomPanelPage');
-    };
-    CustomPanelPage.prototype.onSubmit = function () {
-        this.panels = this.custompanel.value;
-        this.storage.set('panels', this.panels);
-        console.log(this.panels);
-        this.viewCtrl.dismiss(this.panels);
-    };
-    CustomPanelPage.prototype.createTracker = function () {
-        var _this = this;
-        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_4__create_tracker_create_tracker__["a" /* CreateTrackerPage */]);
-        modal.present();
-        modal.onDidDismiss(function (mytracker) {
-            console.log(mytracker);
-            _this.storage.set('mytracker', mytracker);
-        });
-    };
-    CustomPanelPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-custom-panel',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/custom-panel/custom-panel.html"*/'<!--\n  Generated template for the CustomPanelPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n\n<form [formGroup]=\'custompanel\' (ngSubmit)="onSubmit()">\n  <ion-list no-lines>\n    <ion-list-header>Custom Panel</ion-list-header>\n    <ion-item *ngFor="let f of formgrouparray">\n      <ion-label>{{f.name | titlecase}}</ion-label>\n      <ion-checkbox formControlName="{{f.name}}"></ion-checkbox>\n    </ion-item>\n    <button ion-button clear type="submit">OK</button>\n    <!-- <button ion-button clear (click)="createTracker()">Create My Tracker</button> -->\n  </ion-list>\n</form>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/custom-panel/custom-panel.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],
-            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["ViewController"],
-            __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["ModalController"]])
-    ], CustomPanelPage);
-    return CustomPanelPage;
-}());
-
-//# sourceMappingURL=custom-panel.js.map
-
-/***/ }),
-
 /***/ 153:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2127,7 +2122,7 @@ var CustomPanelPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_question_question__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_question_control_question_control__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__welcome_welcome__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_health_records_health_records__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_health_records_health_records__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2170,117 +2165,116 @@ var DiagnosticProcedureDetailPage = (function () {
         }
         this.title = navParams.get('title');
         this.id = navParams.get('id');
-        this.questions = this.qp.getDiagnosticProcedureQuestions(this.id);
+        this.questions = this.qp.getDiagnosticProcedureQuestions(this.title, this.id);
         this.form = this.qcp.toFormGroup(this.questions);
         this.navcolor = this.color[(this.id + 1) % 3];
-        if (this.id == 204 || this.id == 207 || this.id == 212 || this.id == 401) {
-            this.records = [
-                {
-                    "organ": "liver",
-                    "results": [
-                        {
-                            "result": "BB",
-                            "date": "2018-06-15T01:37:58-04:00",
-                            "note": ""
-                        },
-                        {
-                            "result": "BBB",
-                            "date": "2018-06-12T01:37:58-04:00",
-                            "note": ""
-                        }
-                    ]
-                },
-                {
-                    "organ": "lung",
-                    "results": [
-                        {
-                            "result": "BB",
-                            "date": "2018-06-15T01:37:58-04:00",
-                            "note": ""
-                        }
-                    ]
-                }
-            ];
-        }
-        else if (this.id == 205 || this.id == 206) {
-            this.records = [
-                {
-                    "organ": "liver",
-                    "results": [
-                        {
-                            "result": "AA",
-                            "contrast": true,
-                            "date": "2018-06-15T01:37:58-04:00",
-                            "note": ":("
-                        },
-                        {
-                            "result": "AAA",
-                            "contrast": false,
-                            "date": "2018-06-12T01:37:58-04:00",
-                            "note": ""
-                        }
-                    ]
-                },
-                {
-                    "organ": "lung",
-                    "results": [
-                        {
-                            "result": "AA",
-                            "contrast": true,
-                            "date": "2018-06-15T01:37:58-04:00",
-                            "note": ""
-                        }
-                    ]
-                }
-            ];
-        }
-        else {
-            this.records = [
-                {
-                    "result": "AAA",
-                    "date": "2018-06-15T01:37:58-04:00",
-                    "note": ""
-                },
-                {
-                    "result": "BBB",
-                    "date": "2018-06-12T01:37:58-04:00",
-                    "note": ""
-                }
-            ];
-        }
-        if (!this.categoryNormal()) {
-            this.records[0]['open'] = true;
-            for (var i = 1; i < this.records.length; i++) {
-                this.records[i]['open'] = false;
-            }
-        }
+        // if (this.id == 2 || this.id == 5) {
+        //   this.records = [
+        //     {
+        //       "organ": "liver",
+        //       "results": [
+        //         {
+        //           "result": "BB",
+        //           "date": "2018-06-15T01:37:58-04:00",
+        //           "note": ""
+        //         },
+        //         {
+        //           "result": "BBB",
+        //           "date": "2018-06-12T01:37:58-04:00",
+        //           "note": ""
+        //         }
+        //       ]
+        //     },
+        //     {
+        //       "organ": "lung",
+        //       "results": [
+        //         {
+        //           "result": "BB",
+        //           "date": "2018-06-15T01:37:58-04:00",
+        //           "note": ""
+        //         }
+        //       ]
+        //     }
+        //   ];
+        // }
+        // else if (this.id == 3 || this.id == 4) {
+        //   this.records = [
+        //     {
+        //       "organ": "liver",
+        //       "results": [
+        //         {
+        //           "result": "AA",
+        //           "contrast": true,
+        //           "date": "2018-06-15T01:37:58-04:00",
+        //           "note": ":("
+        //         },
+        //         {
+        //           "result": "AAA",
+        //           "contrast": false,
+        //           "date": "2018-06-12T01:37:58-04:00",
+        //           "note": ""
+        //         }
+        //       ]
+        //     },
+        //     {
+        //       "organ": "lung",
+        //       "results": [
+        //         {
+        //           "result": "AA",
+        //           "contrast": true,
+        //           "date": "2018-06-15T01:37:58-04:00",
+        //           "note": ""
+        //         }
+        //       ]
+        //     }
+        //   ]
+        // }
+        // else {
+        //   this.records = [
+        //     {
+        //       "name": "Sleep Study",
+        //       "results": [
+        //         {
+        //           "result": "AAA",
+        //           "date": "2018-06-15T01:37:58-04:00",
+        //           "note": ""
+        //         },
+        //         {
+        //           "result": "BBB",
+        //           "date": "2018-06-12T01:37:58-04:00",
+        //           "note": ""
+        //         }
+        //       ]
+        //     }
+        //   ];
+        // }
+        // this.records[0]['open'] = true;
+        // for (let i = 1; i < this.records.length; i++) {
+        //   this.records[i]['open'] = false;
+        // }
         this.hrp.getDiagnosticProcedure(this.auth.userId, this.id)
-            .subscribe(function (records) { return _this.records = records; }, function (errmess) { return _this.errMess = errmess; });
+            .subscribe(function (records) {
+            _this.records = records;
+            _this.records[0]['open'] = true;
+            if (_this.records.length > 1) {
+                for (var i = 1; i < _this.records.length; i++) {
+                    _this.records[i]['open'] = false;
+                }
+            }
+        }, function (errmess) { return _this.errMess = errmess; });
+        console.log(this.records);
     }
     DiagnosticProcedureDetailPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad DiagnosticProcedureDetailPage');
     };
-    DiagnosticProcedureDetailPage.prototype.categoryNormal = function () {
-        return !(this.id == 204 || this.id == 207 || this.id == 212 || this.id == 401 || this.id == 205 || this.id == 206);
-    };
     DiagnosticProcedureDetailPage.prototype.toggleSection = function (i) {
-        if (!this.categoryNormal()) {
-            this.records[i].open = !this.records[i].open;
-        }
+        this.records[i].open = !this.records[i].open;
     };
     DiagnosticProcedureDetailPage.prototype.showNotes = function (i, j) {
-        var alert;
-        if (j == -1) {
-            alert = this.alertCtrl.create({
-                message: 'Notes: ' + this.records[i].note,
-            });
-        }
-        else {
-            alert = this.alertCtrl.create({
-                message: 'Notes: ' + this.records[i].results[j].note,
-                enableBackdropDismiss: true
-            });
-        }
+        var alert = this.alertCtrl.create({
+            message: 'Notes: ' + this.records[i].results[j].note,
+            enableBackdropDismiss: true
+        });
         alert.present();
     };
     DiagnosticProcedureDetailPage.prototype.onSubmit = function () {
@@ -2295,8 +2289,8 @@ var DiagnosticProcedureDetailPage = (function () {
             _this.hrp.getDiagnosticProcedure(_this.auth.userId, _this.id)
                 .subscribe(function (records) {
                 _this.records = records;
-                if (!_this.categoryNormal()) {
-                    _this.records[0]['open'] = true;
+                _this.records[0]['open'] = true;
+                if (_this.records.length > 1) {
                     for (var i = 1; i < _this.records.length; i++) {
                         _this.records[i]['open'] = false;
                     }
@@ -2304,7 +2298,7 @@ var DiagnosticProcedureDetailPage = (function () {
             }, function (errmess) { return _this.errMess = errmess; });
         }, function (err) {
             _this.loading.dismiss();
-            _this.presentToast('Failed to add the record.');
+            _this.presentToast('Error: ' + err);
         });
     };
     DiagnosticProcedureDetailPage.prototype.showLoader = function (msg) {
@@ -2344,7 +2338,7 @@ var DiagnosticProcedureDetailPage = (function () {
     };
     DiagnosticProcedureDetailPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-diagnostic-procedure-detail',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/diagnostic-procedure-detail/diagnostic-procedure-detail.html"*/'<!--\n  Generated template for the DiagnosticProcedureDetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar [color]="navcolor">\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n\n  <ion-toolbar [color]="navcolor">\n    <ion-segment color="light" [(ngModel)]="tab">\n      <ion-segment-button value="form">\n        TRACK\n      </ion-segment-button>\n      <ion-segment-button value="history">\n        HISTORY\n      </ion-segment-button>\n    </ion-segment>\n  </ion-toolbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <div [ngSwitch]="tab">\n    <div *ngSwitchCase="\'form\'">\n      <ion-card>\n        <ion-card-content>\n          <div>\n            <form [formGroup]=\'form\' (ngSubmit)="onSubmit()">\n\n              <div *ngFor="let question of questions">\n                <ion-item>\n                  <dynamic-form-question [question]="question" [form]="form"></dynamic-form-question>\n                </ion-item>\n              </div>\n\n              <div>\n                <button ion-button type="submit" [disabled]="!form.valid" color="slate-grey">Record</button>\n              </div>\n\n            </form>\n          </div>\n        </ion-card-content>\n      </ion-card>\n    </div>\n    <div *ngSwitchCase="\'history\'">\n      <ion-list *ngIf="records.length!=0">\n        <div *ngIf="!categoryNormal()">\n          <ion-card *ngFor="let d of records; let i = index">\n            <ion-card-header>\n              <ion-item (click)="toggleSection(i)" no-padding>\n                <ion-label text-wrap>{{d.organ}}</ion-label>\n                <ion-icon item-right name="arrow-forward" *ngIf="!d.open"></ion-icon>\n                <ion-icon item-right name="arrow-down" *ngIf="d.open"></ion-icon>\n              </ion-item>\n            </ion-card-header>\n            <ion-list *ngIf="d.open && d.results" no-padding>\n              <ion-item *ngFor="let r of d.results; let j = index" (click)="showNotes(i, j)">\n                <div>\n                  <h3 text-wrap>{{r.result}}</h3>\n                  <ion-note *ngIf="r.contrast!=undefined">{{r.date | date}}</ion-note>\n                </div>\n                <ion-note *ngIf="r.contrast==undefined" item-right>{{r.date | date}}</ion-note>\n                <ion-note *ngIf="r.contrast==true" item-right>With Contrast</ion-note>\n              </ion-item>\n            </ion-list>\n          </ion-card>\n        </div>\n        <div *ngIf="categoryNormal()">\n          <ion-card *ngFor="let d of records; let i = index">\n            <ion-item (click)="showNotes(i, -1)">\n              <h3 text-wrap>{{d.result}}</h3>\n              <ion-note item-right>{{d.date | date}}</ion-note>\n            </ion-item>\n          </ion-card>\n        </div>\n      </ion-list>\n      <ion-card [hidden]="records.length!=0">\n        <ion-card-header>No record.</ion-card-header>\n      </ion-card>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/diagnostic-procedure-detail/diagnostic-procedure-detail.html"*/,
+            selector: 'page-diagnostic-procedure-detail',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/diagnostic-procedure-detail/diagnostic-procedure-detail.html"*/'<!--\n  Generated template for the DiagnosticProcedureDetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar [color]="navcolor">\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n\n  <ion-toolbar [color]="navcolor">\n    <ion-segment color="light" [(ngModel)]="tab">\n      <ion-segment-button value="form">\n        TRACK\n      </ion-segment-button>\n      <ion-segment-button value="history">\n        HISTORY\n      </ion-segment-button>\n    </ion-segment>\n  </ion-toolbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <div [ngSwitch]="tab">\n    <div *ngSwitchCase="\'form\'">\n      <ion-card>\n        <ion-card-content>\n          <div>\n            <form [formGroup]=\'form\' (ngSubmit)="onSubmit()">\n\n              <div *ngFor="let question of questions">\n                <ion-item>\n                  <dynamic-form-question [question]="question" [form]="form"></dynamic-form-question>\n                </ion-item>\n              </div>\n\n              <div>\n                <button ion-button type="submit" [disabled]="!form.valid" color="slate-grey">Record</button>\n              </div>\n\n            </form>\n          </div>\n        </ion-card-content>\n      </ion-card>\n    </div>\n    <div *ngSwitchCase="\'history\'">\n      <ion-list *ngIf="records.length!=0">\n        <div>\n          <ion-card *ngFor="let d of records; let i = index">\n            <ion-card-header>\n              <ion-item (click)="toggleSection(i)" no-padding>\n                <ion-label *ngIf="d.organ" text-wrap>{{d.organ}}</ion-label>\n                <ion-label *ngIf="d.name" text-wrap>{{d.name}}</ion-label>\n                <ion-icon item-right name="arrow-forward" *ngIf="!d.open"></ion-icon>\n                <ion-icon item-right name="arrow-down" *ngIf="d.open"></ion-icon>\n              </ion-item>\n            </ion-card-header>\n            <ion-list *ngIf="d.open && d.results" no-padding>\n              <ion-item *ngFor="let r of d.results; let j = index" (click)="showNotes(i, j)">\n                <div>\n                  <h3 text-wrap>{{r.result}}</h3>\n                  <ion-note *ngIf="r.contrast!=undefined">{{r.date | date}}</ion-note>\n                </div>\n                <ion-note *ngIf="r.contrast==undefined" item-right>{{r.date | date}}</ion-note>\n                <ion-note *ngIf="r.contrast==true" item-right>With Contrast</ion-note>\n              </ion-item>\n            </ion-list>\n          </ion-card>\n        </div>\n      </ion-list>\n      <ion-card [hidden]="records.length!=0">\n        <ion-card-header>No record.</ion-card-header>\n      </ion-card>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/diagnostic-procedure-detail/diagnostic-procedure-detail.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],
             __WEBPACK_IMPORTED_MODULE_3__providers_question_question__["a" /* QuestionProvider */],
@@ -2423,7 +2417,7 @@ var DiagnosticProcedurePage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_question_question__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_service_auth_service__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_question_control_question_control__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_history_history__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_history_history__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2530,7 +2524,7 @@ var FamilyHistoryDetailPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__family_history_detail_family_history_detail__ = __webpack_require__(155);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_service_auth_service__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__welcome_welcome__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_history_history__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_history_history__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2642,7 +2636,7 @@ var FamilyHistoryPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_question_question__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_service_auth_service__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_question_control_question_control__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_health_records_health_records__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_health_records_health_records__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2750,8 +2744,8 @@ var ImmunizationDetailPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LabTestPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lab_test_detail_lab_test_detail__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_health_records_health_records__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lab_test_detail_lab_test_detail__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_health_records_health_records__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2773,213 +2767,30 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  */
 var LabTestPage = (function () {
     function LabTestPage(navCtrl, navParams, hrp) {
-        // get common lab test list
         var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.hrp = hrp;
         this.list = [];
-        // let list = [
-        //   {
-        //     id: 1,
-        //     name: "ANA",
-        //     subset: ["ANA"]
-        //   }
-        // ];
-        var list = [
-            {
-                id: 1,
-                name: "ANA",
-                unit: "",
-                isnumber: false,
-                subtest: ["AAA"]
-            },
-            {
-                id: 2,
-                name: "BMP (Basic Metabolic Panel)",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: ["BMP (Basic Metabolic Panel)", "BMP (Basic Metabolic Panel) (Other)"]
-            },
-            {
-                id: 3,
-                name: "CBC (Complete Blood Count)",
-                unit: "K/mcL",
-                isnumber: true,
-                subtest: ["CBC (Complete Blood Count)"]
-            },
-            {
-                id: 4,
-                name: "CMP (Comprehensive Metabolic Panel)",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: ["CMP (Comprehensive Metabolic Panel)"]
-            },
-            {
-                id: 5,
-                name: "ESR (Sedimentation Rate)",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: ["ESR (Sedimentation Rate)"]
-            },
-            {
-                id: 6,
-                name: "Flu (Influenza A and B Screen)",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: ["Flu (Influenza A and B Screen)"]
-            },
-            {
-                id: 7,
-                name: "Glycohemoglobin (Hemoglobin A1C)",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: ["Glycohemoglobin (Hemoglobin A1C)"]
-            },
-            {
-                id: 8,
-                name: "Glucose Level",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: ["Glucose Level"]
-            },
-            {
-                id: 9,
-                name: "HCG",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: ["HCG"]
-            },
-            {
-                id: 10,
-                name: "HIV Antibody (HIV 1/2 Ag/Ab 4th Generation with Reflex)",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: ["HIV Antibody (HIV 1/2 Ag/Ab 4th Generation with Reflex)"]
-            },
-            {
-                id: 11,
-                name: "Lipid Panel (or Lipid Profile)",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: ["Lipid Panel (or Lipid Profile)"]
-            },
-            {
-                id: 12,
-                name: "Liver Function Panel (LFT)",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: ["Liver Function Panel (LFT)"]
-            },
-            {
-                id: 13,
-                name: "Lyme Antibody w/Reflex Immunoblot",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: ["Lyme Antibody w/Reflex Immunoblot"]
-            },
-            {
-                id: 14,
-                name: "PTT (Partial Thromboplastin Time)",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: ["PTT (Partial Thromboplastin Time)"]
-            },
-            {
-                id: 15,
-                name: "Microalbumin, Urine",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: []
-            },
-            {
-                id: 16,
-                name: "Mono",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: []
-            },
-            {
-                id: 17,
-                name: "Pap Smear",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: []
-            },
-            {
-                id: 18,
-                name: "PSA (Prostate Specific Antigen)",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: []
-            },
-            {
-                id: 19,
-                name: "PT (Protime)",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: []
-            },
-            {
-                id: 20,
-                name: "Semen Analysis",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: []
-            },
-            {
-                id: 21,
-                name: "Stool Culture",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: []
-            },
-            {
-                id: 22,
-                name: "TSH, High Sensitivity (Thyroid Stimulating Hormone)",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: []
-            },
-            {
-                id: 23,
-                name: "Uric Acid",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: []
-            },
-            {
-                id: 24,
-                name: "Urinalysis",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: []
-            },
-            {
-                id: 25,
-                name: "Urine Culture",
-                unit: "mg/dL",
-                isnumber: true,
-                subtest: []
-            },
-        ];
+        // set an empty array with 26 initials.
         for (var i = 0; i < 26; i++) {
             this.list.push({ initial: String.fromCharCode(65 + i), category: new Array(0) });
         }
-        list.forEach(function (category) {
-            _this.list[category.name.charCodeAt(0) - 65].category.push(category);
-        });
-        for (var i = 0; i < this.list.length; i++) {
-            if (this.list[i].category.length == 0) {
-                this.list.splice(i, 1);
-                i--;
-            }
-        }
+        console.log(this.list);
+        // get common lab test list
         this.hrp.getLabTestCategory()
             .subscribe(function (list) {
-            list.forEach(function (category) {
-                _this.list[category.name.charCodeAt(0) - 65].category.push(category);
+            console.log(list);
+            list.forEach(function (title) {
+                // insert each category into corresponding initial
+                if (title.name.charCodeAt(0) > 90) {
+                    _this.list[title.name.charCodeAt(0) - 97].category.push(title);
+                }
+                else {
+                    _this.list[title.name.charCodeAt(0) - 65].category.push(title);
+                }
             });
+            // delete empty initials
             for (var i = 0; i < _this.list.length; i++) {
                 if (_this.list[i].category.length == 0) {
                     _this.list.splice(i, 1);
@@ -2995,8 +2806,6 @@ var LabTestPage = (function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__lab_test_detail_lab_test_detail__["a" /* LabTestDetailPage */], {
             'id': this.list[i].category[j].id,
             'title': this.list[i].category[j].name,
-            'unit': this.list[i].category[j].unit,
-            'isnumber': this.list[i].category[j].isnumber,
             'subtest': this.list[i].category[j].subtest,
             'tab': 'form'
         });
@@ -3005,8 +2814,6 @@ var LabTestPage = (function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__lab_test_detail_lab_test_detail__["a" /* LabTestDetailPage */], {
             'id': 0,
             'title': 'Other Tests',
-            'unit': "",
-            'isnumber': false,
             'subtest': [],
             'tab': 'form'
         });
@@ -3035,7 +2842,7 @@ var LabTestPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__medical_history_detail_medical_history_detail__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_service_auth_service__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__welcome_welcome__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_history_history__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_history_history__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3137,9 +2944,9 @@ var MedicalHistoryPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WelcomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(141);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__signup_signup__ = __webpack_require__(146);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__password_reset_password_reset__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__signup_signup__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__password_reset_password_reset__ = __webpack_require__(146);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3188,7 +2995,7 @@ var WelcomePage = (function () {
     };
     WelcomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-welcome',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/welcome/welcome.html"*/'<ion-content padding class="content">\n  <div class="title">\n    <a>PITT</a>\n    <br>\n    <a>MOBILE</a>\n    <br>\n    <a>PHR</a>\n  </div>\n  <h5>A way to manage your health data</h5>\n\n  <div class="btns">\n    <button ion-button block (click)="signup()">SIGNUP</button>\n    <button ion-button block color="primary-pale" (click)="login()">LOGIN</button>\n    <button ion-button clear color="primary" (click)="resetPassword()" no-padding>Forget password?</button>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/welcome/welcome.html"*/,
+            selector: 'page-welcome',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/welcome/welcome.html"*/'<ion-content padding class="content">\n  <div class="title-wrapper">\n    <div>\n      <a>PITT</a>\n      <br>\n      <a>MOBILE</a>\n      <br>\n      <a>PHR</a>\n    </div>\n    <p class="font">A way to manage your health data</p>\n  </div>\n\n  <div class="botton-wrapper">\n    <button ion-button block (click)="signup()">SIGNUP</button>\n    <button ion-button class="botton-space" block color="primary-pale" (click)="login()">LOGIN</button>\n    <button ion-button clear color="primary" (click)="resetPassword()" no-padding>Forget password?</button>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/welcome/welcome.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["MenuController"],
@@ -3212,7 +3019,7 @@ var WelcomePage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_question_question__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_service_auth_service__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_question_control_question_control__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_history_history__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_history_history__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3357,7 +3164,8 @@ var PasswordEditPage = (function () {
                 "required": "Current password is required."
             },
             "newPassword": {
-                "required": "New password is required."
+                "required": "New password is required.",
+                "pattern": "Password must be 8-17 characters long and contains at least one number, one letter and one unique character such as !@#$%^&*?\"';:"
             },
             "confirmPassword": {
                 "required": "Please enter your password again.",
@@ -3366,8 +3174,8 @@ var PasswordEditPage = (function () {
         };
         this.editpasswordForm = this.fb.group({
             currentPassword: ['', __WEBPACK_IMPORTED_MODULE_0__angular_forms__["Validators"].required],
-            newPassword: ['', __WEBPACK_IMPORTED_MODULE_0__angular_forms__["Validators"].required],
-            confirmPassword: ['', [__WEBPACK_IMPORTED_MODULE_0__angular_forms__["Validators"].required]]
+            newPassword: ['', [__WEBPACK_IMPORTED_MODULE_0__angular_forms__["Validators"].required, __WEBPACK_IMPORTED_MODULE_0__angular_forms__["Validators"].pattern('^.*(?=.{8,})(?=.*[a-zA-Z])(?=.*\\d)(?=.*[\!\@\#\$\%\^\&\*\?\"\'\;\:]).*$')]],
+            confirmPassword: ['', __WEBPACK_IMPORTED_MODULE_0__angular_forms__["Validators"].required]
         }, { validator: this.pwdMatchValidator('newPassword', 'confirmPassword') });
         this.editpasswordForm.valueChanges.subscribe(function (data) { return _this.onValueChanged(data); });
         this.onValueChanged();
@@ -3727,7 +3535,7 @@ var ProfilePage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResourcesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__ = __webpack_require__(356);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_in_app_browser__ = __webpack_require__(355);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3802,7 +3610,7 @@ var ResourcesPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SocialHistoryCategoryPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_social_history_classification_social_history_classification__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_social_history_classification_social_history_classification__ = __webpack_require__(356);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3857,7 +3665,7 @@ var SocialHistoryCategoryPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_question_question__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_service_auth_service__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_question_control_question_control__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_history_history__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_history_history__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3969,7 +3777,7 @@ var SocialHistoryDetailPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__social_history_category_social_history_category__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_service_auth_service__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__welcome_welcome__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_history_history__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_history_history__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4091,6 +3899,108 @@ var SocialHistoryPage = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SurgicalHistoryPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__surgical_history_detail_surgical_history_detail__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__welcome_welcome__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_service_auth_service__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_history_history__ = __webpack_require__(25);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+/**
+ * Generated class for the SurgicalHistoryPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var SurgicalHistoryPage = (function () {
+    function SurgicalHistoryPage(navCtrl, navParams, modalCtrl, historyProvider, auth, alertCtrl) {
+        // get sorted records
+        // this.records = [
+        //   {
+        //     surgery: 'appendectomy',
+        //     doctor: 'Aaric Falconi',
+        //     date: '2018/04/26'
+        //   },
+        //   {
+        //     surgery: 'arthrodesis',
+        //     doctor: 'Scott Williamson',
+        //     date: '2017/09/11'
+        //   }
+        // ];
+        var _this = this;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.modalCtrl = modalCtrl;
+        this.historyProvider = historyProvider;
+        this.auth = auth;
+        this.alertCtrl = alertCtrl;
+        this.records = [];
+        this.historyProvider.getSurgicalHistory(this.auth.userId)
+            .subscribe(function (records) { return _this.records = records; }, function (errmess) { return _this.errMess = errmess; });
+    }
+    SurgicalHistoryPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SurgicalHistoryPage');
+    };
+    SurgicalHistoryPage.prototype.addSurgicalHistory = function () {
+        var _this = this;
+        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_2__surgical_history_detail_surgical_history_detail__["a" /* SurgicalHistoryDetailPage */]);
+        modal.present();
+        modal.onWillDismiss(function () { return _this.historyProvider.getSurgicalHistory(_this.auth.userId)
+            .subscribe(function (records) { return _this.records = records; }, function (errmess) { return _this.errMess = errmess; }); });
+    };
+    SurgicalHistoryPage.prototype.presentAlert = function (msg) {
+        var _this = this;
+        var alert = this.alertCtrl.create({
+            title: 'Oops!',
+            message: msg,
+            enableBackdropDismiss: false,
+            buttons: [
+                {
+                    text: 'Ok',
+                    handler: function () {
+                        _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__welcome_welcome__["a" /* WelcomePage */]);
+                    }
+                }
+            ]
+        });
+        alert.present();
+    };
+    SurgicalHistoryPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-surgical-history',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/surgical-history/surgical-history.html"*/'<!--\n  Generated template for the SurgicalHistoryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>SURGICAL HISTORY</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list *ngIf="records.length!=0">\n    <ion-list-header>Surgical History</ion-list-header>\n    <ion-item *ngFor="let record of records">\n      <div class="white-space">\n        <h3>Surgery: {{record.surgery}}</h3>\n        <h3>Doctor: {{record.doctor}}</h3>\n        <p>{{record.date | date}}</p>\n      </div>\n    </ion-item>\n  </ion-list>\n\n  <ion-card [hidden]="records.length!=0">\n    <ion-card-header>No surgical history record.</ion-card-header>\n  </ion-card>\n\n  <ion-fab right bottom>\n    <button ion-fab color="primary" (click)="addSurgicalHistory()">\n      <ion-icon name="add"></ion-icon>\n    </button>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/surgical-history/surgical-history.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["ModalController"],
+            __WEBPACK_IMPORTED_MODULE_5__providers_history_history__["a" /* HistoryProvider */],
+            __WEBPACK_IMPORTED_MODULE_4__providers_auth_service_auth_service__["a" /* AuthServiceProvider */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["AlertController"]])
+    ], SurgicalHistoryPage);
+    return SurgicalHistoryPage;
+}());
+
+//# sourceMappingURL=surgical-history.js.map
+
+/***/ }),
+
+/***/ 169:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SurgicalHistoryDetailPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
@@ -4099,7 +4009,7 @@ var SocialHistoryPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contact_add_contacts_contact_add_contacts__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_question_control_question_control__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_auth_service_auth_service__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_history_history__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_history_history__ = __webpack_require__(25);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4267,108 +4177,6 @@ var SurgicalHistoryDetailPage = (function () {
 
 /***/ }),
 
-/***/ 169:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SurgicalHistoryPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__surgical_history_detail_surgical_history_detail__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__welcome_welcome__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_service_auth_service__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_history_history__ = __webpack_require__(24);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-/**
- * Generated class for the SurgicalHistoryPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var SurgicalHistoryPage = (function () {
-    function SurgicalHistoryPage(navCtrl, navParams, modalCtrl, historyProvider, auth, alertCtrl) {
-        // get sorted records
-        // this.records = [
-        //   {
-        //     surgery: 'appendectomy',
-        //     doctor: 'Aaric Falconi',
-        //     date: '2018/04/26'
-        //   },
-        //   {
-        //     surgery: 'arthrodesis',
-        //     doctor: 'Scott Williamson',
-        //     date: '2017/09/11'
-        //   }
-        // ];
-        var _this = this;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.modalCtrl = modalCtrl;
-        this.historyProvider = historyProvider;
-        this.auth = auth;
-        this.alertCtrl = alertCtrl;
-        this.records = [];
-        this.historyProvider.getSurgicalHistory(this.auth.userId)
-            .subscribe(function (records) { return _this.records = records; }, function (errmess) { return _this.errMess = errmess; });
-    }
-    SurgicalHistoryPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad SurgicalHistoryPage');
-    };
-    SurgicalHistoryPage.prototype.addSurgicalHistory = function () {
-        var _this = this;
-        var modal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_2__surgical_history_detail_surgical_history_detail__["a" /* SurgicalHistoryDetailPage */]);
-        modal.present();
-        modal.onWillDismiss(function () { return _this.historyProvider.getSurgicalHistory(_this.auth.userId)
-            .subscribe(function (records) { return _this.records = records; }, function (errmess) { return _this.errMess = errmess; }); });
-    };
-    SurgicalHistoryPage.prototype.presentAlert = function (msg) {
-        var _this = this;
-        var alert = this.alertCtrl.create({
-            title: 'Oops!',
-            message: msg,
-            enableBackdropDismiss: false,
-            buttons: [
-                {
-                    text: 'Ok',
-                    handler: function () {
-                        _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__welcome_welcome__["a" /* WelcomePage */]);
-                    }
-                }
-            ]
-        });
-        alert.present();
-    };
-    SurgicalHistoryPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-surgical-history',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/surgical-history/surgical-history.html"*/'<!--\n  Generated template for the SurgicalHistoryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>SURGICAL HISTORY</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list *ngIf="records.length!=0">\n    <ion-list-header>Surgical History</ion-list-header>\n    <ion-item *ngFor="let record of records">\n      <div class="white-space">\n        <h3>Surgery: {{record.surgery}}</h3>\n        <h3>Doctor: {{record.doctor}}</h3>\n        <p>{{record.date | date}}</p>\n      </div>\n    </ion-item>\n  </ion-list>\n\n  <ion-card [hidden]="records.length!=0">\n    <ion-card-header>No surgical history record.</ion-card-header>\n  </ion-card>\n\n  <ion-fab right bottom>\n    <button ion-fab color="primary" (click)="addSurgicalHistory()">\n      <ion-icon name="add"></ion-icon>\n    </button>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/surgical-history/surgical-history.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["ModalController"],
-            __WEBPACK_IMPORTED_MODULE_5__providers_history_history__["a" /* HistoryProvider */],
-            __WEBPACK_IMPORTED_MODULE_4__providers_auth_service_auth_service__["a" /* AuthServiceProvider */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["AlertController"]])
-    ], SurgicalHistoryPage);
-    return SurgicalHistoryPage;
-}());
-
-//# sourceMappingURL=surgical-history.js.map
-
-/***/ }),
-
 /***/ 170:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4461,7 +4269,7 @@ var TestResultsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_question_question__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_question_control_question_control__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_trackers_trackers__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_trackers_trackers__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__welcome_welcome__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_auth_service_auth_service__ = __webpack_require__(6);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -4648,7 +4456,7 @@ var TrackerDetailPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__custom_panel_custom_panel__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__custom_panel_custom_panel__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tracker_detail_tracker_detail__ = __webpack_require__(171);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4867,12 +4675,12 @@ var QuestionControlProvider = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__question_option_question_option__ = __webpack_require__(349);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_dynamic_form_types_question_textbox__ = __webpack_require__(464);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_dynamic_form_types_question_datetime__ = __webpack_require__(465);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_dynamic_form_types_question_dropdown__ = __webpack_require__(466);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_dynamic_form_types_question_textarea__ = __webpack_require__(467);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_dynamic_form_types_question_toggle__ = __webpack_require__(468);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__question_option_question_option__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_dynamic_form_types_question_textbox__ = __webpack_require__(463);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_dynamic_form_types_question_datetime__ = __webpack_require__(464);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_dynamic_form_types_question_dropdown__ = __webpack_require__(465);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_dynamic_form_types_question_textarea__ = __webpack_require__(466);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_dynamic_form_types_question_toggle__ = __webpack_require__(467);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5582,102 +5390,100 @@ var QuestionProvider = (function () {
         ];
         return questions.sort(function (a, b) { return a.order - b.order; });
     };
-    QuestionProvider.prototype.getLabTestQuestions = function (isnumber, unit, title) {
-        var questions;
-        if (isnumber == true) {
-            questions = [
-                new __WEBPACK_IMPORTED_MODULE_3__components_dynamic_form_types_question_textbox__["a" /* TextboxQuestion */]({
-                    key: 'subtest',
-                    label: 'Test Name',
-                    type: 'text',
-                    value: title,
-                    required: true,
-                    order: 1
-                }),
-                new __WEBPACK_IMPORTED_MODULE_4__components_dynamic_form_types_question_datetime__["a" /* DatetimeQuestion */]({
-                    key: 'date',
-                    label: 'Date',
-                    display: 'MM/DD/YYYY',
-                    value: __WEBPACK_IMPORTED_MODULE_1_moment__().format(),
-                    required: true,
-                    order: 2
-                }),
-                new __WEBPACK_IMPORTED_MODULE_3__components_dynamic_form_types_question_textbox__["a" /* TextboxQuestion */]({
-                    key: 'result',
-                    label: 'Result',
-                    type: 'number',
-                    value: '',
-                    unit: unit,
-                    required: true,
-                    order: 3
-                }),
-                new __WEBPACK_IMPORTED_MODULE_7__components_dynamic_form_types_question_toggle__["a" /* ToggleQuestion */]({
-                    key: 'abnormal',
-                    label: 'Abnormal?',
-                    value: false,
-                    order: 4
-                }),
-                new __WEBPACK_IMPORTED_MODULE_6__components_dynamic_form_types_question_textarea__["a" /* TextareaQuestion */]({
-                    key: 'note',
-                    label: 'Notes',
-                    value: '',
-                    rows: 4,
-                    required: false,
-                    order: 5
-                }),
-            ];
-        }
-        else {
-            questions = [
-                new __WEBPACK_IMPORTED_MODULE_3__components_dynamic_form_types_question_textbox__["a" /* TextboxQuestion */]({
-                    key: 'subtest',
-                    label: 'Test Name',
-                    type: 'text',
-                    value: title,
-                    required: true,
-                    order: 1
-                }),
-                new __WEBPACK_IMPORTED_MODULE_4__components_dynamic_form_types_question_datetime__["a" /* DatetimeQuestion */]({
-                    key: 'date',
-                    label: 'Date',
-                    display: 'MM/DD/YYYY',
-                    value: __WEBPACK_IMPORTED_MODULE_1_moment__().format(),
-                    required: true,
-                    order: 2
-                }),
-                new __WEBPACK_IMPORTED_MODULE_3__components_dynamic_form_types_question_textbox__["a" /* TextboxQuestion */]({
-                    key: 'result',
-                    label: 'Result',
-                    type: 'text',
-                    value: '',
-                    required: true,
-                    order: 3
-                }),
-                new __WEBPACK_IMPORTED_MODULE_7__components_dynamic_form_types_question_toggle__["a" /* ToggleQuestion */]({
-                    key: 'abnormal',
-                    label: 'Abnormal?',
-                    value: false,
-                    order: 4
-                }),
-                new __WEBPACK_IMPORTED_MODULE_6__components_dynamic_form_types_question_textarea__["a" /* TextareaQuestion */]({
-                    key: 'note',
-                    label: 'Notes',
-                    value: '',
-                    rows: 4,
-                    required: false,
-                    order: 5
-                }),
-            ];
-        }
+    QuestionProvider.prototype.getLabTestQuestions = function (title) {
+        var questions = [
+            new __WEBPACK_IMPORTED_MODULE_3__components_dynamic_form_types_question_textbox__["a" /* TextboxQuestion */]({
+                key: 'subtest',
+                label: 'Test Name',
+                type: 'text',
+                value: title,
+                required: true,
+                order: 1
+            }),
+            new __WEBPACK_IMPORTED_MODULE_4__components_dynamic_form_types_question_datetime__["a" /* DatetimeQuestion */]({
+                key: 'date',
+                label: 'Date',
+                display: 'MM/DD/YYYY',
+                value: __WEBPACK_IMPORTED_MODULE_1_moment__().format(),
+                required: true,
+                order: 2
+            }),
+            new __WEBPACK_IMPORTED_MODULE_3__components_dynamic_form_types_question_textbox__["a" /* TextboxQuestion */]({
+                key: 'result',
+                label: 'Result',
+                type: 'text',
+                value: '',
+                required: true,
+                order: 3
+            }),
+            new __WEBPACK_IMPORTED_MODULE_3__components_dynamic_form_types_question_textbox__["a" /* TextboxQuestion */]({
+                key: 'unit',
+                label: 'Unit',
+                type: 'text',
+                value: '',
+                required: false,
+                order: 4
+            }),
+            new __WEBPACK_IMPORTED_MODULE_7__components_dynamic_form_types_question_toggle__["a" /* ToggleQuestion */]({
+                key: 'abnormal',
+                label: 'Abnormal?',
+                value: false,
+                order: 5
+            }),
+            new __WEBPACK_IMPORTED_MODULE_6__components_dynamic_form_types_question_textarea__["a" /* TextareaQuestion */]({
+                key: 'note',
+                label: 'Notes',
+                value: '',
+                rows: 4,
+                required: false,
+                order: 6
+            }),
+        ];
         return questions.sort(function (a, b) { return a.order - b.order; });
     };
-    QuestionProvider.prototype.getDiagnosticProcedureQuestions = function (id) {
+    QuestionProvider.prototype.getDiagnosticProcedureQuestions = function (title, id) {
         var questions;
-        if (id == 204 || id == 207 || id == 212 || id == 401) {
+        if (id == 1 || id == 6 || id == 7 || id == 8) {
+            questions = [
+                new __WEBPACK_IMPORTED_MODULE_3__components_dynamic_form_types_question_textbox__["a" /* TextboxQuestion */]({
+                    key: 'name',
+                    label: 'Test Name',
+                    type: 'text',
+                    value: title,
+                    required: true,
+                    order: 1
+                }),
+                new __WEBPACK_IMPORTED_MODULE_3__components_dynamic_form_types_question_textbox__["a" /* TextboxQuestion */]({
+                    key: 'result',
+                    label: 'Result',
+                    type: 'text',
+                    value: '',
+                    required: true,
+                    order: 2
+                }),
+                new __WEBPACK_IMPORTED_MODULE_4__components_dynamic_form_types_question_datetime__["a" /* DatetimeQuestion */]({
+                    key: 'date',
+                    label: 'Date',
+                    display: 'MM/DD/YYYY',
+                    value: __WEBPACK_IMPORTED_MODULE_1_moment__().format(),
+                    required: true,
+                    order: 3
+                }),
+                new __WEBPACK_IMPORTED_MODULE_6__components_dynamic_form_types_question_textarea__["a" /* TextareaQuestion */]({
+                    key: 'note',
+                    label: 'Notes',
+                    value: '',
+                    rows: 5,
+                    required: false,
+                    order: 4
+                }),
+            ];
+        }
+        else if (id == 2 || id == 5) {
             questions = [
                 new __WEBPACK_IMPORTED_MODULE_3__components_dynamic_form_types_question_textbox__["a" /* TextboxQuestion */]({
                     key: 'organ',
-                    label: 'Organ',
+                    label: 'Body Part',
                     type: 'text',
                     value: '',
                     required: true,
@@ -5708,13 +5514,12 @@ var QuestionProvider = (function () {
                     order: 4
                 }),
             ];
-            return questions.sort(function (a, b) { return a.order - b.order; });
         }
-        else if (id == 205 || id == 206) {
+        else if (id == 3 || id == 4) {
             questions = [
                 new __WEBPACK_IMPORTED_MODULE_3__components_dynamic_form_types_question_textbox__["a" /* TextboxQuestion */]({
                     key: 'organ',
-                    label: 'Organ',
+                    label: 'Body Part',
                     type: 'text',
                     value: '',
                     required: true,
@@ -5752,37 +5557,118 @@ var QuestionProvider = (function () {
                     order: 5
                 }),
             ];
-            return questions.sort(function (a, b) { return a.order - b.order; });
         }
-        else {
-            questions = [
-                new __WEBPACK_IMPORTED_MODULE_3__components_dynamic_form_types_question_textbox__["a" /* TextboxQuestion */]({
-                    key: 'result',
-                    label: 'Result',
-                    type: 'text',
-                    value: '',
-                    required: true,
-                    order: 1
-                }),
-                new __WEBPACK_IMPORTED_MODULE_4__components_dynamic_form_types_question_datetime__["a" /* DatetimeQuestion */]({
-                    key: 'date',
-                    label: 'Date',
-                    display: 'MM/DD/YYYY',
-                    value: __WEBPACK_IMPORTED_MODULE_1_moment__().format(),
-                    required: true,
-                    order: 2
-                }),
-                new __WEBPACK_IMPORTED_MODULE_6__components_dynamic_form_types_question_textarea__["a" /* TextareaQuestion */]({
-                    key: 'note',
-                    label: 'Notes',
-                    value: '',
-                    rows: 5,
-                    required: false,
-                    order: 3
-                }),
-            ];
-            return questions.sort(function (a, b) { return a.order - b.order; });
-        }
+        return questions.sort(function (a, b) { return a.order - b.order; });
+        // if (id == 204 || id == 207 || id == 212 || id == 401) {
+        // questions = [
+        //   new TextboxQuestion({
+        //     key: 'organ',
+        //     label: 'Organ',
+        //     type: 'text',
+        //     value: '',
+        //     required: true,
+        //     order: 1
+        //   }),
+        //   new TextboxQuestion({
+        //     key: 'result',
+        //     label: 'Result',
+        //     type: 'text',
+        //     value: '',
+        //     required: true,
+        //     order: 2
+        //   }),
+        //   new DatetimeQuestion({
+        //     key: 'date',
+        //     label: 'Date',
+        //     display: 'MM/DD/YYYY',
+        //     value: moment().format(),
+        //     required: true,
+        //     order: 3
+        //   }),
+        //   new TextareaQuestion({
+        //     key: 'note',
+        //     label: 'Notes',
+        //     value: '',
+        //     rows: 5,
+        //     required: false,
+        //     order: 4
+        //   }),
+        // ];
+        //   return questions.sort((a, b) => a.order - b.order);
+        // }
+        // else if (id == 205 || id == 206) {
+        //   questions = [
+        //     new TextboxQuestion({
+        //       key: 'organ',
+        //       label: 'Organ',
+        //       type: 'text',
+        //       value: '',
+        //       required: true,
+        //       order: 1
+        //     }),
+        //     new TextboxQuestion({
+        //       key: 'result',
+        //       label: 'Result',
+        //       type: 'text',
+        //       value: '',
+        //       required: true,
+        //       order: 2
+        //     }),
+        // new ToggleQuestion({
+        //   key: 'contrast',
+        //   label: 'With Contrast?',
+        //   value: false,
+        //   required: true,
+        //   order: 3
+        // }),
+        //     new DatetimeQuestion({
+        //       key: 'date',
+        //       label: 'Date',
+        //       display: 'MM/DD/YYYY',
+        //       value: moment().format(),
+        //       required: true,
+        //       order: 4
+        //     }),
+        //     new TextareaQuestion({
+        //       key: 'note',
+        //       label: 'Notes',
+        //       value: '',
+        //       rows: 5,
+        //       required: false,
+        //       order: 5
+        //     }),
+        //   ];
+        //   return questions.sort((a, b) => a.order - b.order);
+        // }
+        // else {
+        // questions = [
+        //   new TextboxQuestion({
+        //     key: 'result',
+        //     label: 'Result',
+        //     type: 'text',
+        //     value: '',
+        //     required: true,
+        //     order: 1
+        //   }),
+        //   new DatetimeQuestion({
+        //     key: 'date',
+        //     label: 'Date',
+        //     display: 'MM/DD/YYYY',
+        //     value: moment().format(),
+        //     required: true,
+        //     order: 2
+        //   }),
+        //   new TextareaQuestion({
+        //     key: 'note',
+        //     label: 'Notes',
+        //     value: '',
+        //     rows: 5,
+        //     required: false,
+        //     order: 3
+        //   }),
+        // ];
+        //   return questions.sort((a, b) => a.order - b.order);
+        // }
     };
     QuestionProvider.prototype.getResetPasswordQuestion = function (typeid) {
         var questions;
@@ -5868,23 +5754,23 @@ var map = {
 		43
 	],
 	"../pages/allergy-history/allergy-history.module": [
-		556,
+		554,
 		42
 	],
 	"../pages/allergy/allergy.module": [
-		557,
+		556,
 		41
 	],
 	"../pages/appointment-add-appointments/appointment-add-appointments.module": [
-		558,
+		557,
 		40
 	],
 	"../pages/appointment/appointment.module": [
-		559,
+		558,
 		39
 	],
 	"../pages/contact-add-contacts/contact-add-contacts.module": [
-		560,
+		559,
 		38
 	],
 	"../pages/contact-detail/contact-detail.module": [
@@ -5892,7 +5778,7 @@ var map = {
 		37
 	],
 	"../pages/contact/contact.module": [
-		562,
+		560,
 		36
 	],
 	"../pages/create-tracker/create-tracker.module": [
@@ -5900,11 +5786,11 @@ var map = {
 		35
 	],
 	"../pages/custom-panel/custom-panel.module": [
-		564,
+		562,
 		34
 	],
 	"../pages/customtracker/customtracker.module": [
-		565,
+		564,
 		33
 	],
 	"../pages/dashboard/dashboard.module": [
@@ -5912,7 +5798,7 @@ var map = {
 		32
 	],
 	"../pages/diagnostic-procedure-detail/diagnostic-procedure-detail.module": [
-		567,
+		565,
 		31
 	],
 	"../pages/diagnostic-procedure/diagnostic-procedure.module": [
@@ -5920,55 +5806,55 @@ var map = {
 		30
 	],
 	"../pages/doctor-visit-notes-detail/doctor-visit-notes-detail.module": [
-		569,
+		567,
 		29
 	],
 	"../pages/doctor-visit-notes/doctor-visit-notes.module": [
-		570,
+		569,
 		28
 	],
 	"../pages/family-history-detail/family-history-detail.module": [
-		571,
+		570,
 		27
 	],
 	"../pages/family-history/family-history.module": [
-		572,
+		571,
 		26
 	],
 	"../pages/foodtracker/foodtracker.module": [
-		573,
+		572,
 		0
 	],
 	"../pages/immunization-detail/immunization-detail.module": [
-		574,
+		573,
 		25
 	],
 	"../pages/immunization-history/immunization-history.module": [
-		575,
+		574,
 		24
 	],
 	"../pages/immunization/immunization.module": [
-		576,
+		575,
 		23
 	],
 	"../pages/lab-test-detail/lab-test-detail.module": [
-		577,
+		576,
 		22
 	],
 	"../pages/lab-test/lab-test.module": [
-		578,
+		577,
 		21
 	],
 	"../pages/login/login.module": [
-		579,
+		578,
 		20
 	],
 	"../pages/medical-history-detail/medical-history-detail.module": [
-		581,
+		580,
 		19
 	],
 	"../pages/medical-history/medical-history.module": [
-		580,
+		579,
 		18
 	],
 	"../pages/medication-detail/medication-detail.module": [
@@ -5976,15 +5862,15 @@ var map = {
 		17
 	],
 	"../pages/medication/medication.module": [
-		587,
+		581,
 		16
 	],
 	"../pages/password-edit/password-edit.module": [
-		583,
+		584,
 		15
 	],
 	"../pages/password-reset/password-reset.module": [
-		584,
+		583,
 		14
 	],
 	"../pages/profile-editable/profile-editable.module": [
@@ -5996,11 +5882,11 @@ var map = {
 		12
 	],
 	"../pages/resources/resources.module": [
-		588,
+		587,
 		11
 	],
 	"../pages/signup/signup.module": [
-		590,
+		588,
 		10
 	],
 	"../pages/social-history-category/social-history-category.module": [
@@ -6008,11 +5894,11 @@ var map = {
 		9
 	],
 	"../pages/social-history-detail/social-history-detail.module": [
-		591,
+		590,
 		8
 	],
 	"../pages/social-history/social-history.module": [
-		592,
+		591,
 		7
 	],
 	"../pages/surgical-history-detail/surgical-history-detail.module": [
@@ -6020,23 +5906,23 @@ var map = {
 		6
 	],
 	"../pages/surgical-history/surgical-history.module": [
-		594,
+		592,
 		5
 	],
 	"../pages/test-results/test-results.module": [
-		595,
+		594,
 		4
 	],
 	"../pages/tracker-detail/tracker-detail.module": [
-		596,
+		595,
 		3
 	],
 	"../pages/trackers/trackers.module": [
-		597,
+		596,
 		2
 	],
 	"../pages/welcome/welcome.module": [
-		598,
+		597,
 		1
 	]
 };
@@ -6056,15 +5942,12 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 24:
+/***/ 226:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HistoryProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__shared_baseurl__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__process_httpmsg_process_httpmsg__ = __webpack_require__(38);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AllergyClassificationProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6075,84 +5958,48 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-
-
-
 /*
-  Generated class for the HistoryProvider provider.
+  Generated class for the AllergyClassificationProvider provider.
 
   See https://angular.io/guide/dependency-injection for more info on providers
   and Angular DI.
 */
-var HistoryProvider = (function () {
-    function HistoryProvider(http, processHttpmsgService) {
-        this.http = http;
-        this.processHttpmsgService = processHttpmsgService;
-        console.log('Hello HistoryProvider Provider');
+var AllergyClassificationProvider = (function () {
+    function AllergyClassificationProvider() {
+        console.log('Hello AllergyClassificationProvider Provider');
     }
-    HistoryProvider.prototype.getAllergy = function (id) {
-        var _this = this;
-        return this.http.get(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/allergy/' + id)
-            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
+    AllergyClassificationProvider.prototype.getMenu = function (id) {
+        var arr = [];
+        if (id === 0) {
+            arr = [
+                { id: 1, name: 'Food Allergy', menu: 'allergy', end: true },
+                { id: 2, name: 'Skin Allergy', menu: 'allergy', end: true },
+                { id: 3, name: 'Dust Allergy', menu: 'allergy', end: true },
+                { id: 4, name: 'Insect Sting Allergy', menu: 'allergy', end: true },
+                { id: 5, name: 'Pet Allergies', menu: 'allergy', end: true },
+                { id: 6, name: 'Eye Allergy', menu: 'allergy', end: true },
+                { id: 7, name: 'Drug Allergies', menu: 'allergy', end: true },
+                { id: 8, name: 'Allergic Rhinitis', menu: 'allergy', end: true },
+                { id: 9, name: 'Latex Allergy', menu: 'allergy', end: true },
+                { id: 10, name: 'Mold Allergy', menu: 'allergy', end: true },
+                { id: 11, name: 'Sinus Infection', menu: 'allergy', end: true },
+                { id: 12, name: 'Cockroach Allergy', menu: 'allergy', end: true }
+            ];
+        }
+        return arr;
     };
-    HistoryProvider.prototype.addAllergy = function (id, record) {
-        var _this = this;
-        return this.http.post(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/allergy/' + id, record)
-            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
-    };
-    HistoryProvider.prototype.getMedicalHistory = function (id) {
-        var _this = this;
-        return this.http.get(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/medical/' + id)
-            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
-    };
-    HistoryProvider.prototype.addMedicalHistory = function (id, record) {
-        var _this = this;
-        return this.http.post(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/medical/' + id, record)
-            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
-    };
-    HistoryProvider.prototype.getSocialHistory = function (id) {
-        var _this = this;
-        return this.http.get(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/social/' + id)
-            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
-    };
-    HistoryProvider.prototype.addSocialHistory = function (id, title, record) {
-        var _this = this;
-        return this.http.post(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/social/' + title + '/' + id, record)
-            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
-    };
-    HistoryProvider.prototype.getSurgicalHistory = function (id) {
-        var _this = this;
-        return this.http.get(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/surgical/' + id)
-            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
-    };
-    HistoryProvider.prototype.addSurgicalHistory = function (id, record) {
-        var _this = this;
-        return this.http.post(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/surgical/' + id, record)
-            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
-    };
-    HistoryProvider.prototype.getFamilyHistory = function (id) {
-        var _this = this;
-        return this.http.get(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/family/' + id)
-            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
-    };
-    HistoryProvider.prototype.addFamilyHistory = function (id, record) {
-        var _this = this;
-        return this.http.post(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/family/' + id, record)
-            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
-    };
-    HistoryProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */],
-            __WEBPACK_IMPORTED_MODULE_3__process_httpmsg_process_httpmsg__["a" /* ProcessHttpmsgProvider */]])
-    ], HistoryProvider);
-    return HistoryProvider;
+    AllergyClassificationProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+        __metadata("design:paramtypes", [])
+    ], AllergyClassificationProvider);
+    return AllergyClassificationProvider;
 }());
 
-//# sourceMappingURL=history.js.map
+//# sourceMappingURL=allergy-classification.js.map
 
 /***/ }),
 
-/***/ 25:
+/***/ 24:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6258,7 +6105,103 @@ var HealthRecordsProvider = (function () {
 
 /***/ }),
 
-/***/ 349:
+/***/ 25:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HistoryProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__shared_baseurl__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__process_httpmsg_process_httpmsg__ = __webpack_require__(38);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/*
+  Generated class for the HistoryProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var HistoryProvider = (function () {
+    function HistoryProvider(http, processHttpmsgService) {
+        this.http = http;
+        this.processHttpmsgService = processHttpmsgService;
+        console.log('Hello HistoryProvider Provider');
+    }
+    HistoryProvider.prototype.getAllergy = function (id) {
+        var _this = this;
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/allergy/' + id)
+            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
+    };
+    HistoryProvider.prototype.addAllergy = function (id, record) {
+        var _this = this;
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/allergy/' + id, record)
+            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
+    };
+    HistoryProvider.prototype.getMedicalHistory = function (id) {
+        var _this = this;
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/medical/' + id)
+            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
+    };
+    HistoryProvider.prototype.addMedicalHistory = function (id, record) {
+        var _this = this;
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/medical/' + id, record)
+            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
+    };
+    HistoryProvider.prototype.getSocialHistory = function (id) {
+        var _this = this;
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/social/' + id)
+            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
+    };
+    HistoryProvider.prototype.addSocialHistory = function (id, title, record) {
+        var _this = this;
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/social/' + title + '/' + id, record)
+            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
+    };
+    HistoryProvider.prototype.getSurgicalHistory = function (id) {
+        var _this = this;
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/surgical/' + id)
+            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
+    };
+    HistoryProvider.prototype.addSurgicalHistory = function (id, record) {
+        var _this = this;
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/surgical/' + id, record)
+            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
+    };
+    HistoryProvider.prototype.getFamilyHistory = function (id) {
+        var _this = this;
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/family/' + id)
+            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
+    };
+    HistoryProvider.prototype.addFamilyHistory = function (id, record) {
+        var _this = this;
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/family/' + id, record)
+            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
+    };
+    HistoryProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["Injectable"])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */],
+            __WEBPACK_IMPORTED_MODULE_3__process_httpmsg_process_httpmsg__["a" /* ProcessHttpmsgProvider */]])
+    ], HistoryProvider);
+    return HistoryProvider;
+}());
+
+//# sourceMappingURL=history.js.map
+
+/***/ }),
+
+/***/ 352:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6360,63 +6303,6 @@ var QuestionOptionProvider = (function () {
 
 /***/ }),
 
-/***/ 352:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AllergyClassificationProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-/*
-  Generated class for the AllergyClassificationProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
-var AllergyClassificationProvider = (function () {
-    function AllergyClassificationProvider() {
-        console.log('Hello AllergyClassificationProvider Provider');
-    }
-    AllergyClassificationProvider.prototype.getMenu = function (id) {
-        var arr = [];
-        if (id === 0) {
-            arr = [
-                { id: 1, name: 'Food Allergy', menu: 'allergy', end: true },
-                { id: 2, name: 'Skin Allergy', menu: 'allergy', end: true },
-                { id: 3, name: 'Dust Allergy', menu: 'allergy', end: true },
-                { id: 4, name: 'Insect Sting Allergy', menu: 'allergy', end: true },
-                { id: 5, name: 'Pet Allergies', menu: 'allergy', end: true },
-                { id: 6, name: 'Eye Allergy', menu: 'allergy', end: true },
-                { id: 7, name: 'Drug Allergies', menu: 'allergy', end: true },
-                { id: 8, name: 'Allergic Rhinitis', menu: 'allergy', end: true },
-                { id: 9, name: 'Latex Allergy', menu: 'allergy', end: true },
-                { id: 10, name: 'Mold Allergy', menu: 'allergy', end: true },
-                { id: 11, name: 'Sinus Infection', menu: 'allergy', end: true },
-                { id: 12, name: 'Cockroach Allergy', menu: 'allergy', end: true }
-            ];
-        }
-        return arr;
-    };
-    AllergyClassificationProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [])
-    ], AllergyClassificationProvider);
-    return AllergyClassificationProvider;
-}());
-
-//# sourceMappingURL=allergy-classification.js.map
-
-/***/ }),
-
 /***/ 353:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -6478,7 +6364,7 @@ var ImmunizationClassificationProvider = (function () {
 
 /***/ }),
 
-/***/ 357:
+/***/ 356:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6533,11 +6419,11 @@ var SocialHistoryClassificationProvider = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProcessHttpmsgProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(227);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_throw__ = __webpack_require__(462);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_throw__ = __webpack_require__(459);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_throw___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_throw__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -6590,13 +6476,13 @@ var ProcessHttpmsgProvider = (function () {
 
 /***/ }),
 
-/***/ 408:
+/***/ 407:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(409);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(430);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(408);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(429);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -6604,17 +6490,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 43:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return baseurl; });
-var baseurl = 'https://phrbackend.herokuapp.com/api/';
-//# sourceMappingURL=baseurl.js.map
-
-/***/ }),
-
-/***/ 430:
+/***/ 429:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6622,91 +6498,89 @@ var baseurl = 'https://phrbackend.herokuapp.com/api/';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(227);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ion2_calendar__ = __webpack_require__(495);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ion2_calendar__ = __webpack_require__(494);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ion2_calendar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_ion2_calendar__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_call_number__ = __webpack_require__(354);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ng2_charts__ = __webpack_require__(499);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_ng2_charts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_ng2_charts__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_in_app_browser__ = __webpack_require__(356);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__(546);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_trackers_trackers__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_tracker_detail_tracker_detail__ = __webpack_require__(171);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_custom_panel_custom_panel__ = __webpack_require__(152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_create_tracker_create_tracker__ = __webpack_require__(150);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_customtracker_customtracker__ = __webpack_require__(151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_dashboard_dashboard__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_welcome_welcome__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_login_login__ = __webpack_require__(141);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_signup_signup__ = __webpack_require__(146);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_contact_contact__ = __webpack_require__(149);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_contact_detail_contact_detail__ = __webpack_require__(148);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_contact_add_contacts_contact_add_contacts__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_appointment_appointment__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_appointment_add_appointments_appointment_add_appointments__ = __webpack_require__(142);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_profile_profile__ = __webpack_require__(163);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_profile_editable_profile_editable__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_resources_resources__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_allergy_allergy__ = __webpack_require__(140);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_allergy_detail_allergy_detail__ = __webpack_require__(138);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_allergy_history_allergy_history__ = __webpack_require__(139);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__pages_family_history_family_history__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_family_history_detail_family_history_detail__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__pages_medical_history_medical_history__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__pages_medical_history_detail_medical_history_detail__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__pages_surgical_history_surgical_history__ = __webpack_require__(169);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__pages_surgical_history_detail_surgical_history_detail__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__pages_immunization_immunization__ = __webpack_require__(144);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__pages_immunization_detail_immunization_detail__ = __webpack_require__(157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__pages_immunization_history_immunization_history__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__pages_social_history_social_history__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__pages_social_history_category_social_history_category__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__pages_social_history_detail_social_history_detail__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__pages_doctor_visit_notes_doctor_visit_notes__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__pages_doctor_visit_notes_detail_doctor_visit_notes_detail__ = __webpack_require__(145);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__pages_medication_medication__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__pages_medication_detail_medication_detail__ = __webpack_require__(143);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__pages_test_results_test_results__ = __webpack_require__(170);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__pages_diagnostic_procedure_diagnostic_procedure__ = __webpack_require__(154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__pages_diagnostic_procedure_detail_diagnostic_procedure_detail__ = __webpack_require__(153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__pages_lab_test_lab_test__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__pages_lab_test_detail_lab_test_detail__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__pages_password_edit_password_edit__ = __webpack_require__(161);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__pages_password_reset_password_reset__ = __webpack_require__(147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__ionic_native_status_bar__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__ionic_native_splash_screen__ = __webpack_require__(407);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__providers_trackers_trackers__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__providers_process_httpmsg_process_httpmsg__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__providers_question_option_question_option__ = __webpack_require__(349);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__providers_question_control_question_control__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__providers_question_question__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__providers_contacts_contacts__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__providers_allergy_classification_allergy_classification__ = __webpack_require__(352);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__providers_immunization_classification_immunization_classification__ = __webpack_require__(353);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__providers_user_user__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__providers_appointment_appointment__ = __webpack_require__(70);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__providers_social_history_classification_social_history_classification__ = __webpack_require__(357);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__providers_auth_service_auth_service__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__providers_history_history__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__providers_diagnostic_procedure_classification_diagnostic_procedure_classification__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__providers_health_records_health_records__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__components_tile_tile__ = __webpack_require__(547);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__components_dynamic_form_question_dynamic_form_question__ = __webpack_require__(548);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__components_dynamic_form_dynamic_form__ = __webpack_require__(549);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__components_calendar_calendar__ = __webpack_require__(550);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_75_rxjs_add_operator_catch__ = __webpack_require__(551);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_75_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_75_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_76_rxjs_add_operator_map__ = __webpack_require__(554);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_76_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_76_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ng2_charts__ = __webpack_require__(498);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_ng2_charts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_ng2_charts__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_in_app_browser__ = __webpack_require__(355);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__app_component__ = __webpack_require__(545);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_trackers_trackers__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_tracker_detail_tracker_detail__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_custom_panel_custom_panel__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_create_tracker_create_tracker__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_customtracker_customtracker__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_dashboard_dashboard__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_welcome_welcome__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_login_login__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_signup_signup__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_contact_contact__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_contact_detail_contact_detail__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_contact_add_contacts_contact_add_contacts__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_appointment_appointment__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_appointment_add_appointments_appointment_add_appointments__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_profile_profile__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_profile_editable_profile_editable__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_resources_resources__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_allergy_allergy__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_allergy_detail_allergy_detail__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_allergy_history_allergy_history__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_family_history_family_history__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__pages_family_history_detail_family_history_detail__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_medical_history_medical_history__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__pages_medical_history_detail_medical_history_detail__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__pages_surgical_history_surgical_history__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__pages_surgical_history_detail_surgical_history_detail__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__pages_immunization_immunization__ = __webpack_require__(143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__pages_immunization_detail_immunization_detail__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__pages_immunization_history_immunization_history__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__pages_social_history_social_history__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__pages_social_history_category_social_history_category__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__pages_social_history_detail_social_history_detail__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__pages_doctor_visit_notes_doctor_visit_notes__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__pages_doctor_visit_notes_detail_doctor_visit_notes_detail__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__pages_medication_medication__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__pages_medication_detail_medication_detail__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__pages_test_results_test_results__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__pages_diagnostic_procedure_diagnostic_procedure__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__pages_diagnostic_procedure_detail_diagnostic_procedure_detail__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__pages_lab_test_lab_test__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__pages_lab_test_detail_lab_test_detail__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__pages_password_edit_password_edit__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__pages_password_reset_password_reset__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__ionic_native_status_bar__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__ionic_native_splash_screen__ = __webpack_require__(406);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__providers_trackers_trackers__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__providers_process_httpmsg_process_httpmsg__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__providers_question_option_question_option__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__providers_question_control_question_control__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__providers_question_question__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__providers_contacts_contacts__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__providers_allergy_classification_allergy_classification__ = __webpack_require__(226);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__providers_immunization_classification_immunization_classification__ = __webpack_require__(353);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__providers_user_user__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__providers_appointment_appointment__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__providers_social_history_classification_social_history_classification__ = __webpack_require__(356);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__providers_auth_service_auth_service__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__providers_history_history__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__providers_diagnostic_procedure_classification_diagnostic_procedure_classification__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__providers_health_records_health_records__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__components_tile_tile__ = __webpack_require__(546);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__components_dynamic_form_question_dynamic_form_question__ = __webpack_require__(547);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__components_dynamic_form_dynamic_form__ = __webpack_require__(548);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__components_calendar_calendar__ = __webpack_require__(549);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_74_rxjs_add_operator_catch__ = __webpack_require__(550);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_74_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_74_rxjs_add_operator_catch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_75_rxjs_add_operator_map__ = __webpack_require__(553);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_75_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_75_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
 
 
 
@@ -6789,74 +6663,74 @@ var AppModule = (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_trackers_trackers__["a" /* TrackersPage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_tracker_detail_tracker_detail__["a" /* TrackerDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_custom_panel_custom_panel__["a" /* CustomPanelPage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_create_tracker_create_tracker__["a" /* CreateTrackerPage */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_customtracker_customtracker__["a" /* CustomtrackerPage */],
-                __WEBPACK_IMPORTED_MODULE_71__components_tile_tile__["a" /* TileComponent */],
-                __WEBPACK_IMPORTED_MODULE_16__pages_dashboard_dashboard__["a" /* DashboardPage */],
-                __WEBPACK_IMPORTED_MODULE_28__pages_allergy_allergy__["a" /* AllergyPage */],
-                __WEBPACK_IMPORTED_MODULE_29__pages_allergy_detail_allergy_detail__["a" /* AllergyDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_73__components_dynamic_form_dynamic_form__["a" /* DynamicFormComponent */],
-                __WEBPACK_IMPORTED_MODULE_72__components_dynamic_form_question_dynamic_form_question__["a" /* DynamicFormQuestionComponent */],
-                __WEBPACK_IMPORTED_MODULE_17__pages_welcome_welcome__["a" /* WelcomePage */],
-                __WEBPACK_IMPORTED_MODULE_18__pages_login_login__["a" /* LoginPage */],
-                __WEBPACK_IMPORTED_MODULE_19__pages_signup_signup__["a" /* SignupPage */],
-                __WEBPACK_IMPORTED_MODULE_20__pages_contact_contact__["a" /* ContactPage */],
-                __WEBPACK_IMPORTED_MODULE_21__pages_contact_detail_contact_detail__["a" /* ContactDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_22__pages_contact_add_contacts_contact_add_contacts__["a" /* ContactAddContactsPage */],
-                __WEBPACK_IMPORTED_MODULE_23__pages_appointment_appointment__["a" /* AppointmentPage */],
-                __WEBPACK_IMPORTED_MODULE_24__pages_appointment_add_appointments_appointment_add_appointments__["a" /* AppointmentAddAppointmentsPage */],
-                __WEBPACK_IMPORTED_MODULE_74__components_calendar_calendar__["a" /* CalendarComponent */],
-                __WEBPACK_IMPORTED_MODULE_25__pages_profile_profile__["a" /* ProfilePage */],
-                __WEBPACK_IMPORTED_MODULE_26__pages_profile_editable_profile_editable__["a" /* ProfileEditablePage */],
-                __WEBPACK_IMPORTED_MODULE_27__pages_resources_resources__["a" /* ResourcesPage */],
-                __WEBPACK_IMPORTED_MODULE_30__pages_allergy_history_allergy_history__["a" /* AllergyHistoryPage */],
-                __WEBPACK_IMPORTED_MODULE_31__pages_family_history_family_history__["a" /* FamilyHistoryPage */],
-                __WEBPACK_IMPORTED_MODULE_32__pages_family_history_detail_family_history_detail__["a" /* FamilyHistoryDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_33__pages_medical_history_medical_history__["a" /* MedicalHistoryPage */],
-                __WEBPACK_IMPORTED_MODULE_34__pages_medical_history_detail_medical_history_detail__["a" /* MedicalHistoryDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_35__pages_surgical_history_surgical_history__["a" /* SurgicalHistoryPage */],
-                __WEBPACK_IMPORTED_MODULE_36__pages_surgical_history_detail_surgical_history_detail__["a" /* SurgicalHistoryDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_37__pages_immunization_immunization__["a" /* ImmunizationPage */],
-                __WEBPACK_IMPORTED_MODULE_39__pages_immunization_history_immunization_history__["a" /* ImmunizationHistoryPage */],
-                __WEBPACK_IMPORTED_MODULE_38__pages_immunization_detail_immunization_detail__["a" /* ImmunizationDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_40__pages_social_history_social_history__["a" /* SocialHistoryPage */],
-                __WEBPACK_IMPORTED_MODULE_41__pages_social_history_category_social_history_category__["a" /* SocialHistoryCategoryPage */],
-                __WEBPACK_IMPORTED_MODULE_42__pages_social_history_detail_social_history_detail__["a" /* SocialHistoryDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_43__pages_doctor_visit_notes_doctor_visit_notes__["a" /* DoctorVisitNotesPage */],
-                __WEBPACK_IMPORTED_MODULE_44__pages_doctor_visit_notes_detail_doctor_visit_notes_detail__["a" /* DoctorVisitNotesDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_45__pages_medication_medication__["a" /* MedicationPage */],
-                __WEBPACK_IMPORTED_MODULE_46__pages_medication_detail_medication_detail__["a" /* MedicationDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_47__pages_test_results_test_results__["a" /* TestResultsPage */],
-                __WEBPACK_IMPORTED_MODULE_48__pages_diagnostic_procedure_diagnostic_procedure__["a" /* DiagnosticProcedurePage */],
-                __WEBPACK_IMPORTED_MODULE_49__pages_diagnostic_procedure_detail_diagnostic_procedure_detail__["a" /* DiagnosticProcedureDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_50__pages_lab_test_lab_test__["a" /* LabTestPage */],
-                __WEBPACK_IMPORTED_MODULE_51__pages_lab_test_detail_lab_test_detail__["a" /* LabTestDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_52__pages_password_edit_password_edit__["a" /* PasswordEditPage */],
-                __WEBPACK_IMPORTED_MODULE_53__pages_password_reset_password_reset__["a" /* PasswordResetPage */]
+                __WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_trackers_trackers__["a" /* TrackersPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_tracker_detail_tracker_detail__["a" /* TrackerDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_custom_panel_custom_panel__["a" /* CustomPanelPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_create_tracker_create_tracker__["a" /* CreateTrackerPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_customtracker_customtracker__["a" /* CustomtrackerPage */],
+                __WEBPACK_IMPORTED_MODULE_70__components_tile_tile__["a" /* TileComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_dashboard_dashboard__["a" /* DashboardPage */],
+                __WEBPACK_IMPORTED_MODULE_27__pages_allergy_allergy__["a" /* AllergyPage */],
+                __WEBPACK_IMPORTED_MODULE_28__pages_allergy_detail_allergy_detail__["a" /* AllergyDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_72__components_dynamic_form_dynamic_form__["a" /* DynamicFormComponent */],
+                __WEBPACK_IMPORTED_MODULE_71__components_dynamic_form_question_dynamic_form_question__["a" /* DynamicFormQuestionComponent */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_welcome_welcome__["a" /* WelcomePage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_signup_signup__["a" /* SignupPage */],
+                __WEBPACK_IMPORTED_MODULE_19__pages_contact_contact__["a" /* ContactPage */],
+                __WEBPACK_IMPORTED_MODULE_20__pages_contact_detail_contact_detail__["a" /* ContactDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_21__pages_contact_add_contacts_contact_add_contacts__["a" /* ContactAddContactsPage */],
+                __WEBPACK_IMPORTED_MODULE_22__pages_appointment_appointment__["a" /* AppointmentPage */],
+                __WEBPACK_IMPORTED_MODULE_23__pages_appointment_add_appointments_appointment_add_appointments__["a" /* AppointmentAddAppointmentsPage */],
+                __WEBPACK_IMPORTED_MODULE_73__components_calendar_calendar__["a" /* CalendarComponent */],
+                __WEBPACK_IMPORTED_MODULE_24__pages_profile_profile__["a" /* ProfilePage */],
+                __WEBPACK_IMPORTED_MODULE_25__pages_profile_editable_profile_editable__["a" /* ProfileEditablePage */],
+                __WEBPACK_IMPORTED_MODULE_26__pages_resources_resources__["a" /* ResourcesPage */],
+                __WEBPACK_IMPORTED_MODULE_29__pages_allergy_history_allergy_history__["a" /* AllergyHistoryPage */],
+                __WEBPACK_IMPORTED_MODULE_30__pages_family_history_family_history__["a" /* FamilyHistoryPage */],
+                __WEBPACK_IMPORTED_MODULE_31__pages_family_history_detail_family_history_detail__["a" /* FamilyHistoryDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_32__pages_medical_history_medical_history__["a" /* MedicalHistoryPage */],
+                __WEBPACK_IMPORTED_MODULE_33__pages_medical_history_detail_medical_history_detail__["a" /* MedicalHistoryDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_34__pages_surgical_history_surgical_history__["a" /* SurgicalHistoryPage */],
+                __WEBPACK_IMPORTED_MODULE_35__pages_surgical_history_detail_surgical_history_detail__["a" /* SurgicalHistoryDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_36__pages_immunization_immunization__["a" /* ImmunizationPage */],
+                __WEBPACK_IMPORTED_MODULE_38__pages_immunization_history_immunization_history__["a" /* ImmunizationHistoryPage */],
+                __WEBPACK_IMPORTED_MODULE_37__pages_immunization_detail_immunization_detail__["a" /* ImmunizationDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_39__pages_social_history_social_history__["a" /* SocialHistoryPage */],
+                __WEBPACK_IMPORTED_MODULE_40__pages_social_history_category_social_history_category__["a" /* SocialHistoryCategoryPage */],
+                __WEBPACK_IMPORTED_MODULE_41__pages_social_history_detail_social_history_detail__["a" /* SocialHistoryDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_42__pages_doctor_visit_notes_doctor_visit_notes__["a" /* DoctorVisitNotesPage */],
+                __WEBPACK_IMPORTED_MODULE_43__pages_doctor_visit_notes_detail_doctor_visit_notes_detail__["a" /* DoctorVisitNotesDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_44__pages_medication_medication__["a" /* MedicationPage */],
+                __WEBPACK_IMPORTED_MODULE_45__pages_medication_detail_medication_detail__["a" /* MedicationDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_46__pages_test_results_test_results__["a" /* TestResultsPage */],
+                __WEBPACK_IMPORTED_MODULE_47__pages_diagnostic_procedure_diagnostic_procedure__["a" /* DiagnosticProcedurePage */],
+                __WEBPACK_IMPORTED_MODULE_48__pages_diagnostic_procedure_detail_diagnostic_procedure_detail__["a" /* DiagnosticProcedureDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_49__pages_lab_test_lab_test__["a" /* LabTestPage */],
+                __WEBPACK_IMPORTED_MODULE_50__pages_lab_test_detail_lab_test_detail__["a" /* LabTestDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_51__pages_password_edit_password_edit__["a" /* PasswordEditPage */],
+                __WEBPACK_IMPORTED_MODULE_52__pages_password_reset_password_reset__["a" /* PasswordResetPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["IonicModule"].forRoot(__WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* MyApp */], {}, {
+                __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["IonicModule"].forRoot(__WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* MyApp */], {}, {
                     links: [
-                        { loadChildren: '../pages/allergy-detail/allergy-detail.module#AllergyDetailPageModule', name: 'AllergyDetailPage', segment: 'allergy-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/allergy-history/allergy-history.module#AllergyHistoryPageModule', name: 'AllergyHistoryPage', segment: 'allergy-history', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/allergy-detail/allergy-detail.module#AllergyDetailPageModule', name: 'AllergyDetailPage', segment: 'allergy-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/allergy/allergy.module#AllergyPageModule', name: 'AllergyPage', segment: 'allergy', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/appointment-add-appointments/appointment-add-appointments.module#AppointmentAddAppointmentsPageModule', name: 'AppointmentAddAppointmentsPage', segment: 'appointment-add-appointments', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/appointment/appointment.module#AppointmentPageModule', name: 'AppointmentPage', segment: 'appointment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/contact-add-contacts/contact-add-contacts.module#ContactAddContactsPageModule', name: 'ContactAddContactsPage', segment: 'contact-add-contacts', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/contact-detail/contact-detail.module#ContactDetailPageModule', name: 'ContactDetailPage', segment: 'contact-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/contact/contact.module#ContactPageModule', name: 'ContactPage', segment: 'contact', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/create-tracker/create-tracker.module#CreateTrackerPageModule', name: 'CreateTrackerPage', segment: 'create-tracker', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/contact-detail/contact-detail.module#ContactDetailPageModule', name: 'ContactDetailPage', segment: 'contact-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/custom-panel/custom-panel.module#CustomPanelPageModule', name: 'CustomPanelPage', segment: 'custom-panel', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/create-tracker/create-tracker.module#CreateTrackerPageModule', name: 'CreateTrackerPage', segment: 'create-tracker', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/customtracker/customtracker.module#CustomtrackerPageModule', name: 'CustomtrackerPage', segment: 'customtracker', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/dashboard/dashboard.module#DashboardPageModule', name: 'DashboardPage', segment: 'dashboard', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/diagnostic-procedure-detail/diagnostic-procedure-detail.module#DiagnosticProcedureDetailPageModule', name: 'DiagnosticProcedureDetailPage', segment: 'diagnostic-procedure-detail', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/diagnostic-procedure/diagnostic-procedure.module#DiagnosticProcedurePageModule', name: 'DiagnosticProcedurePage', segment: 'diagnostic-procedure', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/dashboard/dashboard.module#DashboardPageModule', name: 'DashboardPage', segment: 'dashboard', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/doctor-visit-notes-detail/doctor-visit-notes-detail.module#DoctorVisitNotesDetailPageModule', name: 'DoctorVisitNotesDetailPage', segment: 'doctor-visit-notes-detail', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/diagnostic-procedure/diagnostic-procedure.module#DiagnosticProcedurePageModule', name: 'DiagnosticProcedurePage', segment: 'diagnostic-procedure', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/doctor-visit-notes/doctor-visit-notes.module#DoctorVisitNotesPageModule', name: 'DoctorVisitNotesPage', segment: 'doctor-visit-notes', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/family-history-detail/family-history-detail.module#FamilyHistoryDetailPageModule', name: 'FamilyHistoryDetailPage', segment: 'family-history-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/family-history/family-history.module#FamilyHistoryPageModule', name: 'FamilyHistoryPage', segment: 'family-history', priority: 'low', defaultHistory: [] },
@@ -6869,19 +6743,19 @@ var AppModule = (function () {
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/medical-history/medical-history.module#MedicalHistoryPageModule', name: 'MedicalHistoryPage', segment: 'medical-history', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/medical-history-detail/medical-history-detail.module#MedicalHistoryDetailPageModule', name: 'MedicalHistoryDetailPage', segment: 'medical-history-detail', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/medication/medication.module#MedicationPageModule', name: 'MedicationPage', segment: 'medication', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/medication-detail/medication-detail.module#MedicationDetailPageModule', name: 'MedicationDetailPage', segment: 'medication-detail', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/password-edit/password-edit.module#PasswordEditPageModule', name: 'PasswordEditPage', segment: 'password-edit', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/password-reset/password-reset.module#PasswordResetPageModule', name: 'PasswordResetPage', segment: 'password-reset', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/password-edit/password-edit.module#PasswordEditPageModule', name: 'PasswordEditPage', segment: 'password-edit', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile-editable/profile-editable.module#ProfileEditablePageModule', name: 'ProfileEditablePage', segment: 'profile-editable', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile/profile.module#ProfilePageModule', name: 'ProfilePage', segment: 'profile', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/medication/medication.module#MedicationPageModule', name: 'MedicationPage', segment: 'medication', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/resources/resources.module#ResourcesPageModule', name: 'ResourcesPage', segment: 'resources', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/social-history-category/social-history-category.module#SocialHistoryCategoryPageModule', name: 'SocialHistoryCategoryPage', segment: 'social-history-category', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/social-history-category/social-history-category.module#SocialHistoryCategoryPageModule', name: 'SocialHistoryCategoryPage', segment: 'social-history-category', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/social-history-detail/social-history-detail.module#SocialHistoryDetailPageModule', name: 'SocialHistoryDetailPage', segment: 'social-history-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/social-history/social-history.module#SocialHistoryPageModule', name: 'SocialHistoryPage', segment: 'social-history', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/surgical-history-detail/surgical-history-detail.module#SurgicalHistoryDetailPageModule', name: 'SurgicalHistoryDetailPage', segment: 'surgical-history-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/surgical-history/surgical-history.module#SurgicalHistoryPageModule', name: 'SurgicalHistoryPage', segment: 'surgical-history', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/surgical-history-detail/surgical-history-detail.module#SurgicalHistoryDetailPageModule', name: 'SurgicalHistoryDetailPage', segment: 'surgical-history-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/test-results/test-results.module#TestResultsPageModule', name: 'TestResultsPage', segment: 'test-results', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tracker-detail/tracker-detail.module#TrackerDetailPageModule', name: 'TrackerDetailPage', segment: 'tracker-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/trackers/trackers.module#TrackersPageModule', name: 'TrackersPage', segment: 'trackers', priority: 'low', defaultHistory: [] },
@@ -6892,76 +6766,75 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["b" /* HttpClientModule */],
                 __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
                 __WEBPACK_IMPORTED_MODULE_6_ion2_calendar__["CalendarModule"],
-                __WEBPACK_IMPORTED_MODULE_8_ng2_charts__["ChartsModule"]
+                __WEBPACK_IMPORTED_MODULE_7_ng2_charts__["ChartsModule"]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["IonicApp"]],
             entryComponents: [
-                __WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* MyApp */],
-                __WEBPACK_IMPORTED_MODULE_11__pages_trackers_trackers__["a" /* TrackersPage */],
-                __WEBPACK_IMPORTED_MODULE_12__pages_tracker_detail_tracker_detail__["a" /* TrackerDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_13__pages_custom_panel_custom_panel__["a" /* CustomPanelPage */],
-                __WEBPACK_IMPORTED_MODULE_14__pages_create_tracker_create_tracker__["a" /* CreateTrackerPage */],
-                __WEBPACK_IMPORTED_MODULE_15__pages_customtracker_customtracker__["a" /* CustomtrackerPage */],
-                __WEBPACK_IMPORTED_MODULE_16__pages_dashboard_dashboard__["a" /* DashboardPage */],
-                __WEBPACK_IMPORTED_MODULE_28__pages_allergy_allergy__["a" /* AllergyPage */],
-                __WEBPACK_IMPORTED_MODULE_29__pages_allergy_detail_allergy_detail__["a" /* AllergyDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_17__pages_welcome_welcome__["a" /* WelcomePage */],
-                __WEBPACK_IMPORTED_MODULE_18__pages_login_login__["a" /* LoginPage */],
-                __WEBPACK_IMPORTED_MODULE_19__pages_signup_signup__["a" /* SignupPage */],
-                __WEBPACK_IMPORTED_MODULE_20__pages_contact_contact__["a" /* ContactPage */],
-                __WEBPACK_IMPORTED_MODULE_21__pages_contact_detail_contact_detail__["a" /* ContactDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_22__pages_contact_add_contacts_contact_add_contacts__["a" /* ContactAddContactsPage */],
-                __WEBPACK_IMPORTED_MODULE_23__pages_appointment_appointment__["a" /* AppointmentPage */],
-                __WEBPACK_IMPORTED_MODULE_24__pages_appointment_add_appointments_appointment_add_appointments__["a" /* AppointmentAddAppointmentsPage */],
-                __WEBPACK_IMPORTED_MODULE_25__pages_profile_profile__["a" /* ProfilePage */],
-                __WEBPACK_IMPORTED_MODULE_26__pages_profile_editable_profile_editable__["a" /* ProfileEditablePage */],
-                __WEBPACK_IMPORTED_MODULE_27__pages_resources_resources__["a" /* ResourcesPage */],
-                __WEBPACK_IMPORTED_MODULE_30__pages_allergy_history_allergy_history__["a" /* AllergyHistoryPage */],
-                __WEBPACK_IMPORTED_MODULE_31__pages_family_history_family_history__["a" /* FamilyHistoryPage */],
-                __WEBPACK_IMPORTED_MODULE_32__pages_family_history_detail_family_history_detail__["a" /* FamilyHistoryDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_33__pages_medical_history_medical_history__["a" /* MedicalHistoryPage */],
-                __WEBPACK_IMPORTED_MODULE_34__pages_medical_history_detail_medical_history_detail__["a" /* MedicalHistoryDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_35__pages_surgical_history_surgical_history__["a" /* SurgicalHistoryPage */],
-                __WEBPACK_IMPORTED_MODULE_36__pages_surgical_history_detail_surgical_history_detail__["a" /* SurgicalHistoryDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_37__pages_immunization_immunization__["a" /* ImmunizationPage */],
-                __WEBPACK_IMPORTED_MODULE_39__pages_immunization_history_immunization_history__["a" /* ImmunizationHistoryPage */],
-                __WEBPACK_IMPORTED_MODULE_38__pages_immunization_detail_immunization_detail__["a" /* ImmunizationDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_40__pages_social_history_social_history__["a" /* SocialHistoryPage */],
-                __WEBPACK_IMPORTED_MODULE_41__pages_social_history_category_social_history_category__["a" /* SocialHistoryCategoryPage */],
-                __WEBPACK_IMPORTED_MODULE_42__pages_social_history_detail_social_history_detail__["a" /* SocialHistoryDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_43__pages_doctor_visit_notes_doctor_visit_notes__["a" /* DoctorVisitNotesPage */],
-                __WEBPACK_IMPORTED_MODULE_44__pages_doctor_visit_notes_detail_doctor_visit_notes_detail__["a" /* DoctorVisitNotesDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_45__pages_medication_medication__["a" /* MedicationPage */],
-                __WEBPACK_IMPORTED_MODULE_46__pages_medication_detail_medication_detail__["a" /* MedicationDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_47__pages_test_results_test_results__["a" /* TestResultsPage */],
-                __WEBPACK_IMPORTED_MODULE_48__pages_diagnostic_procedure_diagnostic_procedure__["a" /* DiagnosticProcedurePage */],
-                __WEBPACK_IMPORTED_MODULE_49__pages_diagnostic_procedure_detail_diagnostic_procedure_detail__["a" /* DiagnosticProcedureDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_50__pages_lab_test_lab_test__["a" /* LabTestPage */],
-                __WEBPACK_IMPORTED_MODULE_51__pages_lab_test_detail_lab_test_detail__["a" /* LabTestDetailPage */],
-                __WEBPACK_IMPORTED_MODULE_52__pages_password_edit_password_edit__["a" /* PasswordEditPage */],
-                __WEBPACK_IMPORTED_MODULE_53__pages_password_reset_password_reset__["a" /* PasswordResetPage */]
+                __WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* MyApp */],
+                __WEBPACK_IMPORTED_MODULE_10__pages_trackers_trackers__["a" /* TrackersPage */],
+                __WEBPACK_IMPORTED_MODULE_11__pages_tracker_detail_tracker_detail__["a" /* TrackerDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_12__pages_custom_panel_custom_panel__["a" /* CustomPanelPage */],
+                __WEBPACK_IMPORTED_MODULE_13__pages_create_tracker_create_tracker__["a" /* CreateTrackerPage */],
+                __WEBPACK_IMPORTED_MODULE_14__pages_customtracker_customtracker__["a" /* CustomtrackerPage */],
+                __WEBPACK_IMPORTED_MODULE_15__pages_dashboard_dashboard__["a" /* DashboardPage */],
+                __WEBPACK_IMPORTED_MODULE_27__pages_allergy_allergy__["a" /* AllergyPage */],
+                __WEBPACK_IMPORTED_MODULE_28__pages_allergy_detail_allergy_detail__["a" /* AllergyDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_16__pages_welcome_welcome__["a" /* WelcomePage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_login_login__["a" /* LoginPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_signup_signup__["a" /* SignupPage */],
+                __WEBPACK_IMPORTED_MODULE_19__pages_contact_contact__["a" /* ContactPage */],
+                __WEBPACK_IMPORTED_MODULE_20__pages_contact_detail_contact_detail__["a" /* ContactDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_21__pages_contact_add_contacts_contact_add_contacts__["a" /* ContactAddContactsPage */],
+                __WEBPACK_IMPORTED_MODULE_22__pages_appointment_appointment__["a" /* AppointmentPage */],
+                __WEBPACK_IMPORTED_MODULE_23__pages_appointment_add_appointments_appointment_add_appointments__["a" /* AppointmentAddAppointmentsPage */],
+                __WEBPACK_IMPORTED_MODULE_24__pages_profile_profile__["a" /* ProfilePage */],
+                __WEBPACK_IMPORTED_MODULE_25__pages_profile_editable_profile_editable__["a" /* ProfileEditablePage */],
+                __WEBPACK_IMPORTED_MODULE_26__pages_resources_resources__["a" /* ResourcesPage */],
+                __WEBPACK_IMPORTED_MODULE_29__pages_allergy_history_allergy_history__["a" /* AllergyHistoryPage */],
+                __WEBPACK_IMPORTED_MODULE_30__pages_family_history_family_history__["a" /* FamilyHistoryPage */],
+                __WEBPACK_IMPORTED_MODULE_31__pages_family_history_detail_family_history_detail__["a" /* FamilyHistoryDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_32__pages_medical_history_medical_history__["a" /* MedicalHistoryPage */],
+                __WEBPACK_IMPORTED_MODULE_33__pages_medical_history_detail_medical_history_detail__["a" /* MedicalHistoryDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_34__pages_surgical_history_surgical_history__["a" /* SurgicalHistoryPage */],
+                __WEBPACK_IMPORTED_MODULE_35__pages_surgical_history_detail_surgical_history_detail__["a" /* SurgicalHistoryDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_36__pages_immunization_immunization__["a" /* ImmunizationPage */],
+                __WEBPACK_IMPORTED_MODULE_38__pages_immunization_history_immunization_history__["a" /* ImmunizationHistoryPage */],
+                __WEBPACK_IMPORTED_MODULE_37__pages_immunization_detail_immunization_detail__["a" /* ImmunizationDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_39__pages_social_history_social_history__["a" /* SocialHistoryPage */],
+                __WEBPACK_IMPORTED_MODULE_40__pages_social_history_category_social_history_category__["a" /* SocialHistoryCategoryPage */],
+                __WEBPACK_IMPORTED_MODULE_41__pages_social_history_detail_social_history_detail__["a" /* SocialHistoryDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_42__pages_doctor_visit_notes_doctor_visit_notes__["a" /* DoctorVisitNotesPage */],
+                __WEBPACK_IMPORTED_MODULE_43__pages_doctor_visit_notes_detail_doctor_visit_notes_detail__["a" /* DoctorVisitNotesDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_44__pages_medication_medication__["a" /* MedicationPage */],
+                __WEBPACK_IMPORTED_MODULE_45__pages_medication_detail_medication_detail__["a" /* MedicationDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_46__pages_test_results_test_results__["a" /* TestResultsPage */],
+                __WEBPACK_IMPORTED_MODULE_47__pages_diagnostic_procedure_diagnostic_procedure__["a" /* DiagnosticProcedurePage */],
+                __WEBPACK_IMPORTED_MODULE_48__pages_diagnostic_procedure_detail_diagnostic_procedure_detail__["a" /* DiagnosticProcedureDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_49__pages_lab_test_lab_test__["a" /* LabTestPage */],
+                __WEBPACK_IMPORTED_MODULE_50__pages_lab_test_detail_lab_test_detail__["a" /* LabTestDetailPage */],
+                __WEBPACK_IMPORTED_MODULE_51__pages_password_edit_password_edit__["a" /* PasswordEditPage */],
+                __WEBPACK_IMPORTED_MODULE_52__pages_password_reset_password_reset__["a" /* PasswordResetPage */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_54__ionic_native_status_bar__["a" /* StatusBar */],
-                __WEBPACK_IMPORTED_MODULE_55__ionic_native_splash_screen__["a" /* SplashScreen */],
+                __WEBPACK_IMPORTED_MODULE_53__ionic_native_status_bar__["a" /* StatusBar */],
+                __WEBPACK_IMPORTED_MODULE_54__ionic_native_splash_screen__["a" /* SplashScreen */],
                 { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["ErrorHandler"], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["IonicErrorHandler"] },
-                __WEBPACK_IMPORTED_MODULE_56__providers_trackers_trackers__["a" /* TrackersProvider */],
-                __WEBPACK_IMPORTED_MODULE_57__providers_process_httpmsg_process_httpmsg__["a" /* ProcessHttpmsgProvider */],
-                __WEBPACK_IMPORTED_MODULE_62__providers_allergy_classification_allergy_classification__["a" /* AllergyClassificationProvider */],
-                __WEBPACK_IMPORTED_MODULE_63__providers_immunization_classification_immunization_classification__["a" /* ImmunizationClassificationProvider */],
-                __WEBPACK_IMPORTED_MODULE_59__providers_question_control_question_control__["a" /* QuestionControlProvider */],
-                __WEBPACK_IMPORTED_MODULE_60__providers_question_question__["a" /* QuestionProvider */],
-                __WEBPACK_IMPORTED_MODULE_7__ionic_native_call_number__["a" /* CallNumber */],
-                __WEBPACK_IMPORTED_MODULE_61__providers_contacts_contacts__["a" /* ContactsProvider */],
-                __WEBPACK_IMPORTED_MODULE_58__providers_question_option_question_option__["a" /* QuestionOptionProvider */],
-                __WEBPACK_IMPORTED_MODULE_64__providers_user_user__["a" /* UserProvider */],
-                __WEBPACK_IMPORTED_MODULE_65__providers_appointment_appointment__["a" /* AppointmentProvider */],
-                __WEBPACK_IMPORTED_MODULE_66__providers_social_history_classification_social_history_classification__["a" /* SocialHistoryClassificationProvider */],
-                __WEBPACK_IMPORTED_MODULE_67__providers_auth_service_auth_service__["a" /* AuthServiceProvider */],
-                __WEBPACK_IMPORTED_MODULE_68__providers_history_history__["a" /* HistoryProvider */],
-                __WEBPACK_IMPORTED_MODULE_69__providers_diagnostic_procedure_classification_diagnostic_procedure_classification__["a" /* DiagnosticProcedureClassificationProvider */],
-                __WEBPACK_IMPORTED_MODULE_70__providers_health_records_health_records__["a" /* HealthRecordsProvider */],
-                __WEBPACK_IMPORTED_MODULE_9__ionic_native_in_app_browser__["a" /* InAppBrowser */]
+                __WEBPACK_IMPORTED_MODULE_55__providers_trackers_trackers__["a" /* TrackersProvider */],
+                __WEBPACK_IMPORTED_MODULE_56__providers_process_httpmsg_process_httpmsg__["a" /* ProcessHttpmsgProvider */],
+                __WEBPACK_IMPORTED_MODULE_61__providers_allergy_classification_allergy_classification__["a" /* AllergyClassificationProvider */],
+                __WEBPACK_IMPORTED_MODULE_62__providers_immunization_classification_immunization_classification__["a" /* ImmunizationClassificationProvider */],
+                __WEBPACK_IMPORTED_MODULE_58__providers_question_control_question_control__["a" /* QuestionControlProvider */],
+                __WEBPACK_IMPORTED_MODULE_59__providers_question_question__["a" /* QuestionProvider */],
+                __WEBPACK_IMPORTED_MODULE_60__providers_contacts_contacts__["a" /* ContactsProvider */],
+                __WEBPACK_IMPORTED_MODULE_57__providers_question_option_question_option__["a" /* QuestionOptionProvider */],
+                __WEBPACK_IMPORTED_MODULE_63__providers_user_user__["a" /* UserProvider */],
+                __WEBPACK_IMPORTED_MODULE_64__providers_appointment_appointment__["a" /* AppointmentProvider */],
+                __WEBPACK_IMPORTED_MODULE_65__providers_social_history_classification_social_history_classification__["a" /* SocialHistoryClassificationProvider */],
+                __WEBPACK_IMPORTED_MODULE_66__providers_auth_service_auth_service__["a" /* AuthServiceProvider */],
+                __WEBPACK_IMPORTED_MODULE_67__providers_history_history__["a" /* HistoryProvider */],
+                __WEBPACK_IMPORTED_MODULE_68__providers_diagnostic_procedure_classification_diagnostic_procedure_classification__["a" /* DiagnosticProcedureClassificationProvider */],
+                __WEBPACK_IMPORTED_MODULE_69__providers_health_records_health_records__["a" /* HealthRecordsProvider */],
+                __WEBPACK_IMPORTED_MODULE_8__ionic_native_in_app_browser__["a" /* InAppBrowser */]
             ]
         })
     ], AppModule);
@@ -6972,272 +6845,13 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 456:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 43:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-var map = {
-	"./af": 226,
-	"./af.js": 226,
-	"./ar": 227,
-	"./ar-dz": 228,
-	"./ar-dz.js": 228,
-	"./ar-kw": 229,
-	"./ar-kw.js": 229,
-	"./ar-ly": 230,
-	"./ar-ly.js": 230,
-	"./ar-ma": 231,
-	"./ar-ma.js": 231,
-	"./ar-sa": 232,
-	"./ar-sa.js": 232,
-	"./ar-tn": 233,
-	"./ar-tn.js": 233,
-	"./ar.js": 227,
-	"./az": 234,
-	"./az.js": 234,
-	"./be": 235,
-	"./be.js": 235,
-	"./bg": 236,
-	"./bg.js": 236,
-	"./bm": 237,
-	"./bm.js": 237,
-	"./bn": 238,
-	"./bn.js": 238,
-	"./bo": 239,
-	"./bo.js": 239,
-	"./br": 240,
-	"./br.js": 240,
-	"./bs": 241,
-	"./bs.js": 241,
-	"./ca": 242,
-	"./ca.js": 242,
-	"./cs": 243,
-	"./cs.js": 243,
-	"./cv": 244,
-	"./cv.js": 244,
-	"./cy": 245,
-	"./cy.js": 245,
-	"./da": 246,
-	"./da.js": 246,
-	"./de": 247,
-	"./de-at": 248,
-	"./de-at.js": 248,
-	"./de-ch": 249,
-	"./de-ch.js": 249,
-	"./de.js": 247,
-	"./dv": 250,
-	"./dv.js": 250,
-	"./el": 251,
-	"./el.js": 251,
-	"./en-au": 252,
-	"./en-au.js": 252,
-	"./en-ca": 253,
-	"./en-ca.js": 253,
-	"./en-gb": 254,
-	"./en-gb.js": 254,
-	"./en-ie": 255,
-	"./en-ie.js": 255,
-	"./en-il": 256,
-	"./en-il.js": 256,
-	"./en-nz": 257,
-	"./en-nz.js": 257,
-	"./eo": 258,
-	"./eo.js": 258,
-	"./es": 259,
-	"./es-do": 260,
-	"./es-do.js": 260,
-	"./es-us": 261,
-	"./es-us.js": 261,
-	"./es.js": 259,
-	"./et": 262,
-	"./et.js": 262,
-	"./eu": 263,
-	"./eu.js": 263,
-	"./fa": 264,
-	"./fa.js": 264,
-	"./fi": 265,
-	"./fi.js": 265,
-	"./fo": 266,
-	"./fo.js": 266,
-	"./fr": 267,
-	"./fr-ca": 268,
-	"./fr-ca.js": 268,
-	"./fr-ch": 269,
-	"./fr-ch.js": 269,
-	"./fr.js": 267,
-	"./fy": 270,
-	"./fy.js": 270,
-	"./gd": 271,
-	"./gd.js": 271,
-	"./gl": 272,
-	"./gl.js": 272,
-	"./gom-latn": 273,
-	"./gom-latn.js": 273,
-	"./gu": 274,
-	"./gu.js": 274,
-	"./he": 275,
-	"./he.js": 275,
-	"./hi": 276,
-	"./hi.js": 276,
-	"./hr": 277,
-	"./hr.js": 277,
-	"./hu": 278,
-	"./hu.js": 278,
-	"./hy-am": 279,
-	"./hy-am.js": 279,
-	"./id": 280,
-	"./id.js": 280,
-	"./is": 281,
-	"./is.js": 281,
-	"./it": 282,
-	"./it.js": 282,
-	"./ja": 283,
-	"./ja.js": 283,
-	"./jv": 284,
-	"./jv.js": 284,
-	"./ka": 285,
-	"./ka.js": 285,
-	"./kk": 286,
-	"./kk.js": 286,
-	"./km": 287,
-	"./km.js": 287,
-	"./kn": 288,
-	"./kn.js": 288,
-	"./ko": 289,
-	"./ko.js": 289,
-	"./ky": 290,
-	"./ky.js": 290,
-	"./lb": 291,
-	"./lb.js": 291,
-	"./lo": 292,
-	"./lo.js": 292,
-	"./lt": 293,
-	"./lt.js": 293,
-	"./lv": 294,
-	"./lv.js": 294,
-	"./me": 295,
-	"./me.js": 295,
-	"./mi": 296,
-	"./mi.js": 296,
-	"./mk": 297,
-	"./mk.js": 297,
-	"./ml": 298,
-	"./ml.js": 298,
-	"./mn": 299,
-	"./mn.js": 299,
-	"./mr": 300,
-	"./mr.js": 300,
-	"./ms": 301,
-	"./ms-my": 302,
-	"./ms-my.js": 302,
-	"./ms.js": 301,
-	"./mt": 303,
-	"./mt.js": 303,
-	"./my": 304,
-	"./my.js": 304,
-	"./nb": 305,
-	"./nb.js": 305,
-	"./ne": 306,
-	"./ne.js": 306,
-	"./nl": 307,
-	"./nl-be": 308,
-	"./nl-be.js": 308,
-	"./nl.js": 307,
-	"./nn": 309,
-	"./nn.js": 309,
-	"./pa-in": 310,
-	"./pa-in.js": 310,
-	"./pl": 311,
-	"./pl.js": 311,
-	"./pt": 312,
-	"./pt-br": 313,
-	"./pt-br.js": 313,
-	"./pt.js": 312,
-	"./ro": 314,
-	"./ro.js": 314,
-	"./ru": 315,
-	"./ru.js": 315,
-	"./sd": 316,
-	"./sd.js": 316,
-	"./se": 317,
-	"./se.js": 317,
-	"./si": 318,
-	"./si.js": 318,
-	"./sk": 319,
-	"./sk.js": 319,
-	"./sl": 320,
-	"./sl.js": 320,
-	"./sq": 321,
-	"./sq.js": 321,
-	"./sr": 322,
-	"./sr-cyrl": 323,
-	"./sr-cyrl.js": 323,
-	"./sr.js": 322,
-	"./ss": 324,
-	"./ss.js": 324,
-	"./sv": 325,
-	"./sv.js": 325,
-	"./sw": 326,
-	"./sw.js": 326,
-	"./ta": 327,
-	"./ta.js": 327,
-	"./te": 328,
-	"./te.js": 328,
-	"./tet": 329,
-	"./tet.js": 329,
-	"./tg": 330,
-	"./tg.js": 330,
-	"./th": 331,
-	"./th.js": 331,
-	"./tl-ph": 332,
-	"./tl-ph.js": 332,
-	"./tlh": 333,
-	"./tlh.js": 333,
-	"./tr": 334,
-	"./tr.js": 334,
-	"./tzl": 335,
-	"./tzl.js": 335,
-	"./tzm": 336,
-	"./tzm-latn": 337,
-	"./tzm-latn.js": 337,
-	"./tzm.js": 336,
-	"./ug-cn": 338,
-	"./ug-cn.js": 338,
-	"./uk": 339,
-	"./uk.js": 339,
-	"./ur": 340,
-	"./ur.js": 340,
-	"./uz": 341,
-	"./uz-latn": 342,
-	"./uz-latn.js": 342,
-	"./uz.js": 341,
-	"./vi": 343,
-	"./vi.js": 343,
-	"./x-pseudo": 344,
-	"./x-pseudo.js": 344,
-	"./yo": 345,
-	"./yo.js": 345,
-	"./zh-cn": 346,
-	"./zh-cn.js": 346,
-	"./zh-hk": 347,
-	"./zh-hk.js": 347,
-	"./zh-tw": 348,
-	"./zh-tw.js": 348
-};
-function webpackContext(req) {
-	return __webpack_require__(webpackContextResolve(req));
-};
-function webpackContextResolve(req) {
-	var id = map[req];
-	if(!(id + 1)) // check for number or string
-		throw new Error("Cannot find module '" + req + "'.");
-	return id;
-};
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = 456;
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return baseurl; });
+var baseurl = 'https://phrbackend.herokuapp.com/api/';
+//# sourceMappingURL=baseurl.js.map
 
 /***/ }),
 
@@ -7263,7 +6877,276 @@ var QuestionBase = (function () {
 
 /***/ }),
 
-/***/ 464:
+/***/ 462:
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./af": 229,
+	"./af.js": 229,
+	"./ar": 230,
+	"./ar-dz": 231,
+	"./ar-dz.js": 231,
+	"./ar-kw": 232,
+	"./ar-kw.js": 232,
+	"./ar-ly": 233,
+	"./ar-ly.js": 233,
+	"./ar-ma": 234,
+	"./ar-ma.js": 234,
+	"./ar-sa": 235,
+	"./ar-sa.js": 235,
+	"./ar-tn": 236,
+	"./ar-tn.js": 236,
+	"./ar.js": 230,
+	"./az": 237,
+	"./az.js": 237,
+	"./be": 238,
+	"./be.js": 238,
+	"./bg": 239,
+	"./bg.js": 239,
+	"./bm": 240,
+	"./bm.js": 240,
+	"./bn": 241,
+	"./bn.js": 241,
+	"./bo": 242,
+	"./bo.js": 242,
+	"./br": 243,
+	"./br.js": 243,
+	"./bs": 244,
+	"./bs.js": 244,
+	"./ca": 245,
+	"./ca.js": 245,
+	"./cs": 246,
+	"./cs.js": 246,
+	"./cv": 247,
+	"./cv.js": 247,
+	"./cy": 248,
+	"./cy.js": 248,
+	"./da": 249,
+	"./da.js": 249,
+	"./de": 250,
+	"./de-at": 251,
+	"./de-at.js": 251,
+	"./de-ch": 252,
+	"./de-ch.js": 252,
+	"./de.js": 250,
+	"./dv": 253,
+	"./dv.js": 253,
+	"./el": 254,
+	"./el.js": 254,
+	"./en-au": 255,
+	"./en-au.js": 255,
+	"./en-ca": 256,
+	"./en-ca.js": 256,
+	"./en-gb": 257,
+	"./en-gb.js": 257,
+	"./en-ie": 258,
+	"./en-ie.js": 258,
+	"./en-il": 259,
+	"./en-il.js": 259,
+	"./en-nz": 260,
+	"./en-nz.js": 260,
+	"./eo": 261,
+	"./eo.js": 261,
+	"./es": 262,
+	"./es-do": 263,
+	"./es-do.js": 263,
+	"./es-us": 264,
+	"./es-us.js": 264,
+	"./es.js": 262,
+	"./et": 265,
+	"./et.js": 265,
+	"./eu": 266,
+	"./eu.js": 266,
+	"./fa": 267,
+	"./fa.js": 267,
+	"./fi": 268,
+	"./fi.js": 268,
+	"./fo": 269,
+	"./fo.js": 269,
+	"./fr": 270,
+	"./fr-ca": 271,
+	"./fr-ca.js": 271,
+	"./fr-ch": 272,
+	"./fr-ch.js": 272,
+	"./fr.js": 270,
+	"./fy": 273,
+	"./fy.js": 273,
+	"./gd": 274,
+	"./gd.js": 274,
+	"./gl": 275,
+	"./gl.js": 275,
+	"./gom-latn": 276,
+	"./gom-latn.js": 276,
+	"./gu": 277,
+	"./gu.js": 277,
+	"./he": 278,
+	"./he.js": 278,
+	"./hi": 279,
+	"./hi.js": 279,
+	"./hr": 280,
+	"./hr.js": 280,
+	"./hu": 281,
+	"./hu.js": 281,
+	"./hy-am": 282,
+	"./hy-am.js": 282,
+	"./id": 283,
+	"./id.js": 283,
+	"./is": 284,
+	"./is.js": 284,
+	"./it": 285,
+	"./it.js": 285,
+	"./ja": 286,
+	"./ja.js": 286,
+	"./jv": 287,
+	"./jv.js": 287,
+	"./ka": 288,
+	"./ka.js": 288,
+	"./kk": 289,
+	"./kk.js": 289,
+	"./km": 290,
+	"./km.js": 290,
+	"./kn": 291,
+	"./kn.js": 291,
+	"./ko": 292,
+	"./ko.js": 292,
+	"./ky": 293,
+	"./ky.js": 293,
+	"./lb": 294,
+	"./lb.js": 294,
+	"./lo": 295,
+	"./lo.js": 295,
+	"./lt": 296,
+	"./lt.js": 296,
+	"./lv": 297,
+	"./lv.js": 297,
+	"./me": 298,
+	"./me.js": 298,
+	"./mi": 299,
+	"./mi.js": 299,
+	"./mk": 300,
+	"./mk.js": 300,
+	"./ml": 301,
+	"./ml.js": 301,
+	"./mn": 302,
+	"./mn.js": 302,
+	"./mr": 303,
+	"./mr.js": 303,
+	"./ms": 304,
+	"./ms-my": 305,
+	"./ms-my.js": 305,
+	"./ms.js": 304,
+	"./mt": 306,
+	"./mt.js": 306,
+	"./my": 307,
+	"./my.js": 307,
+	"./nb": 308,
+	"./nb.js": 308,
+	"./ne": 309,
+	"./ne.js": 309,
+	"./nl": 310,
+	"./nl-be": 311,
+	"./nl-be.js": 311,
+	"./nl.js": 310,
+	"./nn": 312,
+	"./nn.js": 312,
+	"./pa-in": 313,
+	"./pa-in.js": 313,
+	"./pl": 314,
+	"./pl.js": 314,
+	"./pt": 315,
+	"./pt-br": 316,
+	"./pt-br.js": 316,
+	"./pt.js": 315,
+	"./ro": 317,
+	"./ro.js": 317,
+	"./ru": 318,
+	"./ru.js": 318,
+	"./sd": 319,
+	"./sd.js": 319,
+	"./se": 320,
+	"./se.js": 320,
+	"./si": 321,
+	"./si.js": 321,
+	"./sk": 322,
+	"./sk.js": 322,
+	"./sl": 323,
+	"./sl.js": 323,
+	"./sq": 324,
+	"./sq.js": 324,
+	"./sr": 325,
+	"./sr-cyrl": 326,
+	"./sr-cyrl.js": 326,
+	"./sr.js": 325,
+	"./ss": 327,
+	"./ss.js": 327,
+	"./sv": 328,
+	"./sv.js": 328,
+	"./sw": 329,
+	"./sw.js": 329,
+	"./ta": 330,
+	"./ta.js": 330,
+	"./te": 331,
+	"./te.js": 331,
+	"./tet": 332,
+	"./tet.js": 332,
+	"./tg": 333,
+	"./tg.js": 333,
+	"./th": 334,
+	"./th.js": 334,
+	"./tl-ph": 335,
+	"./tl-ph.js": 335,
+	"./tlh": 336,
+	"./tlh.js": 336,
+	"./tr": 337,
+	"./tr.js": 337,
+	"./tzl": 338,
+	"./tzl.js": 338,
+	"./tzm": 339,
+	"./tzm-latn": 340,
+	"./tzm-latn.js": 340,
+	"./tzm.js": 339,
+	"./ug-cn": 341,
+	"./ug-cn.js": 341,
+	"./uk": 342,
+	"./uk.js": 342,
+	"./ur": 343,
+	"./ur.js": 343,
+	"./uz": 344,
+	"./uz-latn": 345,
+	"./uz-latn.js": 345,
+	"./uz.js": 344,
+	"./vi": 346,
+	"./vi.js": 346,
+	"./x-pseudo": 347,
+	"./x-pseudo.js": 347,
+	"./yo": 348,
+	"./yo.js": 348,
+	"./zh-cn": 349,
+	"./zh-cn.js": 349,
+	"./zh-hk": 350,
+	"./zh-hk.js": 350,
+	"./zh-tw": 351,
+	"./zh-tw.js": 351
+};
+function webpackContext(req) {
+	return __webpack_require__(webpackContextResolve(req));
+};
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) // check for number or string
+		throw new Error("Cannot find module '" + req + "'.");
+	return id;
+};
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 462;
+
+/***/ }),
+
+/***/ 463:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7298,7 +7181,7 @@ var TextboxQuestion = (function (_super) {
 
 /***/ }),
 
-/***/ 465:
+/***/ 464:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7331,7 +7214,7 @@ var DatetimeQuestion = (function (_super) {
 
 /***/ }),
 
-/***/ 466:
+/***/ 465:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7366,7 +7249,7 @@ var DropdownQuestion = (function (_super) {
 
 /***/ }),
 
-/***/ 467:
+/***/ 466:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7401,7 +7284,7 @@ var TextareaQuestion = (function (_super) {
 
 /***/ }),
 
-/***/ 468:
+/***/ 467:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7485,6 +7368,7 @@ var ContactAddContactsPage = (function () {
             "tel": '',
             "fax": '',
             "specialty": '',
+            "location1": '',
             "group": ''
         };
         this.validationMessages = {
@@ -7511,6 +7395,9 @@ var ContactAddContactsPage = (function () {
             "fax": {
                 "pattern": "Please enter a valid fax number."
             },
+            "location1": {
+                "required": "Address is required."
+            },
             "group": {
                 "required": "Contact group is required."
             }
@@ -7522,7 +7409,7 @@ var ContactAddContactsPage = (function () {
             tel: ['', [__WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required, __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].pattern('[0-9]{10}')]],
             fax: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].pattern('[0-9]{10}')],
             specialty: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required],
-            location1: [''],
+            location1: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required],
             location2: [''],
             location3: [''],
             group: ['', __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required]
@@ -7627,7 +7514,7 @@ var ContactAddContactsPage = (function () {
     };
     ContactAddContactsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-contact-add-contacts',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/contact-add-contacts/contact-add-contacts.html"*/'<!--\n  Generated template for the ContactAddContactsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-toolbar color="primary">\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <span ion-text color="white" showWhen="ios">Cancel</span>\n        <ion-icon name="md-close" showWhen="android, windows"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Add Contacts</ion-title>\n  </ion-toolbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <form [formGroup]=\'addContactForm\' (ngSubmit)="onSubmit()">\n    <ion-item>\n      <ion-label>Contact Group<span class="color-red">*</span></ion-label>\n      <ion-select formControlName="group" (value)="group" multiple="true">\n        <ion-option value="emergency">Emergency</ion-option>\n        <ion-option value="friend">Friend</ion-option>\n        <ion-option value="family">Family</ion-option>\n        <ion-option value="doctor">Doctor</ion-option>\n      </ion-select>\n    </ion-item>\n    <div class="pull-right color-red">\n      <span [hidden]="!(formErrors.group)">{{formErrors.group}}</span>\n    </div>\n    <ion-item>\n      <ion-label floating>First Name<span class="color-red">*</span></ion-label>\n      <ion-input formControlName="firstname"></ion-input>\n    </ion-item>\n    <div class="pull-right color-red">\n      <span [hidden]="!(formErrors.firstname)">{{formErrors.firstname}}</span>\n    </div>\n    <ion-item>\n      <ion-label floating>Last Name<span class="color-red">*</span></ion-label>\n      <ion-input formControlName="lastname"></ion-input>\n    </ion-item>\n    <div class="pull-right color-red">\n      <span [hidden]="!(formErrors.lastname)">{{formErrors.lastname}}</span>\n    </div>\n    <ion-item *ngIf="isFamilyorEmergency">\n      <ion-label floating>Relationship<span class="color-red">*</span></ion-label>\n      <ion-input formControlName="relationship"></ion-input>\n    </ion-item>\n    <div class="pull-right color-red" *ngIf="isFamilyorEmergency">\n      <span [hidden]="!(formErrors.relationship)">{{formErrors.relationship}}</span>\n    </div>\n    <ion-item>\n      <ion-label floating>Tel<span class="color-red">*</span></ion-label>\n      <ion-input type="tel" formControlName="tel"></ion-input>\n    </ion-item>\n    <div class="pull-right color-red">\n      <span [hidden]="!(formErrors.tel)">{{formErrors.tel}}</span>\n    </div>\n    <ion-item *ngIf="isDoctor">\n      <ion-label floating>Fax</ion-label>\n      <ion-input type="tel" formControlName="fax"></ion-input>\n    </ion-item>\n    <div class="pull-right color-red" *ngIf="isDoctor">\n      <span [hidden]="!(formErrors.fax)">{{formErrors.fax}}</span>\n    </div>\n    <ion-item *ngIf="isDoctor">\n      <ion-label floating>Specialty<span class="color-red">*</span></ion-label>\n      <ion-input formControlName="specialty"></ion-input>\n    </ion-item>\n    <div class="pull-right color-red" *ngIf="isDoctor">\n      <span [hidden]="!(formErrors.specialty)">{{formErrors.specialty}}</span>\n    </div>\n    <ion-item *ngIf="!isDoctor">\n      <ion-label floating>Address</ion-label>\n      <ion-input formControlName="location1"></ion-input>\n    </ion-item>\n    <ion-item *ngIf="isDoctor">\n      <ion-label floating>Address1</ion-label>\n      <ion-input formControlName="location1"></ion-input>\n      <ion-icon color="primary" name="add-circle" (click)="addAddress()" item-end></ion-icon>\n    </ion-item>\n    <ion-item *ngIf="address[0] && isDoctor">\n      <ion-label floating>Address2</ion-label>\n      <ion-input formControlName="location2"></ion-input>\n      <ion-icon color="danger" name="remove-circle" (click)="deleteAddress()" item-end></ion-icon>\n    </ion-item>\n    <ion-item *ngIf="address[1] && isDoctor">\n      <ion-label floating>Address3</ion-label>\n      <ion-input formControlName="location3"></ion-input>\n      <ion-icon color="danger" name="remove-circle" (click)="deleteAddress()" item-end></ion-icon>\n    </ion-item>\n    <button ion-button block type="submit" [disabled]="!addContactForm.valid">Create</button>\n  </form>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/contact-add-contacts/contact-add-contacts.html"*/,
+            selector: 'page-contact-add-contacts',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/contact-add-contacts/contact-add-contacts.html"*/'<!--\n  Generated template for the ContactAddContactsPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-toolbar color="primary">\n    <ion-buttons start>\n      <button ion-button (click)="dismiss()">\n        <span ion-text color="white" showWhen="ios">Cancel</span>\n        <ion-icon name="md-close" showWhen="android, windows"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Add Contacts</ion-title>\n  </ion-toolbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <form [formGroup]=\'addContactForm\' (ngSubmit)="onSubmit()">\n    <ion-item>\n      <ion-label>Contact Group<span class="color-red">*</span></ion-label>\n      <ion-select formControlName="group" (value)="group" multiple="true">\n        <ion-option value="emergency">Emergency</ion-option>\n        <ion-option value="friend">Friend</ion-option>\n        <ion-option value="family">Family</ion-option>\n        <ion-option value="doctor">Doctor</ion-option>\n      </ion-select>\n    </ion-item>\n    <div class="pull-right color-red">\n      <span [hidden]="!(formErrors.group)">{{formErrors.group}}</span>\n    </div>\n    <ion-item>\n      <ion-label floating>First Name<span class="color-red">*</span></ion-label>\n      <ion-input formControlName="firstname"></ion-input>\n    </ion-item>\n    <div class="pull-right color-red">\n      <span [hidden]="!(formErrors.firstname)">{{formErrors.firstname}}</span>\n    </div>\n    <ion-item>\n      <ion-label floating>Last Name<span class="color-red">*</span></ion-label>\n      <ion-input formControlName="lastname"></ion-input>\n    </ion-item>\n    <div class="pull-right color-red">\n      <span [hidden]="!(formErrors.lastname)">{{formErrors.lastname}}</span>\n    </div>\n    <ion-item *ngIf="isFamilyorEmergency">\n      <ion-label floating>Relationship<span class="color-red">*</span></ion-label>\n      <ion-input formControlName="relationship"></ion-input>\n    </ion-item>\n    <div class="pull-right color-red" *ngIf="isFamilyorEmergency">\n      <span [hidden]="!(formErrors.relationship)">{{formErrors.relationship}}</span>\n    </div>\n    <ion-item>\n      <ion-label floating>Tel<span class="color-red">*</span></ion-label>\n      <ion-input type="tel" formControlName="tel"></ion-input>\n    </ion-item>\n    <div class="pull-right color-red">\n      <span [hidden]="!(formErrors.tel)">{{formErrors.tel}}</span>\n    </div>\n    <ion-item *ngIf="isDoctor">\n      <ion-label floating>Fax</ion-label>\n      <ion-input type="tel" formControlName="fax"></ion-input>\n    </ion-item>\n    <div class="pull-right color-red" *ngIf="isDoctor">\n      <span [hidden]="!(formErrors.fax)">{{formErrors.fax}}</span>\n    </div>\n    <ion-item *ngIf="isDoctor">\n      <ion-label floating>Specialty<span class="color-red">*</span></ion-label>\n      <ion-input formControlName="specialty"></ion-input>\n    </ion-item>\n    <div class="pull-right color-red" *ngIf="isDoctor">\n      <span [hidden]="!(formErrors.specialty)">{{formErrors.specialty}}</span>\n    </div>\n    <ion-item *ngIf="!isDoctor">\n      <ion-label floating>Address<span class="color-red">*</span></ion-label>\n      <ion-input formControlName="location1"></ion-input>\n    </ion-item>\n    <ion-item *ngIf="isDoctor">\n      <ion-label floating>Address1<span class="color-red">*</span></ion-label>\n      <ion-input formControlName="location1"></ion-input>\n      <ion-icon color="primary" name="add-circle" (click)="addAddress()" item-right></ion-icon>\n    </ion-item>\n    <ion-item *ngIf="address[0] && isDoctor">\n      <ion-label floating>Address2</ion-label>\n      <ion-input formControlName="location2"></ion-input>\n      <ion-icon color="danger" name="remove-circle" (click)="deleteAddress()" item-end></ion-icon>\n    </ion-item>\n    <ion-item *ngIf="address[1] && isDoctor">\n      <ion-label floating>Address3</ion-label>\n      <ion-input formControlName="location3"></ion-input>\n      <ion-icon color="danger" name="remove-circle" (click)="deleteAddress()" item-end></ion-icon>\n    </ion-item>\n    <button ion-button block type="submit" [disabled]="!addContactForm.valid">Create</button>\n  </form>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/contact-add-contacts/contact-add-contacts.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormBuilder"],
@@ -7644,30 +7531,30 @@ var ContactAddContactsPage = (function () {
 
 /***/ }),
 
-/***/ 546:
+/***/ 545:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(407);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(406);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_trackers_trackers__ = __webpack_require__(172);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_welcome_welcome__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_contact_contact__ = __webpack_require__(149);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_appointment_appointment__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_contact_contact__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_appointment_appointment__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_dashboard_dashboard__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_profile_profile__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_resources_resources__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_allergy_history_allergy_history__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_allergy_history_allergy_history__ = __webpack_require__(138);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_family_history_family_history__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_medical_history_medical_history__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_surgical_history_surgical_history__ = __webpack_require__(169);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_immunization_history_immunization_history__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_surgical_history_surgical_history__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_immunization_history_immunization_history__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_social_history_social_history__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_doctor_visit_notes_doctor_visit_notes__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_medication_medication__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_doctor_visit_notes_doctor_visit_notes__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_medication_medication__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_test_results_test_results__ = __webpack_require__(170);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_auth_service_auth_service__ = __webpack_require__(6);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -7888,14 +7775,14 @@ var MyApp = (function () {
 
 /***/ }),
 
-/***/ 547:
+/***/ 546:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TileComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_allergy_detail_allergy_detail__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_allergy_detail_allergy_detail__ = __webpack_require__(147);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_immunization_detail_immunization_detail__ = __webpack_require__(157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_social_history_detail_social_history_detail__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_diagnostic_procedure_detail_diagnostic_procedure_detail__ = __webpack_require__(153);
@@ -7981,7 +7868,7 @@ var TileComponent = (function () {
 
 /***/ }),
 
-/***/ 548:
+/***/ 547:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8039,7 +7926,7 @@ var DynamicFormQuestionComponent = (function () {
 
 /***/ }),
 
-/***/ 549:
+/***/ 548:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8105,7 +7992,7 @@ var DynamicFormComponent = (function () {
 
 /***/ }),
 
-/***/ 550:
+/***/ 549:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8310,15 +8197,15 @@ var AuthServiceProvider = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appointment_appointment__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lab_test_detail_lab_test_detail__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__medication_medication__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__immunization_history_immunization_history__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appointment_appointment__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lab_test_detail_lab_test_detail__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__medication_medication__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__immunization_history_immunization_history__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__welcome_welcome__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__doctor_visit_notes_doctor_visit_notes__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__doctor_visit_notes_doctor_visit_notes__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_appointment_appointment__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_auth_service_auth_service__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_health_records_health_records__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_health_records_health_records__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8494,14 +8381,14 @@ var AppointmentProvider = (function () {
 
 /***/ }),
 
-/***/ 78:
+/***/ 77:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppointmentPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appointment_add_appointments_appointment_add_appointments__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__appointment_add_appointments_appointment_add_appointments__ = __webpack_require__(141);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_appointment_appointment__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_service_auth_service__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__welcome_welcome__ = __webpack_require__(16);
@@ -8589,7 +8476,7 @@ var AppointmentPage = (function () {
 
 /***/ }),
 
-/***/ 79:
+/***/ 78:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8602,7 +8489,7 @@ var AppointmentPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_question_control_question_control__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_moment__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_health_records_health_records__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_health_records_health_records__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8638,6 +8525,7 @@ var LabTestDetailPage = (function () {
         this.toastCtrl = toastCtrl;
         this.alertCtrl = alertCtrl;
         this.hrp = hrp;
+        this.unit = [];
         this.color = ['dark-salmon', 'rosy-brown', 'slate-grey'];
         this.data = [];
         this.date = [];
@@ -8654,10 +8542,8 @@ var LabTestDetailPage = (function () {
         this.tab = navParams.get('tab');
         this.title = navParams.get('title');
         this.id = navParams.get('id');
-        this.unit = navParams.get('unit');
-        this.isnumber = navParams.get('isnumber');
         this.subtest = navParams.get('subtest');
-        this.questions = this.qp.getLabTestQuestions(this.isnumber, this.unit, this.title);
+        this.questions = this.qp.getLabTestQuestions(this.title);
         this.form = this.qcp.toFormGroup(this.questions);
         this.navcolor = this.color[(this.id + 1) % 3];
         // if (this.id == 1) {
@@ -8700,166 +8586,204 @@ var LabTestDetailPage = (function () {
         //     }
         //   ];
         // }
-        // else if (this.id == 2) {
-        //   this.data = [
-        //     {
-        //       "subtest": "BMP (Basic Metabolic Panel)",
-        //       "open": true,
-        //       "results": [
-        //         {
-        //           "result": 22,
-        //           "abnormal": true,
-        //           "note": 'XDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXD',
-        //           "date": "2011-12-10T17:57:28.556094Z"
-        //         },
-        //         {
-        //           "result": 30,
-        //           "abnormal": false,
-        //           "note": ':):):)',
-        //           "date": "2011-12-09T17:57:28.556094Z"
-        //         },
-        //         {
-        //           "result": 40,
-        //           "abnormal": false,
-        //           "note": '',
-        //           "date": "2011-12-08T17:57:28.556094Z"
-        //         },
-        //         {
-        //           "result": 24,
-        //           "abnormal": true,
-        //           "note": ':D',
-        //           "date": "2011-12-07T17:57:28.556094Z"
-        //         },
-        //         {
-        //           "result": 18,
-        //           "abnormal": true,
-        //           "note": '',
-        //           "date": "2011-12-06T02:08:21.199Z"
-        //         },
-        //         {
-        //           "result": 26,
-        //           "abnormal": false,
-        //           "note": '',
-        //           "date": "2011-12-05T02:14:16.365Z"
-        //         },
-        //         {
-        //           "result": 36,
-        //           "abnormal": false,
-        //           "note": '',
-        //           "date": "2011-12-04T02:30:10.570Z"
-        //         },
-        //         {
-        //           "result": 45,
-        //           "abnormal": false,
-        //           "note": '',
-        //           "date": "2011-12-03T02:52:17.718Z"
-        //         },
-        //         {
-        //           "result": 35,
-        //           "abnormal": false,
-        //           "note": '',
-        //           "date": "2011-12-02T01:38:47.452Z"
-        //         }
-        //       ]
-        //     },
-        //     {
-        //       "subtest": "BMP (Basic Metabolic Panel) (Other)",
-        //       "open": false,
-        //       "results": [
-        //         {
-        //           "result": 12,
-        //           "abnormal": true,
-        //           "note": 'XDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXD',
-        //           "date": "2011-12-10T17:57:28.556094Z"
-        //         },
-        //         {
-        //           "result": 53,
-        //           "abnormal": false,
-        //           "note": ':):):)',
-        //           "date": "2011-12-09T17:57:28.556094Z"
-        //         },
-        //         {
-        //           "result": 88,
-        //           "abnormal": false,
-        //           "note": '',
-        //           "date": "2011-12-08T17:57:28.556094Z"
-        //         },
-        //         {
-        //           "result": 26,
-        //           "abnormal": true,
-        //           "note": ':D',
-        //           "date": "2011-12-07T17:57:28.556094Z"
-        //         },
-        //         {
-        //           "result": 40,
-        //           "abnormal": true,
-        //           "note": '',
-        //           "date": "2011-12-06T02:08:21.199Z"
-        //         },
-        //         {
-        //           "result": 30,
-        //           "abnormal": false,
-        //           "note": '',
-        //           "date": "2011-12-05T02:14:16.365Z"
-        //         }
-        //       ]
+        if (this.id == 2) {
+            this.data = [
+                {
+                    "subtest": "BMP (Basic Metabolic Panel)",
+                    "open": true,
+                    "unit": "mg/dL",
+                    "results": [
+                        {
+                            "result": "22",
+                            "abnormal": true,
+                            "note": 'XDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXD',
+                            "date": "2011-12-10T17:57:28.556094Z"
+                        },
+                        {
+                            "result": "30",
+                            "abnormal": false,
+                            "note": ':):):)',
+                            "date": "2011-12-09T17:57:28.556094Z"
+                        },
+                        {
+                            "result": "40",
+                            "abnormal": false,
+                            "note": '',
+                            "date": "2011-12-08T17:57:28.556094Z"
+                        },
+                        {
+                            "result": "24",
+                            "abnormal": true,
+                            "note": ':D',
+                            "date": "2011-12-07T17:57:28.556094Z"
+                        },
+                        {
+                            "result": "18",
+                            "abnormal": true,
+                            "note": '',
+                            "date": "2011-12-06T02:08:21.199Z"
+                        },
+                        {
+                            "result": "26",
+                            "abnormal": false,
+                            "note": '',
+                            "date": "2011-12-05T02:14:16.365Z"
+                        },
+                        {
+                            "result": "36",
+                            "abnormal": false,
+                            "note": '',
+                            "date": "2011-12-04T02:30:10.570Z"
+                        },
+                        {
+                            "result": "45",
+                            "abnormal": false,
+                            "note": '',
+                            "date": "2011-12-03T02:52:17.718Z"
+                        },
+                        {
+                            "result": "35",
+                            "abnormal": false,
+                            "note": '',
+                            "date": "2011-12-02T01:38:47.452Z"
+                        }
+                    ]
+                },
+                {
+                    "subtest": "BMP 3",
+                    "open": false,
+                    "unit": "",
+                    "results": [
+                        {
+                            "result": "negative",
+                            "abnormal": true,
+                            "note": 'XDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXD',
+                            "date": "2011-12-10T17:57:28.556094Z"
+                        },
+                        {
+                            "result": "positive",
+                            "abnormal": false,
+                            "note": ':):):)',
+                            "date": "2011-12-09T17:57:28.556094Z"
+                        },
+                        {
+                            "result": "positive",
+                            "abnormal": false,
+                            "note": '',
+                            "date": "2011-12-08T17:57:28.556094Z"
+                        }
+                    ]
+                },
+                {
+                    "subtest": "BMP (Basic Metabolic Panel) (Other)",
+                    "open": false,
+                    "unit": "mg/dL",
+                    "results": [
+                        {
+                            "result": "12",
+                            "abnormal": true,
+                            "note": 'XDXDXDXDXDXDXDXDXDXDXDXDXDXDXDXD',
+                            "date": "2011-12-10T17:57:28.556094Z"
+                        },
+                        {
+                            "result": "53",
+                            "abnormal": false,
+                            "note": ':):):)',
+                            "date": "2011-12-09T17:57:28.556094Z"
+                        },
+                        {
+                            "result": "88",
+                            "abnormal": false,
+                            "note": '',
+                            "date": "2011-12-08T17:57:28.556094Z"
+                        },
+                        {
+                            "result": "26",
+                            "abnormal": true,
+                            "note": ':D',
+                            "date": "2011-12-07T17:57:28.556094Z"
+                        },
+                        {
+                            "result": "40",
+                            "abnormal": true,
+                            "note": '',
+                            "date": "2011-12-06T02:08:21.199Z"
+                        },
+                        {
+                            "result": "30",
+                            "abnormal": false,
+                            "note": '',
+                            "date": "2011-12-05T02:14:16.365Z"
+                        }
+                    ]
+                },
+            ];
+        }
+        this.unit = [];
+        this.data.forEach(function (record) {
+            _this.unit.push(record.unit);
+        });
+        console.log(this.unit);
+        this.drawcanvas();
+        // this.hrp.getLabtTest(this.auth.userId, this.id)
+        //   .subscribe(records => {
+        //     this.records = records;
+        //     // set extension panel of first category in record history in 'open' status
+        //     this.records[0]['open'] = true;
+        //     for (let i = 1; i < this.records.length; i++) {
+        //       this.records[i]['open'] = false;
         //     }
-        //   ];
-        // }
-        if (this.isnumber)
-            this.drawcanvas();
-        this.hrp.getLabtTest(this.auth.userId, this.id)
-            .subscribe(function (records) {
-            _this.records = records;
-            // set extension panel of first category in record history in 'open' status
-            _this.records[0]['open'] = true;
-            for (var i = 1; i < _this.records.length; i++) {
-                _this.records[i]['open'] = false;
-            }
-            _this.data = _this.records;
-            console.log(_this.data);
-            if (_this.isnumber)
-                _this.drawcanvas();
-        }, function (errmess) { return _this.errMess = errmess; });
+        //     //get unit array
+        //     this.unit = [];
+        //     records.forEach(record => {
+        //       this.unit.push(record.unit);
+        //     });
+        //     this.data = this.records;
+        //     console.log(this.data);
+        //     this.drawcanvas();
+        //   },
+        //     errmess => this.errMess = <any>errmess);
     }
     LabTestDetailPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad LabTestDetailPage');
     };
     LabTestDetailPage.prototype.drawcanvas = function () {
         var _this = this;
-        this.data.forEach(function (data) {
-            _this.date = [];
-            _this.results = [];
-            _this.abnormalColor = [];
-            data.results.forEach(function (result) {
-                _this.date.push(__WEBPACK_IMPORTED_MODULE_6_moment__(result.date).format('MM/DD'));
-                _this.results.push(result.result);
-                if (result.abnormal == true)
-                    _this.abnormalColor.push('red');
-                else
-                    _this.abnormalColor.push('rgba(148,159,177,1)');
-            });
-            console.log(_this.abnormalColor);
-            _this.lineChartLabels = _this.date;
-            _this.lineChartData = [{ data: _this.results, label: data.subtest }];
-            _this.lineChartColors = [{
-                    backgroundColor: 'rgba(148,159,177,0.2)',
-                    borderColor: 'rgba(148,159,177,1)',
-                    pointBackgroundColor: _this.abnormalColor,
-                    pointBorderColor: '#fff',
-                    pointHoverBackgroundColor: '#fff',
-                    pointHoverBorderColor: 'rgba(148,159,177,0.8)'
-                }];
-            _this.charts.push({
-                lineChartData: _this.lineChartData,
-                lineChartLabels: _this.lineChartLabels,
-                lineChartOptions: _this.lineChartOptions,
-                lineChartColors: _this.lineChartColors,
-                lineChartLegend: _this.lineChartLegend,
-                lineChartType: _this.lineChartType
-            });
-            console.log(_this.charts);
-        });
+        for (var i = 0; i < this.data.length; i++) {
+            this.date = [];
+            this.results = [];
+            this.abnormalColor = [];
+            if (this.data[i].unit.length != 0) {
+                this.data[i].results.forEach(function (result) {
+                    _this.date.push(__WEBPACK_IMPORTED_MODULE_6_moment__(result.date).format('MM/DD'));
+                    _this.results.push(result.result);
+                    if (result.abnormal == true)
+                        _this.abnormalColor.push('red');
+                    else
+                        _this.abnormalColor.push('rgba(148,159,177,1)');
+                });
+                console.log(this.abnormalColor);
+                this.lineChartLabels = this.date;
+                this.lineChartData = [{ data: this.results, label: this.data[i].subtest }];
+                this.lineChartColors = [{
+                        backgroundColor: 'rgba(148,159,177,0.2)',
+                        borderColor: 'rgba(148,159,177,1)',
+                        pointBackgroundColor: this.abnormalColor,
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgba(148,159,177,0.8)'
+                    }];
+                this.charts.push({
+                    lineChartData: this.lineChartData,
+                    lineChartLabels: this.lineChartLabels,
+                    lineChartOptions: this.lineChartOptions,
+                    lineChartColors: this.lineChartColors,
+                    lineChartLegend: this.lineChartLegend,
+                    lineChartType: this.lineChartType
+                });
+            }
+            console.log(this.charts);
+        }
     };
     LabTestDetailPage.prototype.toggleSection = function (i) {
         this.data[i].open = !this.data[i].open;
@@ -8892,13 +8816,17 @@ var LabTestDetailPage = (function () {
                 for (var i = 1; i < _this.records.length; i++) {
                     _this.records[i]['open'] = false;
                 }
+                //get unit array
+                _this.unit = [];
+                records.forEach(function (record) {
+                    _this.unit.push(record.unit);
+                });
                 _this.data = _this.records;
-                if (_this.isnumber)
-                    _this.drawcanvas();
+                _this.drawcanvas();
             }, function (errmess) { return _this.errMess = errmess; });
         }, function (err) {
             _this.loading.dismiss();
-            _this.presentToast('Failed to add the record.');
+            _this.presentToast('Error: ' + err);
         });
     };
     LabTestDetailPage.prototype.showLoader = function (msg) {
@@ -8938,7 +8866,7 @@ var LabTestDetailPage = (function () {
     };
     LabTestDetailPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-lab-test-detail',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/lab-test-detail/lab-test-detail.html"*/'<!--\n  Generated template for the MedicalRecordDetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar [color]="navcolor">\n    <ion-title>{{title | titlecase}}</ion-title>\n  </ion-navbar>\n\n  <ion-toolbar [color]="navcolor">\n    <ion-segment color="light" [(ngModel)]="tab">\n      <ion-segment-button value="form">\n        TRACK\n      </ion-segment-button>\n      <ion-segment-button value="history">\n        HISTORY\n      </ion-segment-button>\n      <ion-segment-button value="chart" *ngIf="isnumber">\n        CHART\n      </ion-segment-button>\n    </ion-segment>\n  </ion-toolbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <!-- <ion-refresher (ionRefresh)="doRefresh($event)">\n    <ion-refresher-content color="primary" pullingIcon="arrow-dropdown" pullingText="Pull to refresh" refreshingSpinner="circles"\n      refreshingText="Refreshing..."></ion-refresher-content>\n  </ion-refresher> -->\n  <div [ngSwitch]="tab">\n    <div *ngSwitchCase="\'form\'">\n      <ion-card>\n        <ion-card-content>\n          <div>\n            <form [formGroup]=\'form\' (ngSubmit)="onSubmit()">\n\n              <div *ngFor="let question of questions">\n                <ion-item>\n                  <dynamic-form-question [question]="question" [form]="form"></dynamic-form-question>\n                </ion-item>\n              </div>\n\n              <div>\n                <button ion-button type="submit" [disabled]="!form.valid" color="slate-grey">Record</button>\n              </div>\n\n            </form>\n          </div>\n        </ion-card-content>\n      </ion-card>\n    </div>\n    <div *ngSwitchCase="\'history\'">\n      <ion-list *ngIf="data.length!=0">\n        <ion-card *ngFor="let d of data; let i = index">\n          <ion-card-header>\n            <ion-item (click)="toggleSection(i)" no-padding>\n              <ion-label text-wrap>{{d.subtest}}</ion-label>\n              <ion-icon item-right name="arrow-forward" *ngIf="!d.open"></ion-icon>\n              <ion-icon item-right name="arrow-down" *ngIf="d.open"></ion-icon>\n            </ion-item>\n          </ion-card-header>\n          <ion-list *ngIf="d.open && d.results" no-padding>\n            <ion-item *ngFor="let r of d.results; let j = index" (click)="showNotes(i, j)">\n              <h3 *ngIf="!r.abnormal">{{r.result}}\n                <span *ngIf="isnumber"> {{unit}}</span>\n              </h3>\n              <h3 *ngIf="r.abnormal" style="color:red">{{r.result}}\n                <span *ngIf="isnumber"> {{unit}}</span>\n              </h3>\n              <ion-note item-right>{{r.date | date}}</ion-note>\n            </ion-item>\n          </ion-list>\n        </ion-card>\n      </ion-list>\n      <ion-card [hidden]="data.length!=0">\n        <ion-card-header>No record.</ion-card-header>\n      </ion-card>\n    </div>\n    <div *ngSwitchCase="\'chart\'">\n      <div *ngIf="data.length!=0">\n        <div *ngFor="let chart of charts" style="display: block;">\n          <canvas baseChart [datasets]="chart.lineChartData" [labels]="chart.lineChartLabels" [options]="chart.lineChartOptions" [colors]="chart.lineChartColors"\n            [legend]="chart.lineChartLegend" [chartType]="chart.lineChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>\n        </div>\n      </div>\n      <ion-card [hidden]="data.length!=0">\n        <ion-card-header>No record.</ion-card-header>\n      </ion-card>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/lab-test-detail/lab-test-detail.html"*/,
+            selector: 'page-lab-test-detail',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/lab-test-detail/lab-test-detail.html"*/'<!--\n  Generated template for the MedicalRecordDetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar [color]="navcolor">\n    <ion-title>{{title | titlecase}}</ion-title>\n  </ion-navbar>\n\n  <ion-toolbar [color]="navcolor">\n    <ion-segment color="light" [(ngModel)]="tab">\n      <ion-segment-button value="form">\n        TRACK\n      </ion-segment-button>\n      <ion-segment-button value="history">\n        HISTORY\n      </ion-segment-button>\n      <ion-segment-button value="chart" *ngIf="data.length!=0">\n        CHART\n      </ion-segment-button>\n    </ion-segment>\n  </ion-toolbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <!-- <ion-refresher (ionRefresh)="doRefresh($event)">\n    <ion-refresher-content color="primary" pullingIcon="arrow-dropdown" pullingText="Pull to refresh" refreshingSpinner="circles"\n      refreshingText="Refreshing..."></ion-refresher-content>\n  </ion-refresher> -->\n  <div [ngSwitch]="tab">\n    <div *ngSwitchCase="\'form\'">\n      <ion-card>\n        <ion-card-content>\n          <div>\n            <form [formGroup]=\'form\' (ngSubmit)="onSubmit()">\n\n              <div *ngFor="let question of questions">\n                <ion-item>\n                  <dynamic-form-question [question]="question" [form]="form"></dynamic-form-question>\n                </ion-item>\n              </div>\n\n              <div>\n                <button ion-button type="submit" [disabled]="!form.valid" color="slate-grey">Record</button>\n              </div>\n\n            </form>\n          </div>\n        </ion-card-content>\n      </ion-card>\n    </div>\n    <div *ngSwitchCase="\'history\'">\n      <ion-list *ngIf="data.length!=0">\n        <ion-card *ngFor="let d of data; let i = index">\n          <ion-card-header>\n            <ion-item (click)="toggleSection(i)" no-padding>\n              <ion-label text-wrap>{{d.subtest}}</ion-label>\n              <ion-icon item-right name="arrow-forward" *ngIf="!d.open"></ion-icon>\n              <ion-icon item-right name="arrow-down" *ngIf="d.open"></ion-icon>\n            </ion-item>\n          </ion-card-header>\n          <ion-list *ngIf="d.open && d.results" no-padding>\n            <ion-item *ngFor="let r of d.results; let j = index" (click)="showNotes(i, j)">\n              <h3 *ngIf="!r.abnormal">{{r.result}} {{unit[i]}}</h3>\n              <h3 *ngIf="r.abnormal" style="color:red">{{r.result}} {{unit[i]}}</h3>\n              <ion-note item-right>{{r.date | date}}</ion-note>\n            </ion-item>\n          </ion-list>\n        </ion-card>\n      </ion-list>\n      <ion-card [hidden]="data.length!=0">\n        <ion-card-header>No record.</ion-card-header>\n      </ion-card>\n    </div>\n    <div *ngSwitchCase="\'chart\'">\n      <div *ngIf="data.length!=0">\n        <div *ngFor="let chart of charts" style="display: block;">\n          <canvas baseChart [datasets]="chart.lineChartData" [labels]="chart.lineChartLabels" [options]="chart.lineChartOptions" [colors]="chart.lineChartColors"\n            [legend]="chart.lineChartLegend" [chartType]="chart.lineChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>\n        </div>\n      </div>\n      <ion-card [hidden]="data.length!=0">\n        <ion-card-header>No record.</ion-card-header>\n      </ion-card>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/lab-test-detail/lab-test-detail.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],
             __WEBPACK_IMPORTED_MODULE_2__providers_question_question__["a" /* QuestionProvider */],
@@ -8956,17 +8884,17 @@ var LabTestDetailPage = (function () {
 
 /***/ }),
 
-/***/ 80:
+/***/ 79:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MedicationPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__medication_detail_medication_detail__ = __webpack_require__(143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__medication_detail_medication_detail__ = __webpack_require__(142);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_service_auth_service__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__welcome_welcome__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_health_records_health_records__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_health_records_health_records__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -9063,17 +8991,17 @@ var MedicationPage = (function () {
 
 /***/ }),
 
-/***/ 81:
+/***/ 80:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImmunizationHistoryPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__immunization_immunization__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__immunization_immunization__ = __webpack_require__(143);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__welcome_welcome__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_service_auth_service__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_health_records_health_records__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_health_records_health_records__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -9187,17 +9115,17 @@ var ImmunizationHistoryPage = (function () {
 
 /***/ }),
 
-/***/ 82:
+/***/ 81:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DoctorVisitNotesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__doctor_visit_notes_detail_doctor_visit_notes_detail__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__doctor_visit_notes_detail_doctor_visit_notes_detail__ = __webpack_require__(144);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__welcome_welcome__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_service_auth_service__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_health_records_health_records__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_health_records_health_records__ = __webpack_require__(24);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -9290,7 +9218,7 @@ var DoctorVisitNotesPage = (function () {
 
 /***/ }),
 
-/***/ 83:
+/***/ 82:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9346,5 +9274,5 @@ var TrackersProvider = (function () {
 
 /***/ })
 
-},[408]);
+},[407]);
 //# sourceMappingURL=main.js.map

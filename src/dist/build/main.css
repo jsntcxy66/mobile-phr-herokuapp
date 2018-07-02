@@ -42375,15 +42375,21 @@ page-trackers .item-size {
   text-align: center;
 }
 
-page-welcome .title {
-  margin-top: 40px;
-}
-
 page-welcome a {
-  font-size: 40px;
+  font-size: 10vw;
   color: black;
 }
 
-page-welcome .btns {
-  margin-top: 130px;
+page-welcome .title-wrapper {
+  margin-top: 8vh;
+  min-height: 52vh;
+}
+
+page-welcome .botton-space {
+  margin-top: 2vh;
+}
+
+page-welcome button {
+  height: 7vh !important;
+  font-size: 4vw !important;
 }
