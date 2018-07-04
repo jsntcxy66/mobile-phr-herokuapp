@@ -264,10 +264,61 @@ var AllergyDetailPage = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AllergyPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_allergy_classification_allergy_classification__ = __webpack_require__(352);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the AllergyPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var AllergyPage = (function () {
+    function AllergyPage(navCtrl, navParams, acp) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.acp = acp;
+        // get Main Menu
+        this.tiles = this.acp.getMenu(0);
+    }
+    AllergyPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad AllergyPage');
+    };
+    AllergyPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-allergy',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/allergy/allergy.html"*/'<!--\n  Generated template for the AllergyPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>ALLERGY</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n\n  <tile [tiles]="tiles"></tile>\n\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/allergy/allergy.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],
+            __WEBPACK_IMPORTED_MODULE_2__providers_allergy_classification_allergy_classification__["a" /* AllergyClassificationProvider */]])
+    ], AllergyPage);
+    return AllergyPage;
+}());
+
+//# sourceMappingURL=allergy.js.map
+
+/***/ }),
+
+/***/ 140:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AllergyHistoryPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__allergy_allergy__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__allergy_allergy__ = __webpack_require__(139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_auth_service_auth_service__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__welcome_welcome__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_history_history__ = __webpack_require__(24);
@@ -411,57 +462,6 @@ var AllergyHistoryPage = (function () {
 }());
 
 //# sourceMappingURL=allergy-history.js.map
-
-/***/ }),
-
-/***/ 140:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AllergyPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_allergy_classification_allergy_classification__ = __webpack_require__(352);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the AllergyPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var AllergyPage = (function () {
-    function AllergyPage(navCtrl, navParams, acp) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.acp = acp;
-        // get Main Menu
-        this.tiles = this.acp.getMenu(0);
-    }
-    AllergyPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad AllergyPage');
-    };
-    AllergyPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-allergy',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/allergy/allergy.html"*/'<!--\n  Generated template for the AllergyPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>ALLERGY</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n\n  <tile [tiles]="tiles"></tile>\n\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/allergy/allergy.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],
-            __WEBPACK_IMPORTED_MODULE_2__providers_allergy_classification_allergy_classification__["a" /* AllergyClassificationProvider */]])
-    ], AllergyPage);
-    return AllergyPage;
-}());
-
-//# sourceMappingURL=allergy.js.map
 
 /***/ }),
 
@@ -2151,56 +2151,6 @@ var CustomPanelPage = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DiagnosticProcedurePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_diagnostic_procedure_classification_diagnostic_procedure_classification__ = __webpack_require__(113);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Generated class for the DiagnosticProcedurePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var DiagnosticProcedurePage = (function () {
-    function DiagnosticProcedurePage(navCtrl, navParams, dpcp) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.dpcp = dpcp;
-        this.tiles = this.dpcp.getMenu(0);
-    }
-    DiagnosticProcedurePage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad DiagnosticProcedurePage');
-    };
-    DiagnosticProcedurePage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-diagnostic-procedure',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/diagnostic-procedure/diagnostic-procedure.html"*/'<!--\n  Generated template for the DiagnosticProcedurePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Diagnostic Procedure</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n\n  <tile [tiles]="tiles"></tile>\n\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/diagnostic-procedure/diagnostic-procedure.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],
-            __WEBPACK_IMPORTED_MODULE_2__providers_diagnostic_procedure_classification_diagnostic_procedure_classification__["a" /* DiagnosticProcedureClassificationProvider */]])
-    ], DiagnosticProcedurePage);
-    return DiagnosticProcedurePage;
-}());
-
-//# sourceMappingURL=diagnostic-procedure.js.map
-
-/***/ }),
-
-/***/ 154:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DiagnosticProcedureDetailPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
@@ -2389,6 +2339,28 @@ var DiagnosticProcedureDetailPage = (function () {
             _this.presentToast('Error: ' + err);
         });
     };
+    DiagnosticProcedureDetailPage.prototype.deleteRecord = function (i, j) {
+        var _this = this;
+        var alert = this.alertCtrl.create({
+            title: 'Confirm Delete',
+            message: 'Are you sure you want to delete this record?',
+            enableBackdropDismiss: true,
+            buttons: [
+                {
+                    text: 'Cancel',
+                    role: 'cancel'
+                },
+                {
+                    text: 'Delete',
+                    handler: function () {
+                        _this.hrp.deleteDiagnosticProcedure(_this.auth.userId, i, j)
+                            .subscribe(function (res) { return _this.presentToast('Delete successfully.'); }, function (err) { return _this.presentToast('Error: ' + err); });
+                    }
+                }
+            ]
+        });
+        alert.present();
+    };
     DiagnosticProcedureDetailPage.prototype.showLoader = function (msg) {
         this.loading = this.loadingCtrl.create({
             content: msg
@@ -2426,7 +2398,7 @@ var DiagnosticProcedureDetailPage = (function () {
     };
     DiagnosticProcedureDetailPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-diagnostic-procedure-detail',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/diagnostic-procedure-detail/diagnostic-procedure-detail.html"*/'<!--\n  Generated template for the DiagnosticProcedureDetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar [color]="navcolor">\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n\n  <ion-toolbar [color]="navcolor">\n    <ion-segment color="light" [(ngModel)]="tab">\n      <ion-segment-button value="form">\n        TRACK\n      </ion-segment-button>\n      <ion-segment-button value="history">\n        HISTORY\n      </ion-segment-button>\n    </ion-segment>\n  </ion-toolbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <div [ngSwitch]="tab">\n    <div *ngSwitchCase="\'form\'">\n      <ion-card>\n        <ion-card-content>\n          <div>\n            <form [formGroup]=\'form\' (ngSubmit)="onSubmit()">\n\n              <div *ngFor="let question of questions">\n                <ion-item>\n                  <dynamic-form-question [question]="question" [form]="form"></dynamic-form-question>\n                </ion-item>\n              </div>\n\n              <div>\n                <button ion-button type="submit" [disabled]="!form.valid" color="slate-grey">Record</button>\n              </div>\n\n            </form>\n          </div>\n        </ion-card-content>\n      </ion-card>\n    </div>\n    <div *ngSwitchCase="\'history\'">\n      <ion-list *ngIf="records.length!=0">\n        <div>\n          <ion-card *ngFor="let d of records; let i = index">\n            <ion-card-header>\n              <ion-item (click)="toggleSection(i)" no-padding>\n                <ion-label *ngIf="d.organ" text-wrap>{{d.organ}}</ion-label>\n                <ion-label *ngIf="d.name" text-wrap>{{d.name}}</ion-label>\n                <ion-icon item-right name="arrow-forward" *ngIf="!d.open"></ion-icon>\n                <ion-icon item-right name="arrow-down" *ngIf="d.open"></ion-icon>\n              </ion-item>\n            </ion-card-header>\n            <ion-list *ngIf="d.open && d.results" no-padding>\n              <ion-item *ngFor="let r of d.results; let j = index" (click)="showNotes(i, j)">\n                <div>\n                  <h3 text-wrap>{{r.result}}</h3>\n                  <ion-note *ngIf="r.contrast!=undefined">{{r.date | date}}</ion-note>\n                </div>\n                <ion-note *ngIf="r.contrast==undefined" item-right>{{r.date | date}}</ion-note>\n                <ion-note *ngIf="r.contrast==true" item-right>With Contrast</ion-note>\n              </ion-item>\n            </ion-list>\n          </ion-card>\n        </div>\n      </ion-list>\n      <ion-card [hidden]="records.length!=0">\n        <ion-card-header>No record.</ion-card-header>\n      </ion-card>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/diagnostic-procedure-detail/diagnostic-procedure-detail.html"*/,
+            selector: 'page-diagnostic-procedure-detail',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/diagnostic-procedure-detail/diagnostic-procedure-detail.html"*/'<!--\n  Generated template for the DiagnosticProcedureDetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar [color]="navcolor">\n    <ion-title>{{title}}</ion-title>\n  </ion-navbar>\n\n  <ion-toolbar [color]="navcolor">\n    <ion-segment color="light" [(ngModel)]="tab">\n      <ion-segment-button value="form">\n        TRACK\n      </ion-segment-button>\n      <ion-segment-button value="history">\n        HISTORY\n      </ion-segment-button>\n    </ion-segment>\n  </ion-toolbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <div [ngSwitch]="tab">\n    <div *ngSwitchCase="\'form\'">\n      <ion-card>\n        <ion-card-content>\n          <div>\n            <form [formGroup]=\'form\' (ngSubmit)="onSubmit()">\n\n              <div *ngFor="let question of questions">\n                <ion-item>\n                  <dynamic-form-question [question]="question" [form]="form"></dynamic-form-question>\n                </ion-item>\n              </div>\n\n              <div>\n                <button ion-button type="submit" [disabled]="!form.valid" color="slate-grey">Record</button>\n              </div>\n\n            </form>\n          </div>\n        </ion-card-content>\n      </ion-card>\n    </div>\n    <div *ngSwitchCase="\'history\'">\n      <ion-list *ngIf="records.length!=0">\n        <div>\n          <ion-card *ngFor="let d of records; let i = index">\n            <ion-card-header>\n              <ion-item (click)="toggleSection(i)" no-padding>\n                <ion-label *ngIf="d.organ" text-wrap>{{d.organ}}</ion-label>\n                <ion-label *ngIf="d.name" text-wrap>{{d.name}}</ion-label>\n                <ion-icon item-right name="arrow-forward" *ngIf="!d.open"></ion-icon>\n                <ion-icon item-right name="arrow-down" *ngIf="d.open"></ion-icon>\n              </ion-item>\n            </ion-card-header>\n            <ion-list *ngIf="d.open && d.results" no-padding>\n              <ion-item-sliding *ngFor="let r of d.results; let j = index">\n                <ion-item (click)="showNotes(i, j)">\n                  <div>\n                    <h3 text-wrap>{{r.result}}</h3>\n                    <ion-note *ngIf="r.contrast!=undefined">{{r.date | date}}</ion-note>\n                  </div>\n                  <ion-note *ngIf="r.contrast==undefined" item-right>{{r.date | date}}</ion-note>\n                  <ion-note *ngIf="r.contrast==true" item-right>With Contrast</ion-note>\n                </ion-item>\n                <ion-item-options side="right" icon-start>\n                  <button ion-button color="danger" (click)="deleteRecord(i, j)">\n                    <ion-icon name="trash"></ion-icon>\n                    Delete\n                  </button>\n                </ion-item-options>\n              </ion-item-sliding>\n            </ion-list>\n          </ion-card>\n        </div>\n      </ion-list>\n      <ion-card [hidden]="records.length!=0">\n        <ion-card-header>No record.</ion-card-header>\n      </ion-card>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/diagnostic-procedure-detail/diagnostic-procedure-detail.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],
             __WEBPACK_IMPORTED_MODULE_3__providers_question_question__["a" /* QuestionProvider */],
@@ -2441,6 +2413,56 @@ var DiagnosticProcedureDetailPage = (function () {
 }());
 
 //# sourceMappingURL=diagnostic-procedure-detail.js.map
+
+/***/ }),
+
+/***/ 154:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DiagnosticProcedurePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_diagnostic_procedure_classification_diagnostic_procedure_classification__ = __webpack_require__(113);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the DiagnosticProcedurePage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var DiagnosticProcedurePage = (function () {
+    function DiagnosticProcedurePage(navCtrl, navParams, dpcp) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.dpcp = dpcp;
+        this.tiles = this.dpcp.getMenu(0);
+    }
+    DiagnosticProcedurePage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad DiagnosticProcedurePage');
+    };
+    DiagnosticProcedurePage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'page-diagnostic-procedure',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/diagnostic-procedure/diagnostic-procedure.html"*/'<!--\n  Generated template for the DiagnosticProcedurePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Diagnostic Procedure</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n\n  <tile [tiles]="tiles"></tile>\n\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/diagnostic-procedure/diagnostic-procedure.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],
+            __WEBPACK_IMPORTED_MODULE_2__providers_diagnostic_procedure_classification_diagnostic_procedure_classification__["a" /* DiagnosticProcedureClassificationProvider */]])
+    ], DiagnosticProcedurePage);
+    return DiagnosticProcedurePage;
+}());
+
+//# sourceMappingURL=diagnostic-procedure.js.map
 
 /***/ }),
 
@@ -4027,7 +4049,7 @@ var SocialHistoryPage = (function () {
     };
     SocialHistoryPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-social-history',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/social-history/social-history.html"*/'<!--\n  Generated template for the SocialHistoryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>SOCIAL HISTORY</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list *ngIf="records.smoking.length!=0">\n    <ion-list-header>Smoking History</ion-list-header>\n    <ion-item-sliding *ngFor="let s of records.smoking; let i = index">\n      <ion-item>\n        <div class="white-space">\n          <h3>Cigarettes: {{s.amount}}</h3>\n          <p>{{s.date | date}}</p>\n        </div>\n      </ion-item>\n      <ion-item-options side="right" icon-start>\n        <button ion-button color="danger" (click)="deleteRecord(\'smoking\', i)">\n          <ion-icon name="trash"></ion-icon>\n          Delete\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n  <ion-list *ngIf="records.alcohol.length!=0">\n    <ion-list-header>Alcohol History</ion-list-header>\n    <ion-item-sliding *ngFor="let record of records; let j = index">\n      <ion-item *ngFor="let a of records.alcohol">\n        <div class="white-space">\n          <h3>Name: {{a.name}}</h3>\n          <h3>Amount: {{a.amount}} oz</h3>\n          <h3>Alcohol: {{a.alcohol}} %</h3>\n          <p>{{a.date | date}}</p>\n        </div>\n      </ion-item>\n      <ion-item-options side="right" icon-start>\n        <button ion-button color="danger" (click)="deleteRecord(\'alcohol\', j)">\n          <ion-icon name="trash"></ion-icon>\n          Delete\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n  <ion-list *ngIf="records.drug.length!=0">\n    <ion-list-header>Drug History</ion-list-header>\n    <ion-item-sliding *ngFor="let record of records; let k = index">\n      <ion-item *ngFor="let p of records.drug">\n        <div class="white-space">\n          <h3>Name: {{p.name}}</h3>\n          <h3>Amount: {{p.amount}}</h3>\n          <h3>Notes: {{p.note}}</h3>\n          <p>{{p.date | date}}</p>\n        </div>\n      </ion-item>\n      <ion-item-options side="right" icon-start>\n        <button ion-button color="danger" (click)="deleteRecord(\'drug\', k)">\n          <ion-icon name="trash"></ion-icon>\n          Delete\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n  <ion-list *ngIf="records.travel.length!=0">\n    <ion-list-header>Travel History</ion-list-header>\n    <ion-item-sliding *ngFor="let record of records; let u = index">\n      <ion-item *ngFor="let t of records.travel">\n        <div class="white-space">\n          <h3>Location: {{t.location}}</h3>\n          <h3>Notes: {{t.note}}</h3>\n          <p>{{t.date | date}}</p>\n        </div>\n      </ion-item>\n      <ion-item-options side="right" icon-start>\n        <button ion-button color="danger" (click)="deleteRecord(\'travel\', u)">\n          <ion-icon name="trash"></ion-icon>\n          Delete\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n  <ion-list *ngIf="records.housing.length!=0">\n    <ion-list-header>Housing History</ion-list-header>\n    <ion-item-sliding *ngFor="let record of records; let v = index">\n      <ion-item *ngFor="let h of records.housing">\n        <div class="white-space">\n          <h3>Housing Type: {{h.type | titlecase}}</h3>\n          <h3>Move in: {{h.moveindate | date}}</h3>\n          <h3>Move out: {{h.moveoutdate | date}}</h3>\n          <p>Notes: {{h.note}}</p>\n        </div>\n      </ion-item>\n      <ion-item-options side="right" icon-start>\n        <button ion-button color="danger" (click)="deleteRecord(\'housing\', v)">\n          <ion-icon name="trash"></ion-icon>\n          Delete\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n\n  <ion-card [hidden]="records.smoking.length!=0 || records.alcohol.length!=0 || records.drug.length!=0 || records.travel.length!=0 || records.housing.length!=0">\n    <ion-card-header>No record.</ion-card-header>\n  </ion-card>\n\n  <ion-fab right bottom>\n    <button ion-fab color="primary" (click)="addSocialHistory()">\n      <ion-icon name="add"></ion-icon>\n    </button>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/social-history/social-history.html"*/,
+            selector: 'page-social-history',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/social-history/social-history.html"*/'<!--\n  Generated template for the SocialHistoryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>SOCIAL HISTORY</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list *ngIf="records.smoking.length!=0">\n    <ion-list-header>Smoking History</ion-list-header>\n    <ion-item-sliding *ngFor="let s of records.smoking; let i = index">\n      <ion-item>\n        <div class="white-space">\n          <h3>Cigarettes: {{s.amount}}</h3>\n          <p>{{s.date | date}}</p>\n        </div>\n      </ion-item>\n      <ion-item-options side="right" icon-start>\n        <button ion-button color="danger" (click)="deleteRecord(\'smoking\', i)">\n          <ion-icon name="trash"></ion-icon>\n          Delete\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n  <ion-list *ngIf="records.alcohol.length!=0">\n    <ion-list-header>Alcohol History</ion-list-header>\n    <ion-item-sliding *ngFor="let a of records.alcohol; let j = index">\n      <ion-item>\n        <div class="white-space">\n          <h3>Name: {{a.name}}</h3>\n          <h3>Amount: {{a.amount}} oz</h3>\n          <h3>Alcohol: {{a.alcohol}} %</h3>\n          <p>{{a.date | date}}</p>\n        </div>\n      </ion-item>\n      <ion-item-options side="right" icon-start>\n        <button ion-button color="danger" (click)="deleteRecord(\'alcohol\', j)">\n          <ion-icon name="trash"></ion-icon>\n          Delete\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n  <ion-list *ngIf="records.drug.length!=0">\n    <ion-list-header>Drug History</ion-list-header>\n    <ion-item-sliding *ngFor="let p of records.drug; let k = index">\n      <ion-item>\n        <div class="white-space">\n          <h3>Name: {{p.name}}</h3>\n          <h3>Amount: {{p.amount}}</h3>\n          <h3>Notes: {{p.note}}</h3>\n          <p>{{p.date | date}}</p>\n        </div>\n      </ion-item>\n      <ion-item-options side="right" icon-start>\n        <button ion-button color="danger" (click)="deleteRecord(\'drug\', k)">\n          <ion-icon name="trash"></ion-icon>\n          Delete\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n  <ion-list *ngIf="records.travel.length!=0">\n    <ion-list-header>Travel History</ion-list-header>\n    <ion-item-sliding *ngFor="let t of records.travel; let u = index">\n      <ion-item>\n        <div class="white-space">\n          <h3>Location: {{t.location}}</h3>\n          <h3>Notes: {{t.note}}</h3>\n          <p>{{t.date | date}}</p>\n        </div>\n      </ion-item>\n      <ion-item-options side="right" icon-start>\n        <button ion-button color="danger" (click)="deleteRecord(\'travel\', u)">\n          <ion-icon name="trash"></ion-icon>\n          Delete\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n  <ion-list *ngIf="records.housing.length!=0">\n    <ion-list-header>Housing History</ion-list-header>\n    <ion-item-sliding *ngFor="let h of records.housing; let v = index">\n      <ion-item>\n        <div class="white-space">\n          <h3>Housing Type: {{h.type | titlecase}}</h3>\n          <h3>Move in: {{h.moveindate | date}}</h3>\n          <h3>Move out: {{h.moveoutdate | date}}</h3>\n          <p>Notes: {{h.note}}</p>\n        </div>\n      </ion-item>\n      <ion-item-options side="right" icon-start>\n        <button ion-button color="danger" (click)="deleteRecord(\'housing\', v)">\n          <ion-icon name="trash"></ion-icon>\n          Delete\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n\n  <ion-card [hidden]="records.smoking.length!=0 || records.alcohol.length!=0 || records.drug.length!=0 || records.travel.length!=0 || records.housing.length!=0">\n    <ion-card-header>No record.</ion-card-header>\n  </ion-card>\n\n  <ion-fab right bottom>\n    <button ion-fab color="primary" (click)="addSocialHistory()">\n      <ion-icon name="add"></ion-icon>\n    </button>\n  </ion-fab>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/social-history/social-history.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],
             __WEBPACK_IMPORTED_MODULE_3__providers_auth_service_auth_service__["a" /* AuthServiceProvider */],
@@ -4367,7 +4389,7 @@ var SurgicalHistoryPage = (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TestResultsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__diagnostic_procedure_diagnostic_procedure__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__diagnostic_procedure_diagnostic_procedure__ = __webpack_require__(154);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lab_test_lab_test__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_service_auth_service__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__welcome_welcome__ = __webpack_require__(16);
@@ -5937,11 +5959,11 @@ var map = {
 		43
 	],
 	"../pages/allergy-history/allergy-history.module": [
-		555,
+		556,
 		42
 	],
 	"../pages/allergy/allergy.module": [
-		556,
+		555,
 		41
 	],
 	"../pages/appointment-add-appointments/appointment-add-appointments.module": [
@@ -5977,15 +5999,15 @@ var map = {
 		33
 	],
 	"../pages/dashboard/dashboard.module": [
-		565,
+		566,
 		32
 	],
 	"../pages/diagnostic-procedure-detail/diagnostic-procedure-detail.module": [
-		567,
+		565,
 		31
 	],
 	"../pages/diagnostic-procedure/diagnostic-procedure.module": [
-		566,
+		567,
 		30
 	],
 	"../pages/doctor-visit-notes-detail/doctor-visit-notes-detail.module": [
@@ -5993,19 +6015,19 @@ var map = {
 		29
 	],
 	"../pages/doctor-visit-notes/doctor-visit-notes.module": [
-		569,
+		570,
 		28
 	],
 	"../pages/family-history-detail/family-history-detail.module": [
-		570,
+		569,
 		27
 	],
 	"../pages/family-history/family-history.module": [
-		571,
+		572,
 		26
 	],
 	"../pages/foodtracker/foodtracker.module": [
-		572,
+		571,
 		0
 	],
 	"../pages/immunization-detail/immunization-detail.module": [
@@ -6017,11 +6039,11 @@ var map = {
 		24
 	],
 	"../pages/immunization/immunization.module": [
-		575,
+		576,
 		23
 	],
 	"../pages/lab-test-detail/lab-test-detail.module": [
-		576,
+		575,
 		22
 	],
 	"../pages/lab-test/lab-test.module": [
@@ -6196,7 +6218,7 @@ var HistoryProvider = (function () {
     };
     HistoryProvider.prototype.addSocialHistory = function (id, title, record) {
         var _this = this;
-        return this.http.post(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/social/' + title + '/' + id, record)
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_0__shared_baseurl__["a" /* baseurl */] + 'history/social/' + title + '/' + id, record, { responseType: "text" })
             .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
     };
     HistoryProvider.prototype.deleteSocialHistory = function (id, type, recordid) {
@@ -6295,6 +6317,11 @@ var HealthRecordsProvider = (function () {
         return this.http.post(__WEBPACK_IMPORTED_MODULE_2__shared_baseurl__["a" /* baseurl */] + 'records/labtest/' + testid + '/' + userid, record)
             .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
     };
+    HealthRecordsProvider.prototype.deleteLabTest = function (id, subtestid, recordid) {
+        var _this = this;
+        return this.http.delete(__WEBPACK_IMPORTED_MODULE_2__shared_baseurl__["a" /* baseurl */] + 'history/labtest/' + subtestid + '/' + recordid + '/' + id)
+            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
+    };
     HealthRecordsProvider.prototype.getRecentLabTest = function (userid) {
         var _this = this;
         return this.http.get(__WEBPACK_IMPORTED_MODULE_2__shared_baseurl__["a" /* baseurl */] + 'records/labtest/30days/' + userid)
@@ -6308,6 +6335,11 @@ var HealthRecordsProvider = (function () {
     HealthRecordsProvider.prototype.addDiagnosticProcedure = function (userid, testid, record) {
         var _this = this;
         return this.http.post(__WEBPACK_IMPORTED_MODULE_2__shared_baseurl__["a" /* baseurl */] + 'records/diagnosticprocedure/' + testid + '/' + userid, record)
+            .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
+    };
+    HealthRecordsProvider.prototype.deleteDiagnosticProcedure = function (id, subtestid, recordid) {
+        var _this = this;
+        return this.http.delete(__WEBPACK_IMPORTED_MODULE_2__shared_baseurl__["a" /* baseurl */] + 'history/diagnosticprocedure/' + subtestid + '/' + recordid + '/' + id)
             .catch(function (error) { return _this.processHttpmsgService.handleError(error); });
     };
     HealthRecordsProvider.prototype.getDoctorVisitNotes = function (id) {
@@ -6747,9 +6779,9 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_profile_profile__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_profile_editable_profile_editable__ = __webpack_require__(162);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_resources_resources__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_allergy_allergy__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_allergy_allergy__ = __webpack_require__(139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_allergy_detail_allergy_detail__ = __webpack_require__(138);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_allergy_history_allergy_history__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_allergy_history_allergy_history__ = __webpack_require__(140);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_family_history_family_history__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__pages_family_history_detail_family_history_detail__ = __webpack_require__(155);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_medical_history_medical_history__ = __webpack_require__(160);
@@ -6767,8 +6799,8 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__pages_medication_medication__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__pages_medication_detail_medication_detail__ = __webpack_require__(143);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__pages_test_results_test_results__ = __webpack_require__(170);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__pages_diagnostic_procedure_diagnostic_procedure__ = __webpack_require__(153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__pages_diagnostic_procedure_detail_diagnostic_procedure_detail__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__pages_diagnostic_procedure_diagnostic_procedure__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__pages_diagnostic_procedure_detail_diagnostic_procedure_detail__ = __webpack_require__(153);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__pages_lab_test_lab_test__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__pages_lab_test_detail_lab_test_detail__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__pages_password_edit_password_edit__ = __webpack_require__(161);
@@ -6940,8 +6972,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["IonicModule"].forRoot(__WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/allergy-detail/allergy-detail.module#AllergyDetailPageModule', name: 'AllergyDetailPage', segment: 'allergy-detail', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/allergy-history/allergy-history.module#AllergyHistoryPageModule', name: 'AllergyHistoryPage', segment: 'allergy-history', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/allergy/allergy.module#AllergyPageModule', name: 'AllergyPage', segment: 'allergy', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/allergy-history/allergy-history.module#AllergyHistoryPageModule', name: 'AllergyHistoryPage', segment: 'allergy-history', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/appointment-add-appointments/appointment-add-appointments.module#AppointmentAddAppointmentsPageModule', name: 'AppointmentAddAppointmentsPage', segment: 'appointment-add-appointments', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/appointment/appointment.module#AppointmentPageModule', name: 'AppointmentPage', segment: 'appointment', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/contact-add-contacts/contact-add-contacts.module#ContactAddContactsPageModule', name: 'ContactAddContactsPage', segment: 'contact-add-contacts', priority: 'low', defaultHistory: [] },
@@ -6950,18 +6982,18 @@ var AppModule = (function () {
                         { loadChildren: '../pages/create-tracker/create-tracker.module#CreateTrackerPageModule', name: 'CreateTrackerPage', segment: 'create-tracker', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/custom-panel/custom-panel.module#CustomPanelPageModule', name: 'CustomPanelPage', segment: 'custom-panel', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/customtracker/customtracker.module#CustomtrackerPageModule', name: 'CustomtrackerPage', segment: 'customtracker', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/diagnostic-procedure-detail/diagnostic-procedure-detail.module#DiagnosticProcedureDetailPageModule', name: 'DiagnosticProcedureDetailPage', segment: 'diagnostic-procedure-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/dashboard/dashboard.module#DashboardPageModule', name: 'DashboardPage', segment: 'dashboard', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/diagnostic-procedure/diagnostic-procedure.module#DiagnosticProcedurePageModule', name: 'DiagnosticProcedurePage', segment: 'diagnostic-procedure', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/diagnostic-procedure-detail/diagnostic-procedure-detail.module#DiagnosticProcedureDetailPageModule', name: 'DiagnosticProcedureDetailPage', segment: 'diagnostic-procedure-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/doctor-visit-notes-detail/doctor-visit-notes-detail.module#DoctorVisitNotesDetailPageModule', name: 'DoctorVisitNotesDetailPage', segment: 'doctor-visit-notes-detail', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/doctor-visit-notes/doctor-visit-notes.module#DoctorVisitNotesPageModule', name: 'DoctorVisitNotesPage', segment: 'doctor-visit-notes', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/family-history-detail/family-history-detail.module#FamilyHistoryDetailPageModule', name: 'FamilyHistoryDetailPage', segment: 'family-history-detail', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/family-history/family-history.module#FamilyHistoryPageModule', name: 'FamilyHistoryPage', segment: 'family-history', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/doctor-visit-notes/doctor-visit-notes.module#DoctorVisitNotesPageModule', name: 'DoctorVisitNotesPage', segment: 'doctor-visit-notes', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/foodtracker/foodtracker.module#FoodtrackerPageModule', name: 'FoodtrackerPage', segment: 'foodtracker', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/family-history/family-history.module#FamilyHistoryPageModule', name: 'FamilyHistoryPage', segment: 'family-history', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/immunization-detail/immunization-detail.module#ImmunizationDetailPageModule', name: 'ImmunizationDetailPage', segment: 'immunization-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/immunization-history/immunization-history.module#ImmunizationHistoryPageModule', name: 'ImmunizationHistoryPage', segment: 'immunization-history', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/immunization/immunization.module#ImmunizationPageModule', name: 'ImmunizationPage', segment: 'immunization', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/lab-test-detail/lab-test-detail.module#LabTestDetailPageModule', name: 'LabTestDetailPage', segment: 'lab-test-detail', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/immunization/immunization.module#ImmunizationPageModule', name: 'ImmunizationPage', segment: 'immunization', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/lab-test/lab-test.module#LabTestPageModule', name: 'LabTestPage', segment: 'lab-test', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/medical-history-detail/medical-history-detail.module#MedicalHistoryDetailPageModule', name: 'MedicalHistoryDetailPage', segment: 'medical-history-detail', priority: 'low', defaultHistory: [] },
@@ -7770,7 +7802,7 @@ var ContactAddContactsPage = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_dashboard_dashboard__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_profile_profile__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_resources_resources__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_allergy_history_allergy_history__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_allergy_history_allergy_history__ = __webpack_require__(140);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_family_history_family_history__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_medical_history_medical_history__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_surgical_history_surgical_history__ = __webpack_require__(169);
@@ -8008,7 +8040,7 @@ var MyApp = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_allergy_detail_allergy_detail__ = __webpack_require__(138);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_immunization_detail_immunization_detail__ = __webpack_require__(157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_social_history_detail_social_history_detail__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_diagnostic_procedure_detail_diagnostic_procedure_detail__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_diagnostic_procedure_detail_diagnostic_procedure_detail__ = __webpack_require__(153);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_diagnostic_procedure_classification_diagnostic_procedure_classification__ = __webpack_require__(113);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -8783,6 +8815,7 @@ var LabTestDetailPage = (function () {
         this.alertCtrl = alertCtrl;
         this.hrp = hrp;
         this.unit = [];
+        this.showChart = false;
         this.color = ['dark-salmon', 'rosy-brown', 'slate-grey'];
         this.data = [];
         this.date = [];
@@ -8982,11 +9015,15 @@ var LabTestDetailPage = (function () {
                             for (i = 1; i < this.records.length; i++) {
                                 this.records[i]['open'] = false;
                             }
-                            //get unit array
                             this.unit = [];
                             this.records.forEach(function (record) {
+                                // get unit array
                                 _this.unit.push(record.unit);
+                                // control chart display
+                                if (record.unit.length != 0)
+                                    _this.showChart = true;
                             });
+                            console.log(this.showChart);
                         }
                         this.data = this.records;
                         console.log(this.data);
@@ -9002,6 +9039,7 @@ var LabTestDetailPage = (function () {
     };
     LabTestDetailPage.prototype.drawcanvas = function () {
         var _this = this;
+        this.charts = [];
         for (var i = 0; i < this.data.length; i++) {
             this.date = [];
             this.results = [];
@@ -9016,7 +9054,7 @@ var LabTestDetailPage = (function () {
                         _this.abnormalColor.push('rgba(148,159,177,1)');
                 });
                 console.log(this.abnormalColor);
-                this.lineChartLabels = this.date;
+                this.lineChartLabels = this.date.reverse();
                 this.lineChartData = [{ data: this.results, label: this.data[i].subtest }];
                 this.lineChartColors = [{
                         backgroundColor: 'rgba(148,159,177,0.2)',
@@ -9052,17 +9090,6 @@ var LabTestDetailPage = (function () {
     };
     LabTestDetailPage.prototype.chartClicked = function ($event) {
     };
-    LabTestDetailPage.prototype.showChart = function () {
-        if (this.data.length != 0) {
-            this.data.forEach(function (record) {
-                if (record.unit.length != 0)
-                    return true;
-            });
-            return false;
-        }
-        else
-            return false;
-    };
     LabTestDetailPage.prototype.onSubmit = function () {
         var _this = this;
         this.showLoader('Adding...');
@@ -9082,10 +9109,13 @@ var LabTestDetailPage = (function () {
                     for (var i = 1; i < _this.records.length; i++) {
                         _this.records[i]['open'] = false;
                     }
-                    //get unit array
                     _this.unit = [];
                     _this.records.forEach(function (record) {
+                        // get unit array
                         _this.unit.push(record.unit);
+                        // control chart display
+                        if (record.unit.length != 0)
+                            _this.showChart = true;
                     });
                 }
                 _this.data = _this.records;
@@ -9098,6 +9128,28 @@ var LabTestDetailPage = (function () {
             _this.loading.dismiss();
             _this.presentToast('Error: ' + err);
         });
+    };
+    LabTestDetailPage.prototype.deleteRecord = function (i, j) {
+        var _this = this;
+        var alert = this.alertCtrl.create({
+            title: 'Confirm Delete',
+            message: 'Are you sure you want to delete this record?',
+            enableBackdropDismiss: true,
+            buttons: [
+                {
+                    text: 'Cancel',
+                    role: 'cancel'
+                },
+                {
+                    text: 'Delete',
+                    handler: function () {
+                        _this.hrp.deleteLabTest(_this.auth.userId, i, j)
+                            .subscribe(function (res) { return _this.presentToast('Delete successfully.'); }, function (err) { return _this.presentToast('Error: ' + err); });
+                    }
+                }
+            ]
+        });
+        alert.present();
     };
     LabTestDetailPage.prototype.showLoader = function (msg) {
         this.loading = this.loadingCtrl.create({
@@ -9136,7 +9188,7 @@ var LabTestDetailPage = (function () {
     };
     LabTestDetailPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-lab-test-detail',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/lab-test-detail/lab-test-detail.html"*/'<!--\n  Generated template for the MedicalRecordDetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar [color]="navcolor">\n    <ion-title>{{title | titlecase}}</ion-title>\n  </ion-navbar>\n\n  <ion-toolbar [color]="navcolor">\n    <ion-segment color="light" [(ngModel)]="tab">\n      <ion-segment-button value="form">\n        TRACK\n      </ion-segment-button>\n      <ion-segment-button value="history">\n        HISTORY\n      </ion-segment-button>\n      <ion-segment-button value="chart" *ngIf="showChart()">\n        CHART\n      </ion-segment-button>\n    </ion-segment>\n  </ion-toolbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <!-- <ion-refresher (ionRefresh)="doRefresh($event)">\n    <ion-refresher-content color="primary" pullingIcon="arrow-dropdown" pullingText="Pull to refresh" refreshingSpinner="circles"\n      refreshingText="Refreshing..."></ion-refresher-content>\n  </ion-refresher> -->\n  <div [ngSwitch]="tab">\n    <div *ngSwitchCase="\'form\'">\n      <ion-card>\n        <ion-card-content>\n          <div>\n            <form [formGroup]=\'form\' (ngSubmit)="onSubmit()">\n\n              <div *ngFor="let question of questions">\n                <ion-item>\n                  <dynamic-form-question [question]="question" [form]="form"></dynamic-form-question>\n                </ion-item>\n              </div>\n\n              <div>\n                <button ion-button type="submit" [disabled]="!form.valid" color="slate-grey">Record</button>\n              </div>\n\n            </form>\n          </div>\n        </ion-card-content>\n      </ion-card>\n    </div>\n    <div *ngSwitchCase="\'history\'">\n      <ion-list *ngIf="data.length!=0">\n        <ion-card *ngFor="let d of data; let i = index">\n          <ion-card-header>\n            <ion-item (click)="toggleSection(i)" no-padding>\n              <ion-label text-wrap>{{d.subtest}}</ion-label>\n              <ion-icon item-right name="arrow-forward" *ngIf="!d.open"></ion-icon>\n              <ion-icon item-right name="arrow-down" *ngIf="d.open"></ion-icon>\n            </ion-item>\n          </ion-card-header>\n          <ion-list *ngIf="d.open && d.results" no-padding>\n            <ion-item *ngFor="let r of d.results; let j = index" (click)="showNotes(i, j)">\n              <h3 *ngIf="!r.abnormal">{{r.result}} {{unit[i]}}</h3>\n              <h3 *ngIf="r.abnormal" style="color:red">{{r.result}} {{unit[i]}}</h3>\n              <ion-note item-right>{{r.date | date}}</ion-note>\n            </ion-item>\n          </ion-list>\n        </ion-card>\n      </ion-list>\n      <ion-card [hidden]="data.length!=0">\n        <ion-card-header>No record.</ion-card-header>\n      </ion-card>\n    </div>\n    <div *ngSwitchCase="\'chart\'">\n      <div *ngIf="data.length!=0">\n        <div *ngFor="let chart of charts" style="display: block;">\n          <canvas baseChart [datasets]="chart.lineChartData" [labels]="chart.lineChartLabels" [options]="chart.lineChartOptions" [colors]="chart.lineChartColors"\n            [legend]="chart.lineChartLegend" [chartType]="chart.lineChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>\n        </div>\n      </div>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/lab-test-detail/lab-test-detail.html"*/,
+            selector: 'page-lab-test-detail',template:/*ion-inline-start:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/lab-test-detail/lab-test-detail.html"*/'<!--\n  Generated template for the MedicalRecordDetailPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar [color]="navcolor">\n    <ion-title>{{title | titlecase}}</ion-title>\n  </ion-navbar>\n\n  <ion-toolbar [color]="navcolor">\n    <ion-segment color="light" [(ngModel)]="tab">\n      <ion-segment-button value="form">\n        TRACK\n      </ion-segment-button>\n      <ion-segment-button value="history">\n        HISTORY\n      </ion-segment-button>\n      <ion-segment-button value="chart">\n        CHART\n      </ion-segment-button>\n    </ion-segment>\n  </ion-toolbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <!-- <ion-refresher (ionRefresh)="doRefresh($event)">\n    <ion-refresher-content color="primary" pullingIcon="arrow-dropdown" pullingText="Pull to refresh" refreshingSpinner="circles"\n      refreshingText="Refreshing..."></ion-refresher-content>\n  </ion-refresher> -->\n  <div [ngSwitch]="tab">\n    <div *ngSwitchCase="\'form\'">\n      <ion-card>\n        <ion-card-content>\n          <div>\n            <form [formGroup]=\'form\' (ngSubmit)="onSubmit()">\n\n              <div *ngFor="let question of questions">\n                <ion-item>\n                  <dynamic-form-question [question]="question" [form]="form"></dynamic-form-question>\n                </ion-item>\n              </div>\n\n              <div>\n                <button ion-button type="submit" [disabled]="!form.valid" color="slate-grey">Record</button>\n              </div>\n\n            </form>\n          </div>\n        </ion-card-content>\n      </ion-card>\n    </div>\n    <div *ngSwitchCase="\'history\'">\n      <ion-list *ngIf="data.length!=0">\n        <ion-card *ngFor="let d of data; let i = index">\n          <ion-card-header>\n            <ion-item (click)="toggleSection(i)" no-padding>\n              <ion-label text-wrap>{{d.subtest}}</ion-label>\n              <ion-icon item-right name="arrow-forward" *ngIf="!d.open"></ion-icon>\n              <ion-icon item-right name="arrow-down" *ngIf="d.open"></ion-icon>\n            </ion-item>\n          </ion-card-header>\n          <ion-list *ngIf="d.open && d.results" no-padding>\n            <ion-item-sliding *ngFor="let r of d.results; let j = index">\n              <ion-item (click)="showNotes(i, j)">\n                <h3 *ngIf="!r.abnormal">{{r.result}} {{unit[i]}}</h3>\n                <h3 *ngIf="r.abnormal" style="color:red">{{r.result}} {{unit[i]}}</h3>\n                <ion-note item-right>{{r.date | date}}</ion-note>\n              </ion-item>\n              <ion-item-options side="right" icon-start>\n                <button ion-button color="danger" (click)="deleteRecord(i, j)">\n                  <ion-icon name="trash"></ion-icon>\n                  Delete\n                </button>\n              </ion-item-options>\n            </ion-item-sliding>\n          </ion-list>\n        </ion-card>\n      </ion-list>\n      <ion-card [hidden]="data.length!=0">\n        <ion-card-header>No record.</ion-card-header>\n      </ion-card>\n    </div>\n    <div *ngSwitchCase="\'chart\'">\n      <div *ngIf="showChart">\n        <div *ngFor="let chart of charts" style="display: block;">\n          <canvas baseChart [datasets]="chart.lineChartData" [labels]="chart.lineChartLabels" [options]="chart.lineChartOptions" [colors]="chart.lineChartColors"\n            [legend]="chart.lineChartLegend" [chartType]="chart.lineChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>\n        </div>\n      </div>\n      <ion-card [hidden]="showChart">\n        <ion-card-header>No record.</ion-card-header>\n      </ion-card>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"/Users/chracyc/Materials/Projects/mobileProject/MobilePHR/src/pages/lab-test-detail/lab-test-detail.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavController"], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["NavParams"],
             __WEBPACK_IMPORTED_MODULE_2__providers_question_question__["a" /* QuestionProvider */],
