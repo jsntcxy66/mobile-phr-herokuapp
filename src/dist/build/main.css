@@ -42123,6 +42123,10 @@ ion-navbar.toolbar {
   white-space: normal;
 }
 
+.label {
+  width: 100%;
+}
+
 calendar .my-class .toolbar-background-md,
 calendar .my-class .toolbar-background-ios,
 calendar .my-class ion-calendar-week .week-title {
@@ -42359,8 +42363,9 @@ page-trackers ion-card {
   padding-top: 25px;
 }
 
-page-trackers ion-icon {
-  font-size: 60px;
+page-trackers i {
+  font-size: 50px;
+  margin-bottom: 10px;
 }
 
 page-trackers ion-label {
