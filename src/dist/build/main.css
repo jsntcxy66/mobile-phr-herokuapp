@@ -42230,6 +42230,10 @@ dynamic-form-question .right-justify {
   flex: 0 1 auto;
 }
 
+dynamic-form-question .position {
+  position: relative;
+}
+
 tile ion-card {
   text-align: center;
   display: -webkit-box;
