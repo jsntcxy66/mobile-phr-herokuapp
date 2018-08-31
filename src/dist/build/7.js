@@ -1,14 +1,14 @@
 webpackJsonp([7],{
 
-/***/ 591:
+/***/ 1017:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SocialHistoryPageModule", function() { return SocialHistoryPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SocialHistoryDetailPageModule", function() { return SocialHistoryDetailPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__social_history__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__social_history_detail__ = __webpack_require__(224);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var SocialHistoryPageModule = (function () {
-    function SocialHistoryPageModule() {
+var SocialHistoryDetailPageModule = (function () {
+    function SocialHistoryDetailPageModule() {
     }
-    SocialHistoryPageModule = __decorate([
+    SocialHistoryDetailPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__social_history__["a" /* SocialHistoryPage */],
+                __WEBPACK_IMPORTED_MODULE_2__social_history_detail__["a" /* SocialHistoryDetailPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__social_history__["a" /* SocialHistoryPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["IonicPageModule"].forChild(__WEBPACK_IMPORTED_MODULE_2__social_history_detail__["a" /* SocialHistoryDetailPage */]),
             ],
         })
-    ], SocialHistoryPageModule);
-    return SocialHistoryPageModule;
+    ], SocialHistoryDetailPageModule);
+    return SocialHistoryDetailPageModule;
 }());
 
-//# sourceMappingURL=social-history.module.js.map
+//# sourceMappingURL=social-history-detail.module.js.map
 
 /***/ })
 
